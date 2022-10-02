@@ -3,16 +3,11 @@ import pandas
 
 def main():
     print("Hello World")
-    datasheets = open("datasheets.csv")
-    csv_reader = pandas.reader(datasheets, delimiter="|")
+    datasheets = pandas.read_csv("Datasheets.csv", sep='|')
+    #datasheets.sort_values(datasheets.columns[0], axis=0, inplace=True)
+    #datasheets.to_csv("Datasheets.csv",sep="|")
     line_count = 0
-    for row in csv_reader:
-        if line_count == 0:
-            print(f'column names are {", ".join(row)}')
-            line_count += 1
-        else:
-            print(f'ID: {row[0]}, Name: {row[1]}, Role: {row[5]}')
-            line_count += 1
+    print(datasheets)
 
 
 if __name__ == "__main__":
