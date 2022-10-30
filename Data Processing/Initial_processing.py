@@ -5,7 +5,7 @@ def main():
     print("Hello World")
     datasheets = pandas.read_csv("Datasheets.csv", sep='|')
     datasheets.sort_values(datasheets.columns[0], axis=0, inplace=True)
-    datasheets.to_csv("Datasheets.csv",sep="|")
+    datasheets.to_csv("Datasheets.csv",sep="|", index=False)
     line_count = 0
     print(datasheets)
 
