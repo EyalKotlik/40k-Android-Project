@@ -1,0 +1,1864 @@
+datasheet_id|line|name|WS|BS|S|T|W|A|Sv|Cost|cost_description|models_per_unit|cost_including_wargear
+1|1|Warboss|2|5|6|6|6|5|4|90.0||1|False
+2|1|Warboss in Mega Armour|2|5|6|6|7|5|2|115.0||1|False
+3|1|Warboss on Warbike|2|5|6|7|7|5|4|115.0||1|False
+4|1|Weirdboy|3|5|5|5|5|3|6|70.0||1|False
+5|1|Big Mek|3|5|5|4|4|3|4|55.0||1|False
+5|2|Grot Oiler|5|4|2|2|1|1|6|4.0||0-1|False
+6|1|Big Mek in Mega Armour|3|4|5|5|6|3|2|85.0||1|False
+7|1|Big Mek on Warbike|3|5|5|5|5|3|4|81.0||1|False
+8|1|Ghazghkull Thraka|2|5|7|7|12|5|2|300.0||1|False
+9|1|Kaptin Badrukk|2|4|5|6|6|5|3|95.0||1|False
+10|1|Boss Zagstruk|2|5|6|6|6|6|4|110.0||1|False
+11|1|Boss Snikrot|2|5|6|6|6|6|6|95.0||1|False
+12|1|Mek|3|5|4|5|3|2|6|25.0||1|False
+13|1|Painboy|3|5|5|5|4|4|6|70.0||1|False
+14|1|Painboy on Warbike|3|5|5|5|5|4|4|90.0||1|False
+15|1|Mad Dok Grotsnik|2|5|5|5|4|4|4|85.0||1|False
+16|1|Ork Boy|3|5|4|5|1|2|6|8.0||9-29|False
+16|2|Boss Nob|3|5|5|5|2|3|6|8.0||1|False
+17|1|Gretchin|5|4|2|3|1|1|7|4.0||10-30|False
+18|1|Runtherd|3|5|4|5|4|3|6|30.0||1|False
+19|1|Burna Boy|3|5|4|5|1|2|6|10.0||4-12|False
+19|2|Spanner|3|5|4|5|1|2|6|10.0||1-3|False
+20|1|Tankbusta|3|5|4|5|1|2|6|16.0||4-14|False
+20|2|Boss Nob|3|5|5|5|2|3|6|16.0||1|False
+21|1|Nob|3|5|5|5|2|3|4|17.0||4-9|False
+21|2|Boss Nob|3|5|5|5|2|3|4|17.0||1|False
+22|1|Nob with Waaagh! Banner|3|5|5|5|4|3|4|70.0||1|False
+24|1|Meganob|3|5|5|5|3|3|2|30.0||2-9|False
+24|2|Boss Meganob|3|5|5|5|3|3|2|30.0||1|False
+25|1|Kommando|3|5|4|5|1|2|6|11.0||4-14|False
+25|2|Boss Nob|3|5|5|5|2|3|6|11.0||1|False
+26|1|Trukk|5|5|6|6|10|3|4|70.0||1|False
+27|1|Stormboy|3|5|4|5|1|2|6|10.0||4-14|False
+27|2|Boss Nob|3|5|5|5|2|3|6|10.0||1|False
+28|1|Deffkopta|3|5|4|5|4|2|4|50.0||3-6|False
+29|1|Dakkajet|5|5|6|6|12|3|4|100.0||1|False
+30|1|Burna-bommer|5|5|6|6|12|3|4|135.0||1|False
+31|1|Blitza-bommer|5|5|6|6|12|3|4|150.0||1|False
+32|1|Wazbom Blastajet|5|4|6|6|12|3|4|170.0||1|False
+33|1|Warbiker|3|5|4|5|3|2|4|25.0||2-8|False
+33|2|Boss Nob on Warbike|3|5|5|5|4|3|4|25.0||1|False
+34|1|Wartrakk|3|5|4|5|6|4|4|37.0||1-5|False
+35|1|Skorcha|3|5|4|5|6|4|4|37.0||1-5|False
+36|1|Warbuggy|3|5|4|5|5|4|4|33.0||1-5|False
+37|1|Big Gun|5|4|2|5|3|2|5|8.0||1-6|False
+38|1|Mek Gun|5|4|2|5|6|6|5|40.0||1-3|False
+39|1|Battlewagon|5|5|8|7|16|6|3|105.0||1|False
+40|1|Deff Dread|3|5|5|7|8|3|3|85.0||1-3|False
+41|1|Killa Kan|4|4|5|5|5|3|3|35.0||3-6|False
+42|1|Morkanaut|3|5|8|8|24|4|3|350.0||1|False
+43|1|Gorkanaut|3|5|8|8|24|5|3|365.0||1|False
+44|1|Loota|3|5|4|5|1|2|6|14.0||4-12|False
+44|2|Spanner|3|5|4|5|1|2|6|14.0||1-3|False
+45|1|Flash Git|3|4|5|5|2|3|4|25.0||4-9|False
+45|2|Kaptin|3|4|5|5|2|3|4|25.0||1|False
+46|1|Stompa|3|5|10|8|40|6|3|675.0||1|False
+47|1|Zhadsnark da Ripper|2|5|6|6|7|5|4|120.0||1|False
+48|1|Mek Boss Buzzgob|3|4|5|5|6|4|4|||1|False
+49|1|Grot Tank|6|4|4|5|4|2|3|35.0||3-7|False
+49|2|Kommanda|6|4|4|5|4|3|3|35.0||1|False
+50|1|Grot Mega-tank|5|4|6|6|11|4|3|90.0||1|False
+51|1|Squiggoth|3|5|8|8|18|4|3|170.0||1|False
+52|1|Meka-Dread|3|4|7|7|16|4|3|165.0||1|False
+53|1|Lifta Wagon|5|5|8|7|16|6|4|155.0||1|False
+54|1|Big Trakk|5|5|6|6|12|4|4|85.0||1|False
+55|1|Kannonwagon|5|5|8|7|16|6|3|150.0||1|False
+56|1|Kill Tank|4|5|8|8|24|8|3|275.0||1|False
+57|1|Chinork Warkopta|3|5|6|6|10|3|4|100.0||1|False
+58|1|Kustom Stompa|3|5|10|8|40|6|3|700.0||1|False
+59|1|Gargantuan Squiggoth|3|5|12|8|36|8|3|460.0||1|False
+60|1|Captain|2|2|4|4|5|4|3|85.0||1|False
+61|1|Captain in Terminator Armour|2|2|4|4|6|4|2|100.0||1|False
+63|1|Captain in Gravis Armour|2|2|4|5|7|5|3|115.0||1|False
+64|1|Captain on Bike|2|2|4|5|6|4|3|100.0||1|False
+65|1|Librarian|3|3|4|4|4|3|3|90.0||1|False
+66|1|Librarian in Terminator Armour|3|3|4|4|5|3|2|105.0||1|False
+67|1|Librarian on Bike|3|3|4|5|5|3|3|119.0||1|False
+68|1|Techmarine|3|2|4|4|4|3|2|70.0||1|False
+69|1|Servitor|5|5|3|3|1|1|4|||4|False
+70|1|Techmarine on Bike|3|2|4|5|5|3|2|70.0||1|False
+71|1|Chaplain|2|3|4|4|4|3|3|80.0||1|False
+72|1|Chaplain in Terminator Armour|2|3|4|4|5|3|2|95.0||1|False
+73|1|Chaplain on Bike|2|3|4|5|5|3|3|95.0||1|False
+74|1|Apothecary|3|3|4|4|4|3|3|75.0||1|False
+75|1|Apothecary on Bike|3|3|4|5|5|3|3|80.0||1|False
+76|1|Primaris Lieutenant|2|2|4|4|5|4|3|75.0||1|False
+77|1|Company Ancient|3|3|4|4|4|3|3|75.0||1|False
+78|1|Company Ancient on Bike|3|3|4|5|5|3|3|88.0||1|False
+79|1|Primaris Ancient|3|3|4|4|5|4|3|80.0||1|False
+80|1|Company Champion|2|3|4|4|4|4|3|55.0||1|False
+81|1|Company Champion on Bike|2|3|4|5|5|4|3|80.0||1|False
+82|1|Company Veteran|3|3|4|4|2|2|3|20.0||1-4|False
+82|2|Company Veteran Sergeant|3|3|4|4|2|3|3|20.0||1|False
+83|1|Space Marine Veteran Biker|3|3|4|5|2|2|3|34.0||1-4|False
+83|2|Veteran Biker Sergeant|3|3|4|5|2|3|3|34.0||1|False
+84|1|Space Marine|3|3|4|4|2|1|3|18.0||4-9|False
+84|2|Space Marine Sergeant|3|3|4|4|2|2|3|18.0||1|False
+85|1|Scout|3|3|4|4|1|1|4|14.0||4-9|False
+85|2|Scout Sergeant|3|3|4|4|1|2|4|14.0||1|False
+86|1|Intercessor|3|3|4|4|2|2|3|20.0||4-9|False
+86|2|Intercessor Sergeant|3|3|4|4|2|3|3|20.0||1|False
+87|1|Imperial Space Marine|3|3|4|4|4|3|3|60.0||1|False
+88|1|Honour Guard|3|3|4|4|2|2|2|||2|False
+89|1|Chapter Ancient|3|3|4|4|4|3|2|100.0||1|False
+90|1|Chapter Champion|2|3|4|4|4|5|2|75.0||1|False
+91|1|Assault Centurion|3|3|5|5|4|3|2|55.0||2-5|False
+91|2|Assault Centurion Sergeant|3|3|5|5|4|4|2|55.0||1|False
+92|1|Sternguard Veteran|3|3|4|4|2|2|3|20.0||4-9|False
+92|2|Sternguard Veteran Sergeant|3|3|4|4|2|3|3|20.0||1|False
+93|1|Vanguard Veteran|3|3|4|4|2|2|3|19.0||4-9|False
+93|2|Vanguard Veteran Sergeant|3|3|4|4|2|3|3|19.0||1|False
+94|1|Dreadnought|3|3|6|7|8|4|3|120.0||1|False
+95|1|Venerable Dreadnought|2|2|6|7|8|4|3|135.0||1|False
+96|1|Contemptor Dreadnought|3|3|7|7|9|4|3|150.0||1|False
+97|1|Ironclad Dreadnought|3|3|6|8|8|4|3|135.0||1|False
+98|1|Terminator|3|3|4|4|3|2|2|38.0||4-9|False
+98|2|Terminator Sergeant|3|3|4|4|3|3|2|38.0||1|False
+99|1|Assault Terminator|3|3|4|4|3|2|2|33.0||4-9|False
+99|2|Assault Terminator Sergeant|3|3|4|4|3|3|2|33.0||1|False
+102|1|Assault Marine|3|3|4|4|2|1|3|18.0||4-9|False
+102|2|Assault Marine Sergeant|3|3|4|4|2|2|3|18.0||1|False
+103|1|Inceptor|3|3|4|5|3|2|3|40.0||2-5|False
+103|2|Inceptor Sergeant|3|3|4|5|3|3|3|40.0||1|False
+104|1|Scout Biker|3|3|4|5|2|1|4|30.0||2-8|False
+104|2|Scout Biker Sergeant|3|3|4|5|2|2|4|30.0||1|False
+105|1|Space Marine Biker|3|3|4|5|3|1|3|30.0||2-15|False
+105|2|Space Marine Biker|3|3|4|5|3|1|3|30.0||2-7|False
+105|3|Biker Sergeant|3|3|4|5|3|2|3|30.0||1|False
+105|4|Attack Bike|3|3|4|5|4|2|3|30.0||0-1|False
+106|1|Attack Bike|3|3|4|5|4|2|3|50.0||1-3|False
+107|1|Land Speeder Storm|3|3|4|6|7|2|4|50.0||1|False
+108|1|Land Speeder|3|3|4|6|6|2|3|60.0||1-3|False
+109|1|Rhino|6|3|6|7|10|3|3|80.0||1|False
+110|1|Rhino Primaris|6|3|6|7|10|3|3|52.0||1|False
+111|1|Razorback|6|3|6|7|10|3|3|100.0||1|False
+112|1|Drop Pod|-|3|6|6|8|-|3|70.0||1|False
+113|1|Stormhawk Interceptor|6|3|6|7|10|3|3|185.0||1|False
+114|1|Stormtalon Gunship|6|3|6|6|10|3|3|165.0||1|False
+115|1|Devastator Marine|3|3|4|4|2|1|3|18.0||4-9|False
+115|2|Devastator Marine Sergeant|3|3|4|4|2|2|3|18.0||1|False
+116|1|Devastator Centurion|3|3|5|5|4|3|2|55.0||2-5|False
+116|2|Devastator Centurion Sergeant|3|3|5|5|4|4|2|55.0||1|False
+117|1|Hellblaster|3|3|4|4|2|2|3|33.0||4-9|False
+117|2|Hellblaster Sergeant|3|3|4|4|2|3|3|33.0||1|False
+118|1|Thunderfire Cannon|6|2|3|6|4|1|2|||1|False
+118|2|Techmarine Gunner|3|2|4|4|4|3|2|||1|False
+119|1|Predator Destructor|6|3|6|7|11|3|3|130.0||1|False
+120|1|Whirlwind|6|3|6|7|11|3|3|125.0||1|False
+121|1|Vindicator|6|3|6|8|11|3|3|120.0||1|False
+122|1|Hunter|6|3|6|8|11|3|3|110.0||1|False
+123|1|Stalker|6|3|6|8|11|3|3|115.0||1|False
+124|1|Stormraven Gunship|6|3|8|7|14|6|3|260.0||1|False
+125|1|Land Raider|6|3|8|8|16|6|2|245.0||1|False
+126|1|Land Raider Crusader|6|3|8|8|16|6|2|245.0||1|False
+127|1|Land Raider Redeemer|6|3|8|8|16|6|2|245.0||1|False
+128|1|Land Raider Excelsior|6|3|8|8|16|6|2|200.0||1|False
+129|1|Roboute Guilliman|2|2|6|6|9|6|2|300.0||1|False
+130|1|Captain Lysander|2|2|4|4|6|4|2|130.0||1|False
+131|1|Pedro Kantor|2|2|4|4|6|5|2|145.0||1|False
+132|1|Marneus Calgar|2|2|4|5|8|6|2|180.0||1|False
+133|1|Marneus Calgar in Artificer Armour|2|2|4|4|6|5|2|235.0||1|True
+134|1|Captain Sicarius|2|2|4|4|5|4|2|115.0||1|True
+135|1|Chief Librarian Tigurius|3|3|4|4|5|4|3|135.0||1|True
+136|1|Chaplain Cassius|2|3|4|5|4|3|3|95.0||1|True
+137|1|Sergeant Telion|3|2|4|4|4|2|4|50.0||1|False
+138|1|Sergeant Chronus|3|2|4|4|4|2|3|35.0||1|False
+139|1|Tyrannic War Veteran|3|3|4|4|2|2|3|17.0||3-9|False
+139|2|Veteran Sergeant|3|3|4|4|2|3|3|17.0||1|False
+140|1|Terminus Ultra|6|3|8|8|16|6|2|250.0||1|False
+141|1|High Marshal Helbrecht|2|2|4|4|8|6|2|160.0||1|False
+142|1|The Emperor’s Champion|2|3|4|4|5|5|2|100.0||1|False
+143|1|Chaplain Grimaldus|2|3|4|4|5|4|3|140.0||1|True
+143|2|Cenobyte Servitor|4|4|3|4|1|1|4|||3|True
+145|1|Initiate|3|3|4|4|2|1|3|18.0||4-9|False
+145|2|Neophyte|3|3|4|4|1|1|4|13.0||0-10|False
+145|3|Sword Brother|3|3|4|4|2|2|3|18.0||1|False
+146|1|Kayvaan Shrike|2|2|4|4|6|6|3|135.0||1|False
+147|1|Vulkan He’stan|2|2|4|4|5|4|2|120.0||1|False
+148|1|Kor’sarro Khan|2|2|4|4|6|5|3|110.0||1|False
+149|1|Kor’sarro Khan on Moondrakkan|2|2|4|5|6|4|3|132.0||1|True
+150|1|Legionnaire|3|3|4|4|1|2|3|25.0||4-9|False
+150|2|Legionnaire Sergeant|3|3|4|4|1|3|3|25.0||1|False
+243|1|Fortress of Redemption|-|4|6|8|30|-|3|440.0||1|False
+373|1|Kaldor Draigo|2|2|4|4|7|6|2|180.0||1|False
+374|1|Grand Master Voldus|2|2|4|4|6|6|2|150.0||1|False
+375|1|Grand Master|2|2|4|4|6|6|2|135.0||1|False
+376|1|Brother-Captain|2|2|4|4|6|5|2|110.0||1|False
+377|1|Brother-Captain Stern|2|2|4|4|6|6|2|120.0||1|False
+378|1|Brotherhood Ancient|3|3|4|4|5|4|2|100.0||1|False
+379|1|Brotherhood Champion|2|2|4|4|4|5|2|70.0||1|False
+380|1|Castellan Crowe|2|2|4|4|5|6|2|90.0||1|False
+381|1|Grey Knight|3|3|4|4|2|3|3|22.0||4-9|False
+381|2|Justicar|3|3|4|4|2|4|3|22.0||1|False
+382|1|Brotherhood Terminator|3|3|4|4|3|3|2|40.0||4-9|False
+382|2|Terminator Justicar|3|3|4|4|3|4|2|40.0||1|False
+383|1|Purifier|3|3|4|4|2|3|3|23.0||4-9|False
+383|2|Knight of the Flame|3|3|4|4|2|4|3|23.0||1|False
+384|1|Paladin|2|3|4|4|3|4|2|45.0||2-9|False
+384|2|Paragon|2|3|4|4|3|5|2|45.0||1|False
+385|1|Paladin Ancient|2|3|4|4|5|5|2|110.0||1|False
+386|1|Brotherhood Apothecary|3|3|4|4|5|5|2|100.0||1|False
+387|1|Interceptor|3|3|4|4|2|3|3|26.0||4-9|False
+387|2|Interceptor Justicar|3|3|4|4|2|4|3|26.0||1|False
+388|1|Purgator|3|3|4|4|2|3|3|22.0||4-9|False
+388|2|Purgator Justicar|3|3|4|4|2|4|3|22.0||1|False
+389|1|Nemesis Dreadknight|3|3|6|6|13|5|2|130.0||1|False
+390|1|Dreadnought|3|3|6|7|8|5|3|130.0||1|False
+391|1|Land Raider|6|3|8|8|16|6|2|245.0||1|False
+392|1|Land Raider Crusader|6|3|8|8|16|6|2|245.0||1|False
+393|1|Land Raider Redeemer|6|3|8|8|16|6|2|245.0||1|False
+395|1|Razorback|6|3|6|7|10|3|3|100.0||1|False
+396|1|Rhino|6|3|6|7|10|3|3|80.0||1|False
+397|1|Servitor|5|5|3|3|1|1|4|||4|False
+398|1|Stormraven Gunship|6|3|8|7|14|6|3|260.0||1|False
+399|1|Brotherhood Techmarine|3|2|4|4|4|4|2|80.0||1|False
+400|1|Venerable Dreadnought|2|2|6|7|8|5|3|145.0||1|False
+402|1|Commander in Coldstar Battlesuit|3|2|5|5|7|4|3|110.0||1|False
+403|1|Gun Drone|5|5|3|4|1|1|4|10.0||0-12|False
+403|2|Marker Drone|5|5|3|4|1|1|4|10.0||0-12|False
+403|3|Shield Drone|5|5|3|4|2|1|4|15.0||0-12|False
+404|1|Ethereal|3|4|3|3|4|3|5|80.0||1|False
+405|1|Cadre Fireblade|4|3|3|3|4|3|4|50.0||1|False
+406|1|Commander Farsight|2|2|5|5|7|5|3|130.0||1|False
+407|1|Commander Shadowsun|3|2|5|5|7|4|3|150.0||1|False
+407|2|Advanced Guardian Drone|5|5|3|4|1|1|4|||1|False
+407|3|Command-link Drone|5|5|3|4|1|1|4|||1|False
+408|1|Aun’Shi|2|4|3|3|5|5|7|105.0||1|False
+409|1|Aun’Va|6|4|2|3|6|1|5|||1|False
+409|2|Ethereal Guard|3|3|3|3|2|3|5|||2|False
+410|1|Darkstrider|3|2|3|3|5|3|4|60.0||1|False
+411|1|Fire Warrior|5|4|3|3|1|1|4|||9|False
+411|2|Fire Warrior Shas’ui|5|4|3|3|1|2|4|||1|False
+411|3|Support Turret|-|4|3|3|1|-|4|10.0||0-1|False
+412|1|Breacher Fire Warrior|5|4|3|3|1|1|4|||9|False
+412|2|Breacher Fire Warrior Shas’ui|5|4|3|3|1|2|4|||1|False
+412|3|Support Turret|-|4|3|3|1|-|4|10.0||0-1|False
+413|1|Kroot|3|4|4|3|1|2|6|6.0||10-20|False
+414|1|Krootox Rider|3|4|6|5|4|4|6|25.0||1-3|False
+415|1|Kroot Hound|3|-|3|3|1|3|6|6.0||4-12|False
+416|1|Kroot Shaper|2|4|4|3|4|3|6|25.0||1|False
+417|1|Stealth Shas’ui|5|4|4|4|2|2|3|25.0||2-5|False
+417|2|Stealth Shas’vre|5|4|4|4|2|3|3|25.0||1|False
+418|1|Crisis Shas’ui|5|4|5|5|4|3|3|40.0||2-5|False
+418|2|Crisis Shas’vre|5|4|5|5|4|4|3|40.0||1|False
+419|1|Crisis Bodyguard Shas’ui|5|4|5|5|4|3|3|40.0||1-5|False
+419|2|Crisis Bodyguard Shas’vre|5|4|5|5|4|4|3|40.0||1|False
+420|1|Ghostkeel Shas’vre|5|4|6|7|12|3|3|||1|False
+420|2|Stealth Drone|5|5|3|4|1|1|4|||2|True
+421|1|Riptide Shas’vre|5|4|6|7|14|6|2|240.0||1|False
+422|1|Pathfinder|5|4|3|3|1|1|5|||9|False
+422|2|Pathfinder Shas’ui|5|4|3|3|1|2|5|||1|False
+423|1|Piranha|6|4|4|6|7|2|4|60.0||1-5|False
+423|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+424|1|Devilfish|6|4|6|7|13|3|3|95.0||1|False
+424|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+425|1|Razorshark Strike Fighter|6|4|6|7|12|3|4|155.0||1|False
+426|1|Sun Shark Bomber|6|4|6|6|12|3|4|165.0||1|False
+426|2|Interceptor Drone|5|5|3|4|1|1|4|||2|False
+427|1|Vespid Stingwing|4|4|4|4|1|1|4|12.0||4-12|False
+427|2|Vespid Strain Leader|4|4|4|4|1|2|4|12.0||1|False
+428|1|Firesight Marksman|5|3|3|3|3|2|4|||1|False
+428|2|Sniper Drone|5|5|3|4|1|1|4|||3|False
+430|1|Sky Ray Gunship|6|4|6|7|14|3|3|135.0||1|False
+430|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+431|1|Longstrike|6|3|6|7|14|3|3|160.0||1|False
+431|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+432|1|Hammerhead Gunship|6|4|6|7|14|3|3|145.0||1|False
+432|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+433|1|Broadside Shas’ui|5|4|5|5|8|3|2|85.0||0-2|False
+433|2|Broadside Shas’vre|5|4|5|5|8|4|2|85.0||1|False
+434|1|Stormsurge|5|4|8|8|22|3|2|400.0||1|False
+435|1|Tidewall Droneport|-|4|6|6|10|-|4|80.0||1|False
+436|1|Tidewall Shieldline|-|-|6|6|10|-|4|80.0||1|False
+436|2|Tidewall Defence Platform|-|-|6|6|10|-|4|80.0||0-1|False
+437|1|Tidewall Gunrig|-|4|6|6|16|-|4|125.0||1|False
+438|1|Shas’o R’myr|3|2|5|5|5|4|3|110.0||1|True
+439|1|Shas’o R’alai|3|2|5|5|7|4|3|||1|False
+439|2|Blacklight Marker Drone|5|4|3|3|1|1|4|||2|False
+440|1|Commander in XV81 Crisis Battlesuit|3|2|5|5|5|4|3|100.0||1|False
+441|1|DX4 Technical Drone|5|5|3|4|2|1|4|20.0||2-10|True
+442|1|Commander in XV84 Crisis Battlesuit|3|2|5|5|5|4|3|90.0||1|False
+443|1|XV9 Hazard Battlesuit|5|4|5|5|4|3|3|60.0||1-3|False
+444|1|XV109 Y’vahra Battlesuit|5|4|6|7|14|4|2|300.0||1|False
+445|1|XV107 R’varna Battlesuit|5|4|6|8|15|4|2|320.0||1|False
+446|1|KX139 Ta’unar Supremacy Armour|5|3|8|8|30|4|3|1000.0||1|False
+447|1|Tetra|6|4|4|5|4|2|4|40.0||2-4|False
+448|1|TX42 Piranha|6|4|4|5|6|2|3|55.0||1-5|False
+449|1|Heavy Gun Drone|5|5|3|4|2|1|4|18.0||2-6|False
+452|1|DX-6 Remora Stealth Drone|5|4|4|5|5|2|3|60.0||1-4|False
+453|1|AX-5-2 Barracuda|6|4|6|7|14|3|3|200.0||1|False
+454|1|Tiger Shark|6|4|7|8|18|3|3|375.0||1|False
+455|1|AX-1-0 Tiger Shark|6|4|7|8|18|3|3|450.0||1|False
+456|1|Orca Dropship|6|4|7|8|28|3|3|300.0||1|True
+457|1|Manta|6|4|8|8|60|12|3|2000.0||1|False
+458|1|Remote Sensor Tower|-|4|-|6|3|-|4|40.0||1|True
+459|1|Drone Sentry Turret|-|5|-|6|3|-|4|30.0||1-4|False
+460|1|Hive Tyrant|2|2|7|8|12|5|2|180.0||1|False
+461|1|The Swarmlord|2|2|8|8|13|9|2|240.0||1|False
+462|1|Old One Eye|2|2|6|7|9|6|2|235.0||1|False
+463|1|Broodlord|2|6|5|5|7|6|4|120.0||1|False
+464|1|Tyranid Prime|2|2|5|5|6|4|3|85.0||1|False
+465|1|Tervigon|3|3|7|8|17|4|2|215.0||1|False
+466|1|Tyranid Warrior|3|3|5|5|3|3|4|30.0||3-9|False
+467|1|Genestealer|3|6|4|4|1|4|5|16.0||5-10|False
+468|1|Termagant|4|4|3|3|1|1|5|7.0||10-30|False
+469|1|Hormagaunt|4|4|3|3|1|3|5|8.0||10-30|False
+470|1|Ripper Swarm|5|5|3|3|4|4|6|15.0||3-9|False
+471|1|Tyrant Guard|3|4|5|6|4|3|2|40.0||3-6|False
+472|1|Hive Guard|4|3|5|6|4|3|3|50.0||3-6|False
+473|1|Lictor|2|6|7|5|5|6|4|70.0||1|False
+474|1|Maleceptor|3|3|7|8|15|3|3|220.0||1|False
+475|1|Zoanthrope|5|3|5|5|4|2|5|50.0||3-6|False
+476|1|Venomthrope|3|3|5|5|4|5|4|35.0||3-6|False
+477|1|Pyrovore|3|3|5|5|5|3|3|40.0||1-3|False
+478|1|Haruspex|3|3|7|8|15|5|2|170.0||1|False
+479|1|Deathleaper|2|6|7|5|7|7|4|120.0||1|False
+482|1|Ravener|3|3|5|5|4|5|4|35.0||3-9|False
+483|1|Sky-slasher Swarm|5|5|3|3|3|4|6|15.0||3-9|False
+484|1|Gargoyle|4|4|3|3|1|1|6|8.0||10-20|False
+485|1|Harpy|3|3|6|7|13|4|3|175.0||1|False
+486|1|Hive Crone|3|3|6|7|13|4|3|160.0||1|False
+487|1|Mucolid Spore|6|6|1|4|4|-|6|20.0||1-3|False
+488|1|Spore Mine|6|6|1|3|1|-|6|10.0||3-9|False
+489|1|Tyrannocyte|5|5|7|7|15|6|4|110.0||1|False
+490|1|Carnifex|3|4|6|7|9|4|2|115.0||1-3|False
+491|1|Biovore|4|4|5|5|4|2|4|45.0||1-3|False
+492|1|Trygon Prime|3|3|7|7|14|12|3|175.0||1|False
+493|1|Trygon|3|3|7|7|14|12|3|145.0||1|False
+494|1|Mawloc|3|3|7|7|14|16|3|125.0||1|False
+495|1|Exocrine|3|3|7|8|15|3|2|200.0||1|False
+496|1|Tyrannofex|3|3|7|8|17|4|2|170.0||1|False
+497|1|Toxicrene|3|3|7|8|15|12|3|150.0||1|False
+498|1|Sporocyst|5|5|7|7|10|6|4|95.0||1|False
+499|1|Malanthrope|4|4|4|5|9|4|5|150.0||1|False
+500|1|Dimachaeron|3|3|7|7|18|6|3|280.0||1|False
+501|1|Meiotic Spore|-|-|1|2|2|1|7|20.0||3-6|False
+502|1|Stone-crusher Carnifex|4|4|7|7|8|4|3|120.0||1|False
+503|1|Barbed Hierodule|3|3|8|8|18|4|2|275.0||1|False
+504|1|Harridan|3|3|8|8|34|5|3|700.0||1|False
+505|1|Hierophant|3|3|8|8|34|6|2|850.0||1|False
+506|1|Scythed Hierodule|3|3|8|8|18|6|3|235.0||1|False
+507|1|Patriarch|2|4|5|5|7|6|4|140.0||1|False
+508|1|Magus|3|3|3|3|4|3|5|80.0||1|False
+509|1|Primus|2|2|4|4|5|4|5|80.0||1|False
+510|1|Acolyte Iconward|3|3|4|4|4|4|5|75.0||1|False
+511|1|Acolyte Hybrid|3|4|4|4|1|2|5|9.0||4-14|False
+511|2|Acolyte Leader|3|4|4|4|1|3|5|9.0||1|False
+512|1|Neophyte Hybrid|4|4|3|3|1|1|5|6.0||9-19|False
+512|2|Neophyte Leader|4|4|3|3|1|2|5|6.0||1|False
+513|1|Hybrid Metamorph|3|4|4|4|1|3|5|12.0||4-14|False
+513|2|Metamorph Leader|3|4|4|4|1|4|5|12.0||1|False
+514|1|Aberrant|3|6|5|5|3|2|5|30.0||4-9|False
+514|2|Aberrant Hypermorph|3|6|5|5|3|3|5|30.0||1|False
+515|1|Purestrain Genestealer|2|6|4|4|1|4|5|14.0||5-10|False
+516|1|Goliath Truck|6|4|6|6|10|3|3|90.0||1|False
+521|1|Goliath Rockgrinder|3|4|6|7|10|6|3|110.0||1|False
+522|1|Imotekh the Stormlord|2|2|5|5|6|4|2|130.0||1|False
+523|1|Overlord|2|2|5|5|5|4|3|90.0||1|False
+524|1|Lord|3|3|5|5|4|3|3|65.0||1|False
+527|1|Nemesor Zahndrekh|2|2|5|5|6|4|2|125.0||1|False
+528|1|Vargard Obyron|2|3|5|5|6|4|2|90.0||1|False
+530|1|Orikan the Diviner|3|3|4|4|5|2|4|100.0||1|False
+530|2|Orikan Empowered|2|2|7|7|5|4|4||||False
+531|1|Anrakyr the Traveller|2|2|6|5|6|4|3|130.0||1|False
+532|1|Trazyn the Infinite|2|2|5|5|6|4|3|90.0||1|False
+533|1|Catacomb Command Barge|2|2|5|6|9|4|3|145.0||1|False
+534|1|Necron Warrior|3|3|4|4|1|1|4|13.0||10-20|False
+535|1|Immortal|3|3|4|5|1|2|3|16.0||5-10|False
+536|1|Lychguard|3|3|5|5|2|3|3|25.0||5-10|False
+537|1|Deathmarks|3|2|4|5|1|1|3|15.0||5-10|False
+538|1|Flayed One|3|6|4|4|1|3|4|10.0||5-20|False
+539|1|Triarch Praetorian|3|3|5|5|2|3|3|22.0||5-10|False
+540|1|Triarch Stalker|3|3|7|6|12|3|3|120.0||1|False
+541|1|C’tan Shard of the Nightbringer|2|2|7|7|9|6|4|320.0||1|False
+542|1|C’tan Shard of the Deceiver|2|2|6|7|9|5|4|300.0||1|False
+543|1|Ghost Ark|6|3|6|6|14|3|3|130.0||1|False
+544|1|Night Scythe|6|3|6|6|12|3|3|120.0||1|False
+545|1|Doom Scythe|6|3|6|6|12|3|3|165.0||1|False
+546|1|Canoptek Wraith|4|4|4|5|3|4|3|35.0||3-6|False
+548|1|Tomb Blades|3|3|4|5|2|1|4|20.0||3-9|False
+551|1|Canoptek Spyder|4|4|6|6|6|5|3|60.0||1-3|False
+552|1|Monolith|6|3|8|8|24|6|2|300.0||1|False
+553|1|Annihilation Barge|6|3|5|6|8|3|3|120.0||1|False
+554|1|Doomsday Ark|6|3|6|6|14|3|3|160.0||1|False
+555|1|Transcendent C’tan|2|2|6|7|9|5|4|230.0||1|False
+556|1|Tesseract Vault|6|3|8|7|30|6|2|400.0||1|False
+557|1|Obelisk|6|3|8|8|28|6|2|300.0||1|False
+558|1|Canoptek Tombstalker|4|4|6|7|9|6|3|90.0||1|False
+559|1|Canoptek Acanthrite|4|4|5|5|3|2|3|40.0||3-6|False
+560|1|Canoptek Tomb Sentinel|4|4|6|7|9|4|3|110.0||1|False
+561|1|Night Shroud|6|3|6|7|14|3|3|190.0||1|False
+562|1|Sentry Pylon|-|3|4|7|8|-|3|100.0||1-3|False
+564|1|Tesseract Ark|6|3|5|7|10|3|3|170.0||1|False
+565|1|Kutlakh the World Killer|2|2|5|5|6|4|3|110.0||1|True
+566|1|Toholk the Blinded|3|5|4|4|4|1|4|80.0||1|True
+567|1|Gauss Pylon|-|3|6|8|30|-|3|450.0||1|False
+568|1|Eldrad Ulthran|2|2|3|4|6|3|6|145.0||1|False
+569|1|Prince Yriel|2|2|3|3|6|5|3|95.0||1|False
+570|1|Illic Nightspear|2|2|3|3|5|4|4|90.0||1|False
+571|1|Asurmen|2|2|4|4|6|6|2|160.0||1|False
+572|1|Jain Zar|2|2|4|4|6|6|2|150.0||1|False
+573|1|Karandras|2|2|4|4|6|6|2|150.0||1|False
+574|1|Fuegan|2|2|5|5|6|6|2|170.0||1|False
+575|1|Baharroth|2|2|4|4|6|6|2|160.0||1|False
+576|1|Maugan Ra|2|2|4|4|6|6|2|160.0||1|False
+577|1|Autarch|2|2|3|3|5|5|3|85.0||1|False
+579|1|Autarch with Warp Jump Generator|2|2|3|3|5|4|3|73.0||1|False
+580|1|Autarch Skyrunner|2|2|3|4|6|5|3|105.0||1|False
+581|1|Avatar of Khaine|2|2|7|8|14|7|2|280.0||1|False
+582|1|Farseer|2|2|3|3|5|2|6|95.0||1|False
+583|1|Farseer Skyrunner|2|2|3|4|6|2|4|125.0||1|False
+584|1|Warlock|3|3|3|3|2|2|6|20.0|If this unit contains 1 model, it costs 40pts/model instead.|1-6|False
+586|1|Warlock Skyrunner|3|3|3|4|3|2|4|35.0|If this unit contains 1 model, it costs 60pts/model instead.|1-3|False
+588|1|Spiritseer|2|2|3|3|4|2|6|75.0||1|False
+589|1|Guardian Defender|3|3|3|3|1|1|4|9.0||10-20|False
+589|2|Heavy Weapon Platform|6|3|3|3|2|1|3|20.0||0-2|False
+590|1|Guardian|3|3|3|3|1|1|4|8.0||10-20|False
+590|2|Serpent’s Scale Platform|6|3|3|3|2|1|3|20.0||0-2|False
+591|1|Windrider|3|3|3|4|2|1|3|20.0||3-9|False
+592|1|Ranger|3|2|3|3|1|1|5|13.0||5-10|False
+593|1|Dire Avenger|3|3|3|3|1|2|4|13.0||4-9|False
+593|2|Dire Avenger Exarch|3|3|3|3|2|3|4|13.0||1|False
+594|1|Howling Banshee|3|3|3|3|1|3|4|19.0||4-9|False
+594|2|Howling Banshee Exarch|3|3|3|3|2|4|4|19.0||1|False
+595|1|Striking Scorpion|3|3|3|3|1|3|3|18.0||4-9|False
+595|2|Striking Scorpion Exarch|3|3|3|3|2|4|3|18.0||1|False
+596|1|Fire Dragon|3|3|3|4|1|2|3|24.0||4-9|False
+596|2|Fire Dragon Exarch|3|3|3|4|2|3|3|24.0||1|False
+597|1|Wraithguard|3|3|5|6|3|3|3|40.0||5-10|False
+598|1|Wraithblade|3|3|5|6|3|3|3|40.0||5-10|False
+599|1|Wave Serpent|6|3|6|7|13|3|3|145.0||1|False
+600|1|Swooping Hawk|3|3|3|3|1|2|4|20.0||4-9|False
+600|2|Swooping Hawk Exarch|3|3|3|3|2|3|4|20.0||1|False
+601|1|Warp Spider|3|3|3|3|1|2|3|22.0||4-9|False
+601|2|Warp Spider Exarch|3|3|3|3|2|3|3|22.0||1|False
+602|1|Shining Spear|3|3|3|4|2|3|3|35.0||2-5|False
+602|2|Shining Spear Exarch|3|3|3|4|3|4|3|35.0||1|False
+603|1|Crimson Hunter|6|3|6|6|12|3|3|175.0||1|False
+605|1|Vyper|6|3|4|5|6|2|3|40.0||1-3|False
+606|1|Hemlock Wraithfighter|6|3|6|6|12|3|3|215.0||1|False
+607|1|Dark Reaper|3|3|3|3|1|2|3|||4|False
+607|2|Dark Reaper Exarch|3|3|3|3|2|3|3|||1|False
+608|1|Support Weapon|3|3|3|5|5|2|4|45.0||1-3|False
+609|1|Falcon|6|3|6|7|12|3|3|145.0||1|False
+610|1|Fire Prism|6|3|6|7|12|3|3|165.0||1|False
+611|1|Night Spinner|6|3|6|7|12|3|3|140.0||1|False
+612|1|War Walker|3|3|5|6|6|3|3|55.0||1-3|False
+613|1|Wraithlord|3|3|7|8|9|4|3|100.0||1|False
+614|1|Wraithknight|3|3|8|8|22|5|3|400.0||1|False
+615|1|Shadow Spectre|3|3|3|3|1|1|3|26.0||5-10|False
+615|2|Shadow Spectre Exarch|3|3|3|3|2|2|3|26.0||0-1|False
+616|1|Wasp Assault Walker|3|3|5|6|6|2|4|50.0||1-3|False
+617|1|Wraithseer|3|3|7|8|9|4|3|130.0||1|False
+618|1|Hornet|6|3|4|6|8|2|3|80.0||1-3|False
+619|1|Warp Hunter|6|3|6|7|12|3|3|195.0||1|False
+620|1|Lynx|6|3|6|7|16|3|3|220.0||1|False
+621|1|Scorpion|6|3|8|8|26|6|3|500.0||1|False
+622|1|Cobra|6|3|8|8|26|6|3|450.0||1|False
+623|1|Nightwing|6|3|6|6|14|3|3|220.0||1|False
+624|1|Phoenix|6|3|6|6|16|3|3|210.0||1|True
+625|1|Vampire Raider|6|3|8|8|32|6|3|400.0||1|True
+626|1|Vampire Hunter|6|3|8|8|32|6|3|600.0||1|True
+627|1|Skathach Wraithknight|3|3|8|8|24|4|3|325.0||1|False
+628|1|Revenant Titan|3|3|9|9|32|4|3|1500.0||1|False
+629|1|Corsair Cloud Dancer|3|3|3|4|2|1|4|22.0||3-9|False
+629|2|Corsair Cloud Dancer Felarch|3|3|3|4|2|2|4|22.0||0-1|False
+630|1|Irillyth|2|2|4|4|6|4|2|140.0||1|False
+631|1|Phantom Titan|3|3|9|9|60|6|3|3000.0||1|False
+632|1|Corsair Reaver|3|3|3|3|1|1|5|9.0||5-15|False
+632|2|Corsair Reaver Felarch|3|3|3|3|1|2|5|9.0||0-1|False
+633|1|Corsair Skyreaver|3|3|3|3|1|1|5|12.0||5-15|False
+633|2|Corsair Skyreaver Felarch|3|3|3|3|1|2|5|12.0||0-1|False
+634|1|Archon|2|2|3|3|5|5|4|70.0||1|False
+638|1|Ur-Ghul|3|-|4|3|3|4|7|15.0||1|True
+639|1|Succubus|2|2|3|3|5|6|6|80.0||1|False
+640|1|Lelith Hesperax|2|2|3|3|5|7|6|90.0||1|False
+641|1|Haemonculus|2|2|3|4|6|4|6|70.0||1|False
+642|1|Urien Rakarth|2|2|3|5|6|5|6|100.0||1|False
+643|1|Drazhar|2|2|4|4|6|5|2|145.0||1|False
+644|1|Kabalite Warrior|3|3|3|3|1|2|4|8.0||4-19|False
+644|2|Sybarite|3|3|3|3|1|3|4|8.0||1|False
+645|1|Kabalite Trueborn|3|3|3|3|1|2|5|11.0||4-19|False
+645|2|Dracon|3|3|3|3|1|3|5|11.0||1|False
+646|1|Wych|3|3|3|3|1|3|6|11.0||4-19|False
+646|2|Hekatrix|3|3|3|3|1|4|6|11.0||1|False
+647|1|Hekatrix Bloodbride|3|3|3|3|1|3|6|13.0||4-19|False
+647|2|Syren|3|3|3|3|1|4|6|13.0||1|False
+648|1|Incubi|2|3|3|3|1|3|3|18.0||4-9|False
+648|2|Klaivex|2|3|3|3|2|4|3|18.0||1|False
+649|1|Mandrake|3|3|4|3|1|3|7|15.0||4-9|False
+649|2|Nightfiend|3|3|4|3|1|4|7|15.0||1|False
+650|1|Wrack|3|3|3|4|1|2|6|8.0||4-19|False
+650|2|Acothyst|3|3|3|4|1|3|6|8.0||1|False
+651|1|Grotesque|3|6|5|5|4|4|6|35.0||3-6|False
+652|1|Beastmaster|3|3|3|4|3|3|5|40.0||1|False
+653|1|Clawed Fiend|4|-|5|5|4|5|5|25.0||1-6|False
+654|1|Khymera|3|-|4|4|1|3|6|10.0||2-6|False
+655|1|Razorwing Flock|4|-|2|2|4|4|7|12.0||3-9|False
+656|1|Raider|4|3|6|6|10|3|4|95.0||1|False
+657|1|Venom|4|3|5|5|6|3|4|65.0||1|False
+658|1|Reaver|3|3|3|4|2|3|4|20.0||2-11|False
+658|2|Arena Champion|3|3|3|4|2|4|4|20.0||1|False
+659|1|Hellion|3|3|3|4|2|3|5|17.0||4-19|False
+659|2|Helliarch|3|3|3|4|2|4|5|17.0||1|False
+660|1|Razorwing Jetfighter|6|3|6|6|10|3|4|150.0||1|False
+661|1|Voidraven Bomber|6|3|6|6|12|3|4|175.0||1|False
+662|1|Scourge|3|3|3|3|1|2|4|12.0||4-9|False
+662|2|Solarite|3|3|3|3|1|3|4|12.0||1|False
+663|1|Talos|3|4|6|6|7|5|3|100.0||1-3|False
+664|1|Cronos|4|3|5|6|7|4|3|75.0||1-3|False
+665|1|Ravager|4|3|6|6|11|3|4|130.0||1|False
+666|1|Reaper|4|3|6|6|10|3|4|160.0||1|False
+667|1|Tantalus|4|3|7|7|18|6|3|250.0||1|False
+679|1|Company Commander|3|3|3|3|4|3|5|35.0||1|False
+680|1|Tank Commander|6|3|7|8|12|3|2|175.0||1|False
+681|1|Master of Ordnance|4|3|3|3|3|2|5|35.0||1|False
+682|1|Platoon Commander|3|3|3|3|3|3|5|25.0||1|False
+683|1|Veteran|4|3|3|3|1|1|5|||4|False
+683|2|Veteran Heavy Weapons Team|4|3|3|3|2|2|5|||0-1|False
+684|1|Guardsman|4|4|3|3|1|1|5|||9|True
+684|2|Sergeant|4|4|3|3|1|2|5|||1|True
+684|3|Heavy Weapons Team|4|4|3|3|2|2|5|||0-1|True
+685|1|Guardsman|4|4|3|3|1|1|5|||6|False
+686|1|Heavy Weapons Team|4|4|3|3|2|2|5|||3|False
+687|1|Veteran|4|3|3|3|1|1|5|||9|False
+687|2|Veteran Sergeant|4|3|3|3|1|2|5|||1|False
+687|3|Veteran Weapons Team|4|3|3|3|2|2|5|||0-1|False
+688|1|Conscript|5|5|3|3|1|1|5|5.0||20-30|False
+689|1|Rough Rider|4|4|3|3|2|1|5|8.0||4-9|False
+689|2|Rough Rider Sergeant|4|4|3|3|2|2|5|8.0||1|False
+690|1|Scout Sentinel|4|4|5|5|6|1|4|40.0||1-3|False
+691|1|Armoured Sentinel|4|4|5|6|6|1|3|40.0||1-3|False
+692|1|Chimera|6|4|6|7|10|3|3|65.0||1|False
+693|1|Taurox|6|4|6|6|10|3|3|90.0||1|False
+694|1|Hellhound|6|4|6|7|11|3|3|110.0||1-3|False
+694|2|Devil Dog|6|-|6|7|11|0|3|110.0|||False
+694|3|Bane Wolf|6|-|6|7|11|0|3|100.0|||False
+695|1|Basilisk|6|4|6|6|11|3|3|125.0||1-3|False
+696|1|Hydra|6|4|6|6|11|3|3|110.0||1-3|False
+697|1|Wyvern|6|4|6|6|11|3|3|135.0||1-3|False
+698|1|Manticore|6|4|6|7|11|3|3|155.0||1|False
+699|1|Deathstrike|6|4|6|7|11|3|3|120.0||1|False
+700|1|Leman Russ Battle Tank|6|4|7|8|12|3|2|130.0||1-3|False
+702|1|Baneblade|5|4|9|8|26|9|2|410.0||1|False
+703|1|Banehammer|5|4|9|8|26|9|2|370.0||1|False
+704|1|Banesword|5|4|9|8|26|9|2|370.0||1|False
+705|1|Doomhammer|5|4|9|8|26|9|2|380.0||1|False
+706|1|Hellhammer|5|4|9|8|26|9|2|450.0||1|False
+707|1|Shadowsword|5|4|9|8|26|9|2|430.0||1|False
+708|1|Stormlord|5|4|9|8|26|9|2|430.0||1|False
+709|1|Stormsword|5|4|9|8|26|9|2|400.0||1|False
+710|1|Lord Castellan Creed|3|3|3|3|4|3|4|60.0||1|False
+711|1|Colour Sergeant Kell|3|3|3|3|4|3|4|45.0||1|False
+712|1|Knight Commander Pask|6|2|7|8|12|3|2|200.0||1|False
+713|1|Colonel ‘Iron Hand’ Straken|2|3|6|4|5|4|3|80.0||1|False
+714|1|Sergeant Harker|3|3|4|3|3|4|5|55.0||1|False
+715|1|Lord Commissar|2|2|3|3|4|3|4|35.0||1|False
+716|1|Commissar|3|3|3|3|3|3|5|25.0||1|False
+717|1|Commissar Yarrick|2|2|3|4|4|3|4|110.0||1|False
+718|1|Tempestor Prime|3|3|3|3|4|3|4|40.0||1|False
+719|1|Tempestus Scion|4|3|3|3|1|1|4|||4|False
+720|1|Tempestus Scion|4|3|3|3|1|1|4|9.0||4-9|False
+720|2|Tempestor|3|3|3|3|1|2|4|9.0||1|False
+721|1|Taurox Prime|6|3|6|6|10|3|3|115.0||1|False
+722|1|Ogryn|3|4|5|5|3|3|5|25.0||2-8|False
+722|2|Ogryn Bone ’ead|3|4|5|5|3|4|5|25.0||1|False
+723|1|Bullgryn|3|4|5|5|3|3|4|30.0||2-8|False
+723|2|Bullgryn Bone ’ead|3|4|5|5|3|4|4|30.0||1|False
+724|1|Ratling|5|3|2|2|1|1|6|10.0||5-10|False
+725|1|Nork Deddog|3|4|5|5|6|4|4|60.0||1|False
+726|1|Officer of the Fleet|4|3|3|3|3|2|5|25.0||1|False
+727|1|Valkyrie|6|4|7|7|14|3|3|120.0||1-3|False
+728|1|Atlas Recovery Tank|6|4|7|7|11|3|3|80.0||1|False
+729|1|Salamander Command Vehicle|6|3|6|7|10|3|3|100.0||1|False
+730|1|Hades Breaching Drill|4|4|6|7|7|D33|3|80.0||1|False
+731|1|Centaur Light Carrier|6|4|5|6|7|2|3|50.0||1|False
+733|1|Trojan Support Vehicle|6|4|6|7|10|3|3|85.0||1|False
+735|1|Salamander Scout Tank|6|4|6|7|10|3|3|75.0||1-3|False
+736|1|Tauros Assault Vehicle|4|4|4|5|6|2|4|50.0||1-3|False
+737|1|Tauros Venator|4|4|4|5|6|2|4|50.0||1-3|False
+738|1|Armageddon-pattern Basilisk|6|4|6|7|11|3|3|130.0||1-3|False
+739|1|Armageddon-pattern Medusa|6|4|6|7|11|3|3|140.0||1-3|False
+740|1|Colossus Bombard|6|4|7|8|12|3|3|150.0||1-3|False
+741|1|Cyclops Demolition Vehicle|6|4|4|6|4|1|3|50.0||1|False
+742|1|Earthshaker Carriage|-|4|4|7|7|-|4|125.0||1-3|False
+743|1|Earthshaker Carriage|4|4|3|6|7|5|4|120.0||1-3|False
+744|1|Griffon Mortar Carrier|6|4|7|7|11|3|3|85.0||1-3|False
+745|1|Heavy Mortar|4|4|3|6|7|3|4|70.0||1-3|False
+746|1|Heavy Quad Launcher|4|4|3|6|6|3|4|90.0||1-3|False
+747|1|Hydra Platform|-|4|4|7|7|-|4|80.0||1-3|False
+751|1|Malcador Annihilator|6|4|7|8|18|3|3|230.0||1|False
+752|1|Malcador Defender|6|4|7|8|18|3|3|260.0||1|False
+753|1|Malcador|6|4|7|8|18|3|3|210.0||1|False
+754|1|Malcador Infernus|6|4|7|8|18|3|3|250.0||1|False
+755|1|Manticore Platform|-|4|4|7|7|-|4|120.0||1-3|False
+756|1|Medusa Carriage|4|4|3|6|7|5|4|120.0||1-3|False
+757|1|Rapier Laser Destroyer|4|4|3|5|4|2|3|85.0||1-3|False
+758|1|Sabre Gun Platform|-|4|4|4|4|-|4|30.0||1-3|False
+759|1|Sentinel Powerlifter|4|4|5|5|6|1|4|50.0||1-3|False
+760|1|Stygies Destroyer Tank Hunter|6|4|7|8|10|3|3|155.0||1-3|False
+761|1|Thunderer|6|4|7|8|12|3|3|120.0||1-3|False
+762|1|Tarantula Sentry Gun|-|4|4|5|4|-|3|40.0||1-3|False
+763|1|Stormblade|6|4|7|8|26|6|2|360.0||1|False
+764|1|Arkurian Stormhammer|5|4|9|8|26|9|2|440.0||1|False
+766|1|Crassus|6|4|7|8|20|6|2|240.0||1|False
+767|1|Dominus Armoured Siege Bombard|5|4|8|8|20|3|2|500.0||1|False
+768|1|Gorgon Heavy Transport|5|4|9|8|22|5|2|320.0||1|False
+769|1|Macharius|6|4|7|8|22|6|2|310.0||1|False
+770|1|Macharius Omega|5|4|8|8|22|3|2|340.0||1|False
+771|1|Macharius Vanquisher|6|4|7|8|22|6|2|310.0||1|False
+772|1|Macharius Vulcan|6|4|7|8|22|6|2|340.0||1|False
+773|1|Marauder Bomber|6|4|7|7|20|3|2|320.0||1|False
+774|1|Marauder Destroyer|6|4|7|7|20|3|2|350.0||1|False
+775|1|Minotaur|6|4|7|8|22|6|2|300.0||1|False
+776|1|Praetor|6|4|7|8|20|6|2|400.0||1|False
+777|1|Valdor Tank Hunter|6|4|7|8|20|6|2|335.0||1|False
+778|1|Aquila Lander|6|4|6|7|12|3|3|95.0||1|False
+779|1|Arvus Lighter|6|4|5|6|8|1|3|85.0||1|False
+780|1|Avenger Strike Fighter|6|4|6|6|14|3|3|165.0||1|False
+781|1|Voss-pattern Lightning|6|4|6|6|14|3|3|130.0||1|False
+782|1|Thunderbolt|6|4|6|7|15|3|3|210.0||1|False
+783|1|Vendetta Gunship|6|4|6|7|14|3|3|210.0||1|False
+784|1|Vulture Gunship|6|4|6|7|14|3|3|180.0||1|False
+785|1|Gate Section|-|-|10|10|8|-|2|80.0|Extra gate section|1|False
+785|2|Gate Tower Section|-|4|10|10|16|-|2|160.0|Extra gate tower section|2|False
+785|3|Tower Section|-|4|10|10|12|-|2|120.0|Extra tower section|2|False
+785|4|Wall Section|-|-|10|10|12|-|2|120.0|Extra wall section|2|False
+786|1|Primaris Redoubt|-|4|8|8|20|-|3|750.0||1|False
+838|1|Belisarius Cawl|2|2|5|6|8|4|2|180.0||1|False
+839|1|Tech-Priest Dominus|3|2|4|4|5|3|2|75.0||1|False
+840|1|Tech-Priest Enginseer|4|3|4|4|4|2|3|55.0||1|False
+841|1|Kataphron Breacher|4|4|5|5|3|3|2|35.0||3-6|False
+842|1|Kataphron Destroyer|4|4|5|5|3|3|3|40.0||3-6|False
+843|1|Fulgurite Electro-Priest|3|4|3|3|1|2|6|14.0||5-20|False
+844|1|Corpuscarii Electro-Priest|4|3|3|3|1|2|6|14.0||5-20|False
+845|1|Kastelan Robot|4|4|6|7|7|3|3|90.0||2-6|False
+846|1|Cybernetica Datasmith|3|3|4|4|4|2|2|40.0||1|False
+847|1|Servitor|5|5|3|3|1|1|4|||4|False
+848|1|Skitarii Ranger|4|3|3|3|1|1|4|9.0||4-19|False
+848|2|Skitarii Ranger Alpha|4|3|3|3|1|2|4|9.0||1|False
+849|1|Skitarii Vanguard|4|3|3|3|1|1|4|9.0||4-19|False
+849|2|Skitarii Vanguard Alpha|4|3|3|3|1|2|4|9.0||1|False
+850|1|Sicarian Infiltrator|3|3|4|3|2|2|4|19.0||4-9|False
+850|2|Sicarian Infiltrator Princeps|3|3|4|3|2|3|4|19.0||1|False
+851|1|Sicarian Ruststalker|3|3|4|3|2|3|4|18.0||4-9|False
+851|2|Sicarian Ruststalker Princeps|3|3|4|3|2|4|4|18.0||1|False
+852|1|Ironstrider Ballistarius|3|3|5|6|6|2|3|75.0||1-6|False
+853|1|Sydonian Dragoon|3|3|5|6|6|4|3|55.0||1-6|False
+854|1|Onager Dunecrawler|5|3|6|7|11|3|3|115.0||1|False
+855|1|Knight Paladin|3|3|8|8|24|4|3|425.0||1|False
+856|1|Knight Errant|3|3|8|8|24|4|3|425.0||1|False
+857|1|Knight Warden|3|3|8|8|24|4|3|435.0||1|False
+858|1|Knight Gallant|2|3|8|8|24|5|3|400.0||1|False
+859|1|Knight Crusader|3|3|8|8|24|4|3|485.0||1|False
+860|1|Acastus Knight Porphyrion|4|3|8|8|30|3|3|780.0||1|False
+861|1|Cerastus Knight Acheron|3|3|8|8|26|4|3|480.0||1|False
+862|1|Cerastus Knight Atrapos|3|3|8|8|26|4|3|520.0||1|False
+863|1|Cerastus Knight Castigator|3|3|8|8|26|4|3|460.0||1|False
+864|1|Cerastus Knight Lancer|3|3|8|8|26|5|3|440.0||1|False
+865|1|Questoris Knight Magaera|3|3|8|8|24|4|3|500.0||1|False
+866|1|Questoris Knight Styrix|3|3|8|8|24|4|3|475.0||1|False
+867|1|Warhound Titan|4|3|8|8|50|4|2|2000.0||1|False
+868|1|Reaver Titan|4|3|8|8|70|4|2|3000.0||1|False
+869|1|Warlord Titan|4|3|9|9|120|4|2|5500.0||1|False
+870|1|Vindicare Assassin|2|2|4|4|5|5|6|100.0||1|True
+871|1|Callidus Assassin|2|2|4|4|5|5|6|100.0||1|True
+872|1|Eversor Assassin|2|2|4|4|6|6|6|100.0||1|True
+873|1|Culexus Assassin|2|2|4|4|5|4|6|100.0||1|True
+874|1|Inquisitor Greyfax|3|3|3|3|5|4|3|90.0||1|False
+875|1|Inquisitor Karamazov|3|3|5|5|8|4|4|125.0||1|False
+876|1|Inquisitor Coteaz|3|3|3|3|5|4|2|95.0||1|False
+877|1|Inquisitor|3|3|3|3|5|4|4|60.0||1|False
+878|1|Ordo Malleus Inquisitor in Terminator Armour|3|3|3|3|6|4|2|95.0||1|False
+879|1|Acolyte|4|4|3|3|1|2|5|10.0||1-6|False
+880|1|Daemonhost|4|4|4|4|4|3|7|25.0||1|False
+881|1|Jokaero Weaponsmith|6|4|2|3|3|2|7|20.0||1|False
+882|1|Custodian Guard|2|2|5|5|3|3|2|45.0||3-10|False
+883|1|Venerable Contemptor Dreadnought|2|2|7|7|9|5|2|155.0||1|False
+884|1|Venerable Land Raider|6|2|8|8|16|6|2|265.0||1|False
+889|1|Primaris Psyker|3|3|3|3|4|3|5|50.0||1|False
+890|1|Wyrdvane Psyker|5|4|3|3|1|1|6|8.0||3-9|False
+891|1|Astropath|5|6|3|3|3|1|6|35.0||1|False
+892|1|Uriah Jacobus|3|3|3|3|5|4|6|50.0||1|True
+894|1|Crusader|3|4|3|3|1|2|3|11.0||2-6|False
+895|1|Death Cult Assassin|2|4|4|3|1|4|5|13.0||2-6|False
+896|1|Arco-flagellant|4|-|4|4|2|2|7|13.0||3-10|False
+897|1|Penitent Engine|4|4|5|5|5|4|4|50.0||1-4|False
+898|1|Celestine|2|2|3|3|6|6|2|||1|True
+898|2|Geminae Superia|3|3|3|3|2|3|2|||2|True
+899|1|Canoness|2|2|3|3|5|4|3|50.0||1|False
+900|1|Imagifier|3|3|3|3|4|3|3|50.0||1|False
+901|1|Hospitaller|4|3|3|3|4|3|3|50.0||1|False
+902|1|Dialogus|4|3|3|3|4|3|3|50.0||1|False
+903|1|Battle Sister|4|3|3|3|1|1|3|11.0||4-19|False
+903|2|Sister Superior|4|3|3|3|1|2|3|11.0||1|False
+904|1|Seraphim|3|3|3|3|1|2|3|12.0||4-9|False
+904|2|Seraphim Superior|3|3|3|3|1|3|3|12.0||1|False
+905|1|Celestian|3|3|3|3|1|2|3|12.0||4-9|False
+905|2|Celestian Superior|3|3|3|3|1|3|3|12.0||1|False
+907|1|Sister Repentia|3|3|3|3|1|2|7|14.0||4-10|False
+908|1|Retributor|4|3|3|3|1|1|3|12.0||4-9|False
+908|2|Retributor Superior|4|3|3|3|1|2|3|12.0||1|False
+909|1|Dominion|4|3|3|3|1|1|3|14.0||4-9|False
+909|2|Dominion Superior|4|3|3|3|1|2|3|14.0||1|False
+910|1|Sororitas Rhino|6|3|6|7|10|3|3|80.0||1|False
+911|1|Immolator|6|3|6|7|11|3|3|100.0||1|False
+912|1|Exorcist|6|3|6|7|11|3|3|130.0||1|False
+913|1|Large Shield Section|-|-|-|-|-|-|-|||4|False
+913|2|Small Shield Section|-|-|-|-|-|-|-|||4|False
+913|3|Gun Emplacement|-|5|3|7|3|-|4|||0-1|False
+914|1|Bastion|-|4|6|8|18|-|3|180.0||1|False
+916|1|Imperial Bunker|-|5|-|8|12|-|3|90.0||1|False
+917|1|Vengeance Weapon Battery|-|5|-|8|10|-|3|110.0||1-2|False
+918|1|Firestorm Redoubt|-|5|-|8|20|-|3|210.0||1|False
+919|1|Plasma Obliterator|-|5|-|9|20|-|3|210.0||1|True
+920|1|Macro-cannon Aquila Strongpoint|-|5|-|10|30|-|3|440.0||1|False
+921|1|Vortex Missile Aquila Strongpoint|-|5|-|10|30|-|3|470.0||1|False
+922|1|Void Shield Generator|-|-|6|8|16|-|4|200.0||1|True
+923|1|Skyshield Landing Pad|-|-|-|-|-|-|-|140.0||1|True
+924|1|Abaddon the Despoiler|2|2|6|6|9|8|2|300.0||1|False
+925|1|Huron Blackheart|2|2|4|5|6|7|3|140.0||1|False
+926|1|Cypher|2|2|4|4|6|6|3|90.0||1|False
+928|1|Fabius Bile|2|2|5|4|6|6|3|90.0||1|False
+928|2|Surgeon Acolyte|5|5|3|4|1|1|6|0.0||1|False
+929|1|Chaos Lord|2|2|4|4|6|6|3|90.0||1|False
+930|1|Chaos Lord in Terminator Armour|2|2|4|4|7|6|2|110.0||1|False
+931|1|Chaos Lord on Bike|2|2|4|5|6|6|3|113.0||1|False
+932|1|Chaos Lord on Juggernaut of Khorne|2|2|4|5|7|6|3|125.0||1|False
+933|1|Chaos Lord on Disc of Tzeentch|2|2|4|4|6|6|3|100.0||1|False
+934|1|Chaos Lord on Palanquin of Nurgle|2|2|4|5|7|6|3|99.0||1|False
+935|1|Chaos Lord on Steed of Slaanesh|2|2|4|4|7|6|3|94.0||1|False
+936|1|Dark Apostle|2|3|4|4|5|5|3|||1|False
+936|2|Dark Disciple|4|4|3|4|1|1|6|||2|False
+937|1|Heretic Astartes Daemon Prince|2|2|7|6|8|6|3|120.0|This model must be upgraded to have a Mark of Chaos.|1|False
+938|1|Sorcerer|3|3|4|4|5|5|3|95.0||1|False
+939|1|Sorcerer in Terminator Armour|3|3|4|4|6|5|2|110.0||1|False
+940|1|Sorcerer on Bike|3|3|4|5|6|5|3|130.0||1|False
+941|1|Sorcerer on Disc of Tzeentch|3|3|4|4|5|5|3|125.0||1|False
+942|1|Sorcerer on Palanquin of Nurgle|3|3|4|5|7|5|3|123.0||1|False
+943|1|Sorcerer on Steed of Slaanesh|3|3|4|4|6|5|3|115.0||1|False
+944|1|Warpsmith|3|2|4|4|5|5|2|80.0||1|False
+946|1|Chaos Cultist|4|4|3|3|1|1|6|5.0||9-19|False
+946|2|Cultist Champion|4|4|3|3|1|2|6|5.0||1|False
+947|1|Chaos Terminator|3|3|4|4|3|3|2|33.0||4-9|False
+947|2|Terminator Champion|3|3|4|4|3|4|2|33.0||1|False
+948|1|Khorne Berzerker|3|3|5|4|2|5|3|22.0||4-9|False
+948|2|Berzerker Champion|3|3|5|4|2|6|3|22.0||1|False
+951|1|Noise Marine|3|3|4|4|2|3|3|21.0||4-9|False
+951|2|Noise Champion|3|3|4|4|2|4|3|21.0||1|False
+952|1|Chosen|3|3|4|4|3|3|3|25.0||4-9|False
+952|2|Chosen Champion|3|3|4|4|3|4|3|25.0||1|False
+953|1|Possessed|3|3|5|5|3|5|3|28.0||4-9|False
+953|2|Possessed Champion|3|3|5|5|3|6|3|28.0||1|False
+954|1|Helbrute|3|3|6|7|8|5|3|105.0||1|False
+956|1|Chaos Rhino|6|3|6|7|10|3|3|80.0||1|False
+957|1|Chaos Biker|3|3|4|5|3|3|3|30.0||2-8|False
+957|2|Biker Champion|3|3|4|5|3|4|3|30.0||1|False
+958|1|Raptor|3|3|4|4|2|3|3|21.0||4-9|False
+958|2|Raptor Champion|3|3|4|4|2|4|3|21.0||1|False
+959|1|Warp Talon|3|3|4|4|2|5|3|28.0||4-9|False
+959|2|Warp Talon Champion|3|3|4|4|2|6|3|28.0||1|False
+960|1|Chaos Spawn|4|-|5|5|4|2D3|5|25.0||1-5|False
+961|1|Heldrake|3|3|7|7|12|5|3|165.0||1|False
+962|1|Chaos Land Raider|6|3|8|9|16|6|2|265.0||1|False
+963|1|Chaos Predator Destructor|6|3|6|8|11|3|3|140.0||1|False
+964|1|Chaos Vindicator|6|3|6|8|12|3|3|130.0||1|False
+965|1|Obliterator|3|3|5|5|5|4|2|90.0||1-3|False
+966|1|Havoc|3|3|4|5|2|3|3|||4|False
+966|2|Havoc Champion|3|3|4|5|2|4|3|||1|False
+967|1|Forgefiend|3|3|6|7|12|5|3|110.0||1|False
+968|1|Maulerfiend|3|3|7|7|12|6|3|140.0||1|False
+969|1|Defiler|3|3|8|7|14|5|3|165.0||1|False
+970|1|Khorne Lord of Skulls|3|3|8|8|30|6|2|575.0||1|False
+1016|1|Sorcerer|3|3|4|4|4|4|3|90.0||1|False
+1017|1|Sorcerer in Terminator Armour|3|3|4|4|5|4|2|105.0||1|False
+1018|1|Sorcerer on Disc of Tzeentch|3|3|4|4|4|3|3|146.0||1|False
+1019|1|Thousand Sons Cultist|4|4|3|3|1|1|6|5.0||9-29|False
+1019|2|Thousand Sons Cultist Champion|4|4|3|3|1|2|6|5.0||1|False
+1020|1|Rubric Marine|3|3|4|4|2|2|3|21.0||4-9|False
+1020|2|Aspiring Sorcerer|3|3|4|4|2|3|3|21.0||1|False
+1021|1|Helbrute|3|3|6|7|8|5|3|105.0||1|False
+1022|1|Chaos Rhino|6|3|6|7|10|3|3|80.0||1|False
+1023|1|Chaos Spawn|4|-|5|5|4|2D3|5|23.0||1-5|False
+1024|1|Heldrake|3|3|7|7|12|5|3|165.0||1|False
+1025|1|Chaos Land Raider|6|3|8|8|16|6|2|245.0||1|False
+1026|1|Chaos Predator Destructor|6|3|6|7|11|3|3|130.0||1|False
+1027|1|Chaos Vindicator|6|3|6|8|11|3|3|120.0||1|False
+1028|1|Forgefiend|3|3|7|7|12|5|3|110.0||1|False
+1029|1|Maulerfiend|3|3|7|7|12|6|3|140.0||1|False
+1030|1|Defiler|3|3|8|7|14|5|3|165.0||1|False
+1031|1|Magnus the Red|2|2|8|7|18|8|3|420.0||1|False
+1032|1|Ahriman|2|2|4|4|6|5|3|160.0||1|False
+1033|1|Exalted Sorcerer|2|2|4|4|5|5|3|100.0||1|False
+1034|1|Tzaangor|4|4|4|4|1|1|6|7.0||9-19|False
+1034|2|Twistbray|4|4|4|4|1|2|6|7.0||1|False
+1035|1|Scarab Occult Terminator|3|3|4|4|3|3|2|40.0||4-9|False
+1035|2|Scarab Occult Sorcerer|3|3|4|4|3|3|2|40.0||1|False
+1036|1|Thousand Sons Daemon Prince|2|2|7|6|8|5|3|140.0||1|False
+1037|1|Death Guard Chaos Lord|2|2|4|5|5|5|3|85.0||1|False
+1038|1|Death Guard Chaos Lord in Terminator Armour|2|2|4|5|6|5|2|105.0||1|False
+1039|1|Chaos Lord on Palanquin of Nurgle|2|2|4|5|7|6|3|99.0||1|False
+1041|1|Death Guard Sorcerer in Terminator Armour|3|3|4|5|5|4|2|110.0||1|False
+1043|1|Death Guard Cultist|4|4|3|3|1|1|6|5.0||9-29|False
+1043|2|Death Guard Cultist Champion|4|4|3|3|1|2|6|5.0||1|False
+1044|1|Plague Marine|3|3|4|5|2|2|3|21.0||4-9|False
+1044|2|Plague Champion|3|3|4|5|2|3|3|21.0||1|False
+1045|1|Death Guard Possessed|3|3|5|5|2|4|3|24.0||5-10|False
+1046|1|Helbrute|3|3|6|7|8|5|3|105.0||1|False
+1047|1|Chaos Rhino|6|3|6|7|10|3|3|80.0||1|False
+1048|1|Chaos Spawn|4|-|5|5|4|2D3|5|23.0||1-5|False
+1049|1|Chaos Land Raider|6|3|8|8|16|6|2|245.0||1|False
+1050|1|Chaos Predator Annihilator|6|3|6|7|11|3|3|115.0||1|False
+1051|1|Defiler|3|3|8|7|14|5|3|165.0||1|False
+1052|1|Death Guard Daemon Prince|2|2|7|6|8|6|3|140.0||1|False
+1053|1|Typhus|2|2|4|5|6|6|2|165.0||1|False
+1054|1|Lord of Contagion|2|2|4|5|6|5|2|120.0||1|False
+1055|1|Malignant Plaguecaster|3|3|4|5|4|4|3|90.0||1|False
+1056|1|Poxwalker|4|-|3|4|1|2|7|5.0||10-20|False
+1057|1|Foetid Bloat-drone|3|3|6|7|9|4|3|115.0||1|False
+1058|1|Noxious Blightbringer|3|3|4|5|4|4|3|60.0||1|False
+1094|1|Chaos Cerastus Knight Acheron|3|3|8|8|26|4|3|480.0||1|False
+1095|1|Chaos Cerastus Knight Lancer|3|3|8|8|26|5|3|440.0||1|False
+1096|1|Chaos Cerastus Knight Castigator|3|3|8|8|26|4|3|460.0||1|False
+1097|1|Chaos Cerastus Knight Atrapos|3|3|8|8|26|4|3|520.0||1|False
+1098|1|Chaos Questoris Knight Magaera|3|3|8|8|24|4|3|500.0||1|False
+1099|1|Chaos Acastus Knight Porphyrion|4|3|8|8|30|3|3|780.0||1|False
+1100|1|Chaos Questoris Knight Styrix|3|3|8|8|24|4|3|475.0||1|False
+1104|1|Karanak|2|-|6|5|5|6|5/4|100.0||1|False
+1105|1|Skarbrand|2|2|8|8|22|8|4/4|330.0||1|False
+1106|1|Skulltaker|2|3|6|6|5|6|4/4|110.0||1|False
+1111|1|Rendmaster on Blood Throne|2|3|6|7|9|5|4/4|140.0||1|False
+1112|1|Flesh Hound|3|-|5|4|2|3|5/4|19.0||4-9|False
+1112|2|Gore Hound|3|-|5|4|2|4|5/4|19.0||1|False
+1114|1|Bloodletter|3|3|5|4|1|2|5/4|||9|False
+1114|2|Bloodreaper|3|3|5|4|1|3|5/4|||1|False
+1115|1|Bloodcrusher|3|3|5|5|4|3|4/4|45.0||2-5|False
+1115|2|Bloodhunter|3|3|5|5|4|4|4/4|45.0||1|False
+1116|1|Skull Cannon|3|3|6|7|9|2|4/4|100.0||1|False
+1117|1|Kairos Fateweaver|3|3|6|7|22|5|5/3|320.0||1|False
+1118|1|The Changeling|4|3|3|5|5|2|5/3|100.0||1|False
+1119|1|The Blue Scribes|4|4|3|4|5|2|5/3|90.0||1|False
+1120|1|Lord of Change|3|3|6|7|20|5|5/3|300.0||1|False
+1125|1|Flamer|4|3|5|4|3|3|6/3|25.0||2-5|False
+1125|2|Pyrocaster|4|3|5|4|3|4|6/3|25.0||1|False
+1126|1|Exalted Flamer|3|3|6|5|5|4|6/3|75.0||1|False
+1127|1|Screamer|4|-|4|4|3|3|6/3|30.0||3-6|False
+1128|1|Burning Chariot|4|3|6|6|9|4|4/4|110.0||1|False
+1129|1|Epidemius|2|3|5|6|9|4|5/4|90.0||1|False
+1130|1|Great Unclean One|2|3|7|9|22|6|5/4|300.0||1|False
+1132|1|Plaguebearer|4|4|4|5|2|2|5/4|||9|False
+1132|2|Plagueridden|4|4|4|5|2|3|5/4|||1|False
+1133|1|Nurgling Swarm|4|4|2|3|4|4|6/5|20.0||3-9|False
+1134|1|Beast of Nurgle|4|-|6|6|7|6|5/4|80.0||1-3|False
+1135|1|Plague Drone|4|4|5|6|5|2|5/4|45.0||2-5|False
+1135|2|Plaguebringer|4|4|5|6|5|3|5/4|45.0||1|False
+1136|1|The Masque of Slaanesh|2|3|4|4|4|6|4/4|90.0||1|False
+1137|1|Keeper of Secrets|2|2|6|7|20|6|5/4|280.0||1|False
+1138|1|Tranceweaver|2|3|4|4|4|5|5/4|70.0||1|False
+1139|1|Herald of Slaanesh on Steed|2|2|4|3|5|4|6|82.0||1|True
+1140|1|Tormentbringer on Seeker Chariot|2|3|4|5|7|8|4/4|100.0||1|False
+1141|1|Tormentbringer on Exalted Seeker Chariot|2|3|4|5|12|8|4/4|120.0||1|False
+1142|1|Daemonette|3|3|4|3|1|4|5/4|||9|False
+1142|2|Alluress|3|3|4|3|1|5|5/4|||1|False
+1143|1|Fiend|3|-|5|4|4|4|5/4|35.0||2-5|False
+1143|2|Blissbringer|3|-|5|4|4|5|5/4|35.0||1|False
+1144|1|Hellflayer|3|3|4|5|7|8|4/4|75.0||1|False
+1145|1|Seeker|3|3|4|4|2|4|5/4|20.0||4-9|False
+1145|2|Heartseeker|3|3|4|4|2|5|5/4|20.0||1|False
+1146|1|Seeker Chariot|3|3|4|5|7|8|4/4|65.0||1|False
+1147|1|Exalted Seeker Chariot|2|3|4|5|12|8|4/4|85.0||1|False
+1148|1|Be’lakor|2|2|8|7|20|6|4/4|420.0||1|False
+1149|1|Daemon Prince of Chaos|2|2|7|6|8|6|5/4|140.0||1|False
+1151|1|Soul Grinder|3|3|8|8|16|5|5/4|190.0||1|False
+1153|1|Deimos Predator|6|3|6|7|11|3|3|115.0||1|False
+1154|1|Vindicator Laser Destroyer|6|3|6|8|11|3|3|175.0||1|False
+1156|1|Land Raider Proteus|6|3|8|8|16|6|2|220.0||1|False
+1157|1|Land Raider Helios|6|3|8|8|16|6|2|260.0||1|False
+1158|1|Land Raider Prometheus|6|3|8|8|16|6|2|295.0||1|False
+1159|1|Land Raider Achilles|6|3|8|8|16|6|2|270.0||1|False
+1160|1|Sicaran Battle Tank|6|3|6|7|14|3|2|165.0||1|False
+1161|1|Sicaran Venator|6|3|6|7|14|3|2|170.0||1|False
+1162|1|Sicaran Punisher|6|3|6|7|14|3|2|155.0||1|False
+1163|1|Spartan|5|3|8|8|20|6|2|420.0||1|False
+1164|1|Typhon|5|3|8|8|20|6|2|320.0||1|False
+1165|1|Cerberus|5|3|8|8|20|6|2|370.0||1|False
+1166|1|Fellblade|5|3|8|8|26|6|2|550.0||1|False
+1167|1|Falchion|5|3|8|8|26|6|2|550.0||1|False
+1168|1|Mastodon|5|3|9|9|30|6|2|750.0||1|False
+1169|1|Mortis Dreadnought|3|3|6|7|8|4|3|135.0||1|False
+1172|1|Chaplain Venerable Dreadnought|2|2|6|7|8|5|3|175.0||1|False
+1173|1|Relic Contemptor Dreadnought|3|3|7|7|9|4|3|140.0||1|False
+1174|1|Deredeo Dreadnought|3|3|6|7|12|4|3|190.0||1|False
+1175|1|Leviathan Dreadnought|3|3|7|7|14|4|2|220.0||1|False
+1176|1|Land Speeder Tempest|6|3|4|6|7|2|3|110.0||1-3|False
+1177|1|Javelin Attack Speeder|3|3|4|6|9|2|3|115.0||1|False
+1178|1|Xiphon Interceptor|6|3|6|7|12|3|3|235.0||1|False
+1179|1|Storm Eagle Gunship|6|3|8|7|18|6|3|335.0||1|False
+1181|1|Fire Raptor Gunship|6|3|8|7|18|6|3|340.0||1|False
+1182|1|Caestus Assault Ram|5|3|8|7|20|6|3|320.0||1|True
+1183|1|Thunderhawk Gunship|6|3|10|8|30|6|2|800.0||1|False
+1184|1|Thunderhawk Transporter|6|3|10|8|30|6|2|600.0||1|True
+1185|1|Sokar-pattern Stormbird|6|3|10|8|40|6|2|1000.0||1|False
+1186|1|Damocles Command Rhino|6|3|6|7|10|3|3|90.0||1|False
+1187|1|Whirlwind Hyperios|6|3|6|7|11|3|3|130.0||1|False
+1188|1|Whirlwind Scorpius|6|3|6|7|11|3|3|170.0||1|False
+1189|1|Rapier Carrier|3|3|4|5|5|2|3|75.0||1|False
+1190|1|Tarantula Sentry Gun|-|4|4|5|4|-|3|40.0||1-3|False
+1191|1|Tarantula Air Defence Gun|-|4|4|5|4|-|3|40.0||1-3|False
+1192|1|Dreadnought Drop Pod|-|-|6|6|8|-|3|70.0||1|False
+1193|1|Deathstorm Drop Pod|-|4|6|6|8|-|3|120.0||1|False
+1196|1|Land Raider Banisher|6|3|8|8|16|6|2|245.0||1|False
+1197|1|Grey Knights Thunderhawk Gunship|6|3|10|8|30|6|2|800.0||1|False
+1198|1|Inquisition Land Raider Prometheus|6|3|8|8|16|6|2|295.0||1|False
+1199|1|Repressor|5|3|6|7|12|3|3|85.0||1|False
+1200|1|Lord High Commander Carab Culln|2|2|4|4|7|6|2|170.0||1|False
+1201|1|Lugft Huron|2|2|4|4|7|4|2|160.0||1|False
+1202|1|Armenneus Valthex|3|2|4|4|5|3|2|105.0||1|False
+1203|1|Corien Sumatris|2|2|4|4|5|4|3|100.0||1|False
+1204|1|Carnac Commodus|2|3|4|4|5|3|3|90.0||1|True
+1205|1|Asterion Moloc|2|2|4|4|7|5|2|170.0||1|False
+1206|1|Ivanus Enkomi|2|3|4|4|5|4|3|100.0||1|False
+1207|1|Sevrin Loth|3|3|4|4|5|3|3|135.0||1|False
+1208|1|Tyberos the Red Wake|2|2|4|4|6|6|2|160.0||1|False
+1209|1|Chaplain Dreadnought Titus|2|2|6|7|9|5|3|180.0||1|True
+1210|1|Anton Narvaez|2|2|4|4|5|4|3|110.0||1|True
+1211|1|Tarnus Vale|2|2|4|4|5|4|3|110.0||1|True
+1212|1|Lias Issodon|2|2|4|4|6|5|3|165.0||1|False
+1213|1|Malakim Phoros|2|2|4|4|6|5|3|145.0||1|True
+1214|1|Mordaci Blaylock|2|2|4|4|6|4|2|125.0||1|True
+1215|1|Pellas Mir’san|2|2|4|4|6|4|2|100.0||1|True
+1216|1|Bray’arth Ashmantle|2|2|8|7|8|6|2|220.0||1|False
+1217|1|Harath Shen|3|3|4|4|4|3|3|120.0||1|True
+1218|1|Ahazra Redth|3|3|4|4|4|3|2|125.0||1|True
+1219|1|Thulsa Kane|2|3|4|4|4|4|3|140.0||1|True
+1220|1|Silas Alberec|2|2|5|4|5|4|3|110.0||1|True
+1221|1|Elam Courbray|2|2|4|4|5|4|3|110.0||1|True
+1222|1|Vaylund Cal|2|2|4|4|6|5|2|165.0||1|True
+1223|1|Zhrukhal Androcles|2|2|4|4|5|4|3|95.0||1|True
+1224|1|Hector Rex|2|3|4|3|6|4|2|100.0||1|False
+1225|1|Solomon Lok|3|3|3|3|5|4|3|75.0||1|False
+1226|1|Hecaton Aiakos|2|2|7|7|9|5|3|160.0||1|False
+1237|1|Valkyrie Sky Talon|6|4|7|7|14|3|3|115.0||1|False
+1249|1|Renegade Commander|3|3|3|3|4|3|5|35.0||1|False
+1250|1|Malefic Lord|4|4|3|3|4|3|7|50.0||1|True
+1251|1|Rogue Psyker|5|5|3|3|3|1|7|35.0||5|True
+1252|1|Renegade Cultist|4|4|3|3|1|1|6|5.0||9-29|False
+1252|2|Renegade Cultist Champion|4|4|3|3|1|2|6|5.0||1|False
+1253|1|Renegade Militia|4|4|3|3|1|1|6|6.0||9-19|False
+1253|2|Renegade Militia Champion|4|4|3|3|1|2|6|6.0||1|False
+1253|3|Renegade Militia Weapons Team|4|4|3|3|2|2|6|12.0||0-2|False
+1254|1|Renegade Mutant|4|4|3|3|1|1|6|7.0||9-29|False
+1254|2|Renegade Mutant Champion|4|4|3|3|1|2|6|7.0||1|False
+1255|1|Chaos Spawn|4|-|5|5|4|D6|5|23.0||1-5|True
+1256|1|Renegade Disciples|3|3|3|3|1|1|6|6.0||4-14|False
+1256|2|Renegade Disciple Weapon Team|3|3|3|3|2|2|6|12.0||0-1|False
+1257|1|Renegade Disciples|3|3|3|3|1|1|6|7.0||4-14|False
+1257|2|Renegade Disciple Champion|3|3|3|3|1|2|6|7.0||1|False
+1257|3|Renegade Disciple Weapon Team|3|3|3|3|2|2|6|14.0||0-1|False
+1258|1|Renegade Enforcer|3|3|3|3|4|3|5|23.0||1|False
+1259|1|Marauder|3|3|3|3|1|2|4|9.0||4-9|False
+1259|2|Brute|3|5|5|3|3|3|4|9.0||0-2|False
+1259|3|Marauder Chief|3|3|3|3|2|2|4|9.0||1|False
+1260|1|Ogryn Pack Master|3|4|5|5|3|3|5|15.0||1|False
+1260|2|Chaos Mauler Hounds|3|-|5|5|2|2|5|15.0||3-6|False
+1261|1|Ogryn Brute|3|4|5|5|3|3|5|32.0||3-12|False
+1262|1|Plague Ogryn|3|4|5|5|3|3|5|35.0||3-9|True
+1263|1|Renegade Heavy Weapons Team|4|4|3|3|2|2|6|12.0||3-6|False
+1264|1|Chimera|6|4|6|7|10|3|3|65.0||1|False
+1265|1|Hellhound|6|4|6|7|11|3|3|110.0||1-3|False
+1265|2|Devil Dog|6|-|6|7|11|0|3|110.0|||False
+1265|3|Bane Wolf|6|-|6|7|11|0|3|100.0|||False
+1266|1|Scout Sentinel|4|4|5|5|6|1|4|40.0||1-3|False
+1267|1|Armoured Sentinel|4|4|5|6|6|1|3|40.0||1-3|False
+1268|1|Salamander Scout Tank|6|4|6|7|10|3|3|75.0||1-3|False
+1269|1|Arvus Lighter|6|4|5|6|8|1|3|85.0||1|False
+1270|1|Valkyrie|6|4|7|7|14|3|3|120.0||1-3|False
+1271|1|Leman Russ Battle Tank|6|-|7|8|12|0|3|140.0||1-3|False
+1273|1|Basilisk|6|4|6|6|11|3|3|125.0||1-3|False
+1274|1|Medusa Carriage|4|4|3|6|7|5|4|120.0||1-3|False
+1275|1|Griffon Mortar Carrier|6|4|7|7|11|3|3|85.0||1-3|False
+1276|1|Wyvern|6|4|6|6|11|3|3|135.0||1-3|False
+1277|1|Hydra|6|4|6|6|11|3|3|110.0||1-3|False
+1278|1|Colossus Bombard|6|4|7|8|12|3|3|150.0||1-3|False
+1280|1|Rapier Laser Destroyer|4|4|3|5|4|2|3|85.0||1-3|False
+1281|1|Heavy Quad Launcher|4|4|3|6|6|3|4|90.0||1-3|False
+1282|1|Heavy Mortar|4|4|3|6|7|3|4|70.0||1-3|False
+1283|1|Malcador|6|4|7|8|18|3|3|210.0||1|False
+1284|1|Minotaur|6|4|7|8|22|6|2|300.0||1|False
+1285|1|Malcador Defender|6|4|7|8|18|3|3|260.0||1|False
+1286|1|Baneblade|5|4|9|8|26|9|2|410.0||1|False
+1287|1|Armageddon-pattern Medusa|6|4|6|7|11|3|3|140.0||1-3|False
+1288|1|Earthshaker Carriage|4|4|3|6|7|5|4|120.0||1-3|False
+1289|1|Macharius|6|4|7|8|22|6|2|310.0||1|False
+1290|1|Macharius Omega|5|4|8|8|22|3|2|340.0||1|False
+1291|1|Macharius Vanquisher|6|4|7|8|22|6|2|310.0||1|False
+1292|1|Macharius Vulcan|6|4|7|8|22|6|2|340.0||1|False
+1293|1|Blood Slaughterer|3|3|7|7|9|5|3|140.0||1|False
+1294|1|Greater Blight Drone|3|3|6|7|9|4|3|125.0||1|False
+1295|1|Decimator|3|3|7|7|12|5|3|160.0||1|False
+1296|1|Plague Hulk of Nurgle|4|4|8|8|14|5|3|190.0||1|True
+1297|1|Kytan Ravager|3|3|8|8|26|5|3|440.0||1|False
+1298|1|Greater Brass Scorpion|3|3|8|8|28|6|3|475.0||1|False
+1299|1|Chaos Contemptor Dreadnought|3|3|7|7|9|4|3|140.0||1|False
+1300|1|Chaos Land Raider Proteus|6|3|8|8|16|6|2|220.0||1|False
+1301|1|Chaos Land Raider Achilles|6|3|8|8|16|6|2|270.0||1|False
+1302|1|Chaos Deimos Predator|6|3|6|7|11|3|3|115.0||1|False
+1303|1|Chaos Whirlwind Scorpius|6|3|6|7|11|3|3|170.0||1|False
+1304|1|Hellforged Sicaran|6|3|6|7|14|3|2|165.0||1|False
+1305|1|Chaos Sicaran Venator|6|3|6|7|14|3|2|170.0||1|False
+1306|1|Chaos Spartan|5|3|8|8|20|6|2|420.0||1|False
+1307|1|Chaos Deredeo Dreadnought|3|3|6|7|12|4|3|190.0||1|False
+1308|1|Chaos Rapier Carrier|3|3|4|5|5|2|3|75.0||1|False
+1309|1|Chaos Leviathan Dreadnought|3|3|7|7|14|4|2|220.0||1|False
+1310|1|Dreadclaw Drop Pod|4|-|6|6|9|4|3|115.0||1|False
+1311|1|Kharybdis Assault Claw|4|4|8|8|20|4|3|400.0||1|False
+1312|1|Chaos Cerberus|5|3|8|8|20|6|2|370.0||1|False
+1313|1|Chaos Typhon|5|3|8|8|20|6|2|320.0||1|False
+1314|1|Chaos Fellblade|5|3|8|8|26|6|2|550.0||1|False
+1315|1|Chaos Falchion|5|3|8|8|26|6|2|550.0||1|False
+1316|1|Chaos Mastodon|5|3|9|9|30|6|2|750.0||1|False
+1317|1|Hell Blade|6|3|6|6|9|2|3|135.0||1|False
+1318|1|Hell Talon|6|3|7|7|14|6|3|210.0||1|False
+1319|1|Chaos Storm Eagle Gunship|6|3|8|7|18|6|3|335.0||1|False
+1320|1|Chaos Fire Raptor Gunship|6|3|8|7|18|6|3|340.0||1|False
+1321|1|Chaos Thunderhawk Gunship|6|3|10|8|30|6|2|800.0||1|False
+1322|1|Chaos Sokar-pattern Stormbird|6|3|10|8|40|6|2|1000.0||1|False
+1323|1|Chaos Xiphon Interceptor|6|3|6|7|12|3|3|235.0||1|False
+1324|1|Zhufor the Impaler|2|2|5|4|6|6|2|140.0||1|True
+1325|1|Necrosius the Undying|3|3|4|5|5|5|3|120.0||1|True
+1326|1|Lord Arkos|2|2|4|4|5|6|3|120.0||1|True
+1327|1|Chaos Hellwright|3|2|5|5|4|3|2|85.0||1|True
+1328|1|Chaos Hellwright on Dark Abeyant|3|2|5|6|6|3|2|120.0||1|True
+1329|1|An’ggrath the Unbound|2|4|10|8|24|8|4/4|500.0||1|False
+1330|1|Uraka the Warfiend|2|3|7|6|9|6|5/4|145.0||1|False
+1331|1|Samus|2|4|7|7|12|6|4|200.0||1|True
+1332|1|Zarakynel|2|3|7|7|18|6|5/4|400.0||1|False
+1333|1|Aetaos’rau’keres|2|2|8|8|27|6|5/3|650.0||1|False
+1334|1|Mamon Transfigured|2|3|7|7|9|5|5/4|130.0||1|False
+1335|1|Cor’bax Utterblight|2|3|7|8|12|5|5/4|180.0||1|False
+1336|1|Plague Toad|4|4|5|5|4|3|6|38.0||3-6|True
+1337|1|Pox Rider|4|4|5|5|5|3|6|45.0||3-6|False
+1338|1|Spined Chaos Beast|3|4|7|7|12|5|4|150.0||1|True
+1339|1|Giant Chaos Spawn|4|4|6|6|10|6D6|4|140.0||1|True
+1340|1|Scabeiathrax the Bloated|2|3|8|9|21|5|5/4|425.0||1|False
+1343|1|Chaos Vindicator Laser Destroyer|6|3|6|8|11|3|3|175.0||1|False
+1344|1|Primaris Captain|2|2|4|4|6|5|3|90.0||1|False
+1345|1|Primaris Librarian|3|3|4|4|5|4|3|95.0||1|False
+1346|1|Primaris Chaplain|2|3|4|4|5|4|3|85.0||1|False
+1347|1|Lieutenant|2|2|4|4|4|3|3|70.0||1|False
+1348|1|Primaris Apothecary|3|3|4|4|5|4|3|80.0||1|False
+1349|1|Reiver|3|3|4|4|2|2|3|18.0||4-9|False
+1349|2|Reiver Sergeant|3|3|4|4|2|3|3|18.0||1|False
+1350|1|Aggressor|3|3|4|5|3|3|3|40.0||2-5|False
+1350|2|Aggressor Sergeant|3|3|4|5|3|4|3|40.0||1|False
+1351|1|Redemptor Dreadnought|3|3|7|7|13|4|3|185.0||1|False
+1352|1|Repulsor|6|3|8|8|16|6|3|270.0||1|False
+1353|1|Khârn the Betrayer|2|2|6|4|6|6|3|140.0||1|False
+1354|1|Lucius the Eternal|2|2|5|4|6|5|3|120.0||1|False
+1355|1|Exalted Champion|2|2|4|4|5|5|3|90.0||1|False
+1360|1|Grand Master in Nemesis Dreadknight|2|2|6|6|13|6|2|160.0||1|False
+1361|1|Brotherhood Librarian|3|3|4|4|5|4|2|105.0||1|False
+1362|1|Brotherhood Chaplain|2|3|4|4|5|4|2|110.0||1|False
+1363|1|Stormhawk Interceptor|6|3|6|7|10|3|3|185.0||1|False
+1364|1|Stormtalon Gunship|6|3|6|6|10|3|3|165.0||1|False
+1367|1|Foul Blightspawn|3|3|4|5|4|4|3|90.0||1|False
+1368|1|Biologus Putrifier|3|3|4|5|4|4|3|65.0||1|False
+1369|1|Plague Surgeon|3|3|4|5|4|4|3|75.0||1|False
+1370|1|Tallyman|3|3|4|5|4|4|3|70.0||1|False
+1371|1|Deathshroud Terminator|2|3|4|5|3|4|2|50.0||2-5|False
+1371|2|Deathshroud Champion|2|3|4|5|3|5|2|50.0||1|False
+1372|1|Blightlord Terminator|3|3|4|5|3|3|2|40.0||4-9|False
+1372|2|Blightlord Champion|3|3|4|5|3|4|2|40.0||1|False
+1374|1|Myphitic Blight-hauler|3|3|6|7|9|4|3|120.0||1-3|False
+1376|1|Plagueburst Crawler|6|3|7|8|12|4|3|135.0||1|False
+1377|1|Mortarion|2|2|8|8|18|7|3|450.0||1|False
+1383|1|Mukaali Rider|4|4|3|5|3|1|4|22.0||2-5|False
+1383|2|Mukaali Rider Sergeant|4|4|3|5|3|2|4|22.0||1|False
+1385|1|Grot Bomm Launcha|3|5|4|5|6|4|4|50.0||1|False
+1386|1|Attack Fighta|5|5|6|6|12|3|4|120.0||1|True
+1387|1|Fighta-bommer|5|5|6|6|14|3|4|140.0||1|False
+1388|1|Dethrolla Battle Fortress|5|5|8|8|24|9|4|310.0||1|False
+1389|1|Kill Krusha|5|5|8|8|24|8|4|290.0||1|False
+1390|1|Raven Strike Fighter|6|3|6|6|10|3|4|150.0||1|True
+1391|1|Knarloc Riders|3|4|3|4|4|1|4|30.0||3-6|True
+1392|1|Great Knarloc|3|4|7|6|9|4|4|65.0||1|False
+1393|1|Firestorm|6|3|6|7|12|3|3|130.0||1|False
+1394|1|Ministorum Priest|4|4|3|3|4|3|6|40.0||1|False
+1395|1|Crusader|3|4|3|3|1|2|4|16.0||2-10|False
+1396|1|Tech-Priest Enginseer|4|4|4|4|4|2|3|35.0||1|False
+1397|1|Servitor|5|5|3|3|1|1|4|||4|False
+1398|1|Ogryn Bodyguard|3|4|5|5|6|4|5|50.0||1|False
+1400|1|Bonesinger|3|3|3|3|4|1|6|70.0||1|True
+1401|1|Neurothrope|5|3|5|5|6|2|5|100.0||1|False
+1402|1|Screamer-Killer|3|4|6|7|9|10|2|130.0||1-3|False
+1403|1|Thornback|3|4|6|7|9|4|2|130.0||1-3|False
+1406|1|Sly Marbo|2|2|3|3|4|4|5|60.0||1|False
+1446|1|Trajann Valoris|2|2|5|5|8|6|2|200.0||1|False
+1447|1|Shield-Captain|2|2|5|5|7|6|2|105.0||1|False
+1448|1|Shield-Captain in Allarus Terminator Armour|2|2|5|5|8|6|2|115.0||1|False
+1449|1|Shield-Captain on Dawneagle Jetbike|2|2|5|6|9|6|2|160.0||1|False
+1450|1|Custodian Warden|2|2|5|5|3|4|2|50.0||3-10|False
+1451|1|Vexilus Praetor|2|2|5|5|6|4|2|105.0||1|False
+1452|1|Vexilus Praetor in Allarus Terminator Armour|2|2|5|5|7|4|2|115.0||1|False
+1453|1|Allarus Custodian|2|2|5|5|4|4|2|60.0||1-6|False
+1454|1|Vertus Praetor|2|2|5|6|5|4|2|80.0||3-6|False
+1455|1|Bloodmaster|2|3|6|5|4|5|4/4|90.0||1|False
+1456|1|Skullmaster|2|3|6|6|7|5|4/4|130.0||1|False
+1458|1|Contemptor-Achillus Dreadnought|2|2|7|7|9|5|2|170.0||1|False
+1460|1|Caladius Grav-tank|6|2|6|7|14|3|3|205.0||1|False
+1461|1|Coronus Grav-carrier|6|2|7|8|18|3|3|220.0||1|False
+1462|1|Changecaster|4|3|3|4|5|2|6/3|80.0||1|False
+1463|1|Fateskimmer|4|3|3|6|9|2|5/3|140.0||1|False
+1464|1|Fluxmaster|4|3|3|4|6|2|6/3|110.0||1|False
+1465|1|Rotigus|2|3|7|9|24|6|5/4|320.0||1|False
+1466|1|Horticulous Slimux|2|2|5|7|9|4|4/4|140.0||1|False
+1467|1|Poxbringer|2|3|5|6|6|3|5/4|90.0||1|False
+1468|1|Sloppity Bilepiper|2|3|5|6|6|3|5/4|85.0||1|False
+1469|1|Spoilpox Scrivener|2|3|5|6|6|3|5/4|100.0||1|False
+1470|1|Feculent Gnarlmaw|-|-|6|7|9|-|4/3|||1|False
+1472|1|Tzaangor Shaman|3|3|4|4|4|3|6|70.0||1|False
+1474|1|Enlightened|3|3|4|4|2|2|6|18.0||2-5|False
+1474|2|Aviarch|3|3|4|4|2|3|6|18.0||1|False
+1476|1|Mutalith Vortex Beast|3|4|7|7|14|5|4|145.0||1|False
+1477|1|Commander in Crisis Battlesuit|3|2|5|5|6|4|3|100.0||1|False
+1478|1|Commander in Enforcer Battlesuit|3|2|5|5|7|4|2|120.0||1|False
+1479|1|Telemon Heavy Dreadnought|2|2|8|8|14|4|2|260.0||1|False
+1481|1|Armiger Helverin|3|3|6|7|12|4|3|155.0||1-3|False
+1482|1|Armiger Warglaive|3|3|6|7|12|4|3|145.0||1-3|False
+1483|1|Knight Preceptor|3|3|8|8|24|4|3|420.0||1|False
+1484|1|Canis Rex|2|2|8|8|24|5|3|440.0||1|False
+1484|2|Sir Hekhtur|2|2|3|3|4|3|4||||False
+1485|1|Knight Castellan|4|3|8|8|28|4|2|595.0||1|False
+1486|1|Knight Valiant|4|3|8|8|28|4|2|585.0||1|False
+1521|1|Astraeus|5|3|8|8|30|6|2|550.0||1|False
+1522|1|Gabriel Angelos|2|2|4|4|7|5|2|150.0||1|False
+1523|1|Sicaran Arcus|6|3|6|7|14|3|2|155.0||1|False
+1524|1|Sicaran Omega|6|3|6|7|14|3|2|175.0||1|False
+1525|1|Secutarii Hoplite|3|3|3|3|1|2|4|10.0||4-9|False
+1525|2|Hoplite Alpha|3|3|3|3|1|3|4|10.0||1|False
+1526|1|Secutarii Peltast|3|3|3|3|1|2|4|9.0||4-9|False
+1526|2|Peltast Alpha|3|3|3|3|1|3|4|9.0||1|False
+1527|1|Terrax-pattern Termite|4|3|7|8|14|3|3|180.0||1|False
+1532|1|Chaos Terrax-pattern Termite|4|3|7|8|14|3|3|180.0||1|False
+1533|1|Terrax-pattern Termite|4|3|7|8|14|3|3|180.0||1|False
+1536|1|Big Mek with Shokk Attack Gun|3|4|5|5|5|3|4|110.0||1|False
+1537|1|Deffkilla Wartrike|2|5|5|6|8|5|4|120.0||1|False
+1538|1|Kustom Boosta-blasta|4|5|5|6|8|4|4|80.0||1-3|False
+1539|1|Shokkjump Dragsta|4|5|5|6|8|4|4|85.0||1-3|False
+1540|1|Boomdakka Snazzwagon|4|5|5|6|8|4|4|90.0||1-3|False
+1541|1|Megatrakk Scrapjet|4|5|6|6|9|4|4|100.0||1-3|False
+1542|1|Rukkatrukk Squigbuggy|4|5|5|6|9|4|4|95.0||1-3|False
+1543|1|Gunwagon|5|5|8|8|16|6|3|150.0||1|False
+1544|1|Bonebreaka|5|5|8|8|16|6|3|160.0||1|False
+1546|1|Abominant|3|6|5|5|6|3|5|95.0||1|False
+1552|1|Missionary|4|4|3|3|4|3|6|40.0||1|False
+1553|1|Preacher|4|4|3|3|4|3|6|25.0||1|False
+1554|1|Marneus Calgar in Armour of Heraclus|2|2|4|5|8|6|2|200.0||1|True
+1555|1|Victrix Honour Guard|2|3|4|4|3|4|2|||2|False
+1556|1|Haarken Worldclaimer|2|2|4|4|6|7|3|150.0||1|False
+1557|1|Contemptor-Galatus Dreadnought|2|2|7|7|9|5|2|180.0||1|False
+1558|1|Aquilon Custodian|2|2|5|5|4|4|2|70.0||3-6|False
+1559|1|Custodian Guard|2|2|5|5|3|3|2|55.0||3-5|False
+1560|1|Agamatus Custodians|2|2|5|6|4|4|2|95.0||3-6|False
+1561|1|Venatari Custodian|2|2|5|5|3|3|3|55.0||3-6|False
+1562|1|Pallas Grav-attack|6|2|5|6|8|2|3|95.0||1|False
+1563|1|Sagittarum Custodian|2|2|5|5|3|3|2|50.0||3-5|False
+1564|1|Orion Assault Dropship|6|2|8|8|22|6|3|450.0||1|False
+1565|1|Jackal Alphus|3|2|3|4|4|3|4|80.0||1|False
+1567|1|Clamavus|3|3|3|3|4|3|5|50.0||1|False
+1568|1|Locus|2|3|4|4|4|5|5|50.0||1|False
+1569|1|Sanctus|2|2|3|3|4|4|5|70.0||1|False
+1570|1|Kelermorph|3|2|3|3|4|4|5|80.0||1|False
+1571|1|Nexos|3|3|3|3|4|3|5|50.0||1|False
+1572|1|Biophagus|3|3|3|3|4|3|5|40.0||1|False
+1573|1|Achilles Ridgerunner|6|4|5|6|8|3|4|80.0||1-3|False
+1574|1|Atalan Jackal|4|4|3|4|2|2|4|12.0||3-7|False
+1574|2|Atalan Leader|4|4|3|4|2|3|4|12.0||1|False
+1574|3|Atalan Wolfquad|4|4|3|4|4|2|4|24.0||0-2|False
+1577|1|Seraptek|3|3|8|8|28|6|3|600.0||1|False
+1578|1|Commissar Severina Raine|3|3|3|3|3|3|4|35.0||1|False
+1579|1|Inquisitor Eisenhorn|3|3|3|3|5|4|4|85.0||1|False
+1580|1|Tech-Priest Manipulus|3|2|4|4|5|3|2|80.0||1|False
+1581|1|Master of Possession|3|3|4|4|5|5|3|105.0||1|False
+1583|1|Lord Discordant on Helstalker|2|2|4|6|9|6|2|175.0||1|False
+1584|1|Master of Executions|2|3|4|4|5|6|3|65.0||1|False
+1586|1|Venomcrawler|3|3|7|7|9|6|3|105.0||1|False
+1587|1|Noctilith Crown|-|4|8|8|14|-|3|100.0||1|False
+1588|1|Skull Altar|-|-|6|8|9|-|4/4|50.0||1|False
+1589|1|Infernal Enrapturess|2|3|4|4|4|4|5/4|80.0||1|False
+1591|1|Janus Draik|3|3|3|3|4|3|4|45.0||1|True
+1592|1|Espern Locarno|5|5|3|3|3|2|6|35.0||1|True
+1593|1|Taddeus the Purifier|4|4|3|3|4|3|6|55.0||1|True
+1594|1|Pious Vorne|3|4|3|3|3|3|7|30.0||1|True
+1595|1|UR-025|3|3|5|5|4|2|3|45.0||1|True
+1596|1|Rein|5|2|2|2|2|1|6|||1|True
+1596|2|Raus|5|2|2|2|2|1|6|||1|True
+1597|1|Dahyak Grekh|3|3|3|3|3|3|6|40.0||1|True
+1598|1|Amallyn Shadowguide|3|2|3|3|3|2|5|55.0||1|True
+1599|1|Obsidius Mallex|2|2|4|4|5|4|3|130.0||1|True
+1600|1|Rogue Psyker|4|4|3|3|4|2|5|35.0||1|True
+1601|1|Negavolt Cultist|3|4|3|3|1|3|6|||4|True
+1602|1|Chaos Space Marine|3|3|4|4|1|1|3|||2|True
+1603|1|Spindle Drone|3|3|4|4|2|2|4|||4|True
+1604|1|Chaos Beastman|3|4|4|4|1|1|5|||4|True
+1606|1|Captain in Phobos Armour|2|2|4|4|6|5|3|95.0||1|False
+1607|1|Librarian in Phobos Armour|3|3|4|4|5|4|3|100.0||1|False
+1608|1|Lieutenant in Phobos Armour|2|2|4|4|5|4|3|80.0||1|False
+1609|1|Infiltrator|3|3|4|4|2|2|3|24.0||4-9|False
+1609|2|Infiltrator Sergeant|3|3|4|4|2|3|3|24.0||1|False
+1610|1|Suppressor|3|3|4|4|2|2|3|||2|False
+1610|2|Suppressor Sergeant|3|3|4|4|2|3|3|||1|False
+1611|1|Eliminator|3|2|4|4|2|2|3|25.0||2|False
+1611|2|Eliminator Sergeant|3|2|4|4|2|3|3|25.0||1|False
+1630|1|Ambull|3|6|6|6|7|4|3|75.0||1|True
+1631|1|Borewyrm Infestation|4|6|3|4|2|3|4|15.0||1-2|True
+1632|1|Amallyn Shadowguide|3|2|3|3|3|2|5|55.0||1|True
+1633|1|Dahyak Grekh|3|3|3|3|3|3|6|40.0||1|True
+1634|1|Rein|5|2|2|2|2|1|6|||1|True
+1634|2|Raus|5|2|2|2|2|1|6|||1|True
+1635|1|Elucia Vhane|3|3|3|3|4|3|4|50.0||1|True
+1636|1|Voidsman|4|3|3|3|1|1|5|||4|True
+1636|2|Voidmaster Nitsch|4|3|3|3|2|2|5|||1|True
+1636|3|Aximillion|3|-|3|3|1|2|6|||1|True
+1637|1|Larsen van der Grauss|4|4|3|3|2|2|4|25.0||1|True
+1638|1|Sanistasia Minst|4|4|3|3|2|2|5|20.0||1|True
+1639|1|Knosso Prond|3|4|4|3|2|4|5|30.0||1|True
+1647|1|Contorted Epitome|2|3|4|5|8|8|4/4|160.0||1|False
+1648|1|Shalaxi Helbane|2|2|6|7|22|6|5/4|300.0||1|False
+1649|1|Syll’Esske|2|3|4|6|8|6|5/4|200.0||1|False
+1650|1|Skorpius Dunerider|6|3|6|6|12|3|3|95.0||1|False
+1651|1|Skorpius Disintegrator|6|3|6|7|12|3|3|145.0||1|False
+1652|1|Repulsor Executioner|6|3|8|8|16|6|3|300.0||1|False
+1658|1|Knight Despoiler|3|3|8|8|24|4|3|375.0|20 pts if equipped with 2 daemonbreath thermal cannons, 2 despoiler battle cannons, 2 despoiler gat|1|False
+1659|1|Knight Tyrant|4|3|8|8|28|4|2|585.0||1|False
+1660|1|Knight Desecrator|2|3|8|8|24|4|3|400.0||1|False
+1661|1|Knight Rampager|2|3|8|8|24|5|3|400.0||1|False
+1662|1|Chaos Acastus Knight Asterius|4|3|8|8|30|3|3|750.0||1|False
+1663|1|War Dog Moirax|3|3|6|7|12|4|3|155.0||1-3|False
+1664|1|Acastus Knight Asterius|4|3|8|8|30|3|3|750.0||1|False
+1665|1|Knight Moirax|3|3|6|7|12|4|3|155.0||1-3|False
+1666|1|Incursor|3|3|4|4|2|2|3|21.0||4-9|False
+1666|2|Incursor Sergeant|3|3|4|4|2|3|3|21.0||1|False
+1667|1|Invictor Tactical Warsuit|3|3|7|6|13|4|3|160.0||1|False
+1668|1|Impulsor|6|3|7|7|11|3|3|110.0||1|False
+1678|1|Ancient in Terminator Armour|3|3|4|4|5|3|2|100.0||1|False
+1679|1|Khan on Bike|2|2|4|5|6|4|3|110.0||1|False
+1680|1|Ares Gunship|6|2|8|8|22|6|3|400.0||1|False
+1720|1|Chaos Vindicator Laser Destroyer|6|3|6|8|11|3|3|175.0||1|False
+1746|1|Death Guard Greater Blight Drone|3|3|6|7|9|4|3|125.0||1|False
+1750|1|Chaos Vindicator Laser Destroyer|6|3|6|8|11|3|3|175.0||1|False
+1812|1|Cultist|4|4|3|3|1|1|6|||6|True
+1812|2|Cultist Champion|4|4|3|3|1|2|6|||1|True
+1813|1|Cultist Firebrand|3|3|4|4|3|3|4|35.0||1|True
+1814|1|Neyam Shai Murad|3|4|3|3|4|3|4|55.0||1|True
+1815|1|Gotfret de Montbard|3|4|3|3|4|4|4|40.0||1|True
+1816|1|Gotfret de Montbard|3|4|3|3|4|4|4|40.0||1|True
+1817|1|Aradia Madellan|3|3|3|3|4|3|5|45.0||1|True
+1818|1|Aradia Madellan|3|3|3|3|4|3|5|45.0||1|True
+1821|1|X-101|5|5|4|4|2|2|4|25.0||1|True
+1822|1|X-101|5|5|4|4|2|2|4|25.0||1|True
+1825|1|Iron Father Feirros|3|2|4|5|7|5|2|145.0||1|False
+1990|1|Valdor Tank Hunter|6|4|7|8|20|6|2|335.0||1|False
+1991|1|Tor Garadon|2|2|4|5|7|5|3|135.0||1|False
+1992|1|Adrax Agatone|2|2|4|4|6|5|2|130.0||1|False
+1993|1|Da Red Gobbo|4|3|3|3|3|3|5|30.0||1|True
+1994|1|Carnodon|5|4|7|7|12|3|3|110.0||1|False
+1995|1|Tormentbringer on Hellflayer|2|3|4|5|7|8|4/4|110.0||1|False
+1998|1|Burna Boy|3|5|4|4|1|2|6|10.0||5-15|False
+1998|2|Spanner|3|5|4|4|1|2|6|10.0||0-3|False
+1999|1|Deffkopta|3|5|4|5|4|2|4|20.0||1-5|False
+2000|1|Kommando|3|5|4|4|1|2|6|8.0||5-15|False
+2000|2|Boss Nob|3|5|5|4|2|3|6|8.0||0-1|False
+2001|1|Mek|3|5|4|4|3|2|6|22.0||1|False
+2001|2|Grot Oiler|5|4|2|2|1|1|6|4.0||0-1|False
+2002|1|Sorcerer|3|3|4|4|4|3|3|80.0||1|False
+2003|1|Sorcerer in Terminator Armour|3|3|4|4|5|3|2|100.0||1|False
+2004|1|Honour Guard|3|3|4|4|2|2|2|21.0||2|True
+2005|1|Marneus Calgar|2|2|4|4|7|5|2|250.0||1|True
+2006|1|Chief Librarian Tigurius|3|3|4|4|4|3|3|115.0||1|True
+2007|1|Kayvaan Shrike|2|2|4|4|5|5|3|150.0||1|True
+2008|1|Kor’sarro Khan|2|2|4|4|5|4|3|90.0||1|True
+2009|1|Dreadnought|3|3|6|7|8|4|3|60.0||1|False
+2010|1|Librarian in Terminator Armour|3|3|4|4|5|3|2|100.0||1|False
+2011|1|Techmarine|3|2|4|4|4|3|2|45.0||1|False
+2012|1|Venerable Dreadnought|2|2|6|7|8|4|3|80.0||1|False
+2020|1|Inquisitor|3|3|3|3|5|4|4|55.0||1|False
+2021|1|Termagant|4|4|3|3|1|1|6|4.0||10-30|False
+2033|1|Chaos Lord|2|2|4|4|5|4|3|74.0||1|False
+2034|1|Sorcerer|3|3|4|4|4|3|3|80.0||1|False
+2035|1|Commissar|3|3|3|3|3|3|5|15.0||1|False
+2036|1|Company Commander|3|3|3|3|4|3|5|30.0||1|False
+2037|1|Guardsman|4|4|3|3|1|1|5|4.0||10|False
+2037|2|Sergeant|4|4|3|3|1|2|5|4.0|||False
+2037|3|Heavy Weapons Team|4|4|3|3|2|2|5|8.0|||False
+2038|1|Lord Commissar|2|2|3|3|4|3|4|30.0||1|False
+2039|1|Tempestus Scion|4|3|3|3|1|1|4|7.0||4-9|False
+2039|2|Tempestor|3|3|3|3|1|2|4|7.0||1|False
+2040|1|Platoon Commander|3|3|3|3|3|3|5|20.0||1|False
+2041|1|Guardsman|4|4|3|3|1|1|5|4.0||6|False
+2042|1|Tempestor Prime|3|3|3|3|4|3|4|35.0||1|False
+2043|1|Veteran|4|3|3|3|1|1|5|5.0||9|False
+2043|2|Veteran Sergeant|4|3|3|3|1|2|5|5.0||1|False
+2043|3|Veteran Weapons Team|4|3|3|3|2|2|5|10.0||0-1|False
+2044|1|Dreadnought|3|3|6|7|8|4|3|65.0||1|False
+2045|1|Techmarine|3|2|4|4|4|3|2|55.0||1|False
+2046|1|Venerable Dreadnought|2|2|6|7|8|4|3|85.0||1|False
+2053|1|Autarch|2|2|3|3|5|4|3|65.0||1|False
+2054|1|Autarch with Swooping Hawk Wings|2|2|3|3|5|4|3|80.0||1|False
+2055|1|Autarch Skyrunner|2|2|3|4|6|4|3|95.0||1|False
+2056|1|Guardian|3|3|3|3|1|1|5|6.0||8-24|False
+2057|1|Striking Scorpion|3|3|3|3|1|2|3|8.0||5-10|False
+2057|2|Striking Scorpion Exarch|3|3|3|3|2|3|3|8.0||0-1|False
+2058|1|Swooping Hawk|3|3|3|3|1|1|4|6.0||5-10|False
+2058|2|Swooping Hawk Exarch|3|3|3|3|2|2|4|6.0|||False
+2059|1|Warp Spider|3|3|3|3|1|1|3|9.0||5-10|False
+2059|2|Warp Spider Exarch|3|3|3|3|2|2|3|9.0||0-1|False
+2060|1|Archon|2|2|3|3|5|5|5|55.0||1|False
+2061|1|Beastmaster|3|3|3|3|3|3|5|36.0||1|False
+2062|1|Arch-Confessor Kyrinov|3|3|3|3|5|4|5|60.0||1|True
+2063|1|Triumph of Saint Katherine|3|3|3|3|18|10|3|200.0||1|False
+2064|1|Junith Eruita|2|2|3|4|7|4|3|130.0||1|False
+2065|1|Repentia Superior|3|3|3|3|4|5|3|40.0||1|False
+2066|1|Zephyrim|3|3|3|3|1|3|3|15.0||4-9|False
+2066|2|Zephyrim Superior|3|3|3|3|1|4|3|15.0||1|False
+2067|1|Mortifier|3|3|5|5|5|4|4|60.0||1-4|False
+2068|1|Battle Sanctum|-|-|-|-|-|-|-|80.0||1|False
+2069|1|Battle Sister|4|3|3|3|1|1|3|9.0||4-14|False
+2069|2|Sister Superior|4|3|3|3|1|2|3|9.0||1|False
+2070|1|Canoness|2|2|3|3|5|4|3|45.0||1|False
+2071|1|Celestian|3|3|3|3|1|2|3|10.0||5-10|False
+2071|2|Celestian Superior|3|3|3|3|1|3|3|10.0||0-1|False
+2072|1|Dominion|4|3|3|3|1|1|3|10.0||4-9|False
+2072|2|Dominion Superior|4|3|3|3|1|2|3|10.0||1|False
+2073|1|Preacher|4|4|3|3|4|3|6|30.0||1|False
+2074|1|Retributor|4|3|3|3|1|1|3|10.0||4-9|False
+2074|2|Retributor Superior|4|3|3|3|1|2|3|10.0||1|False
+2076|1|Carab Culln the Risen|2|2|7|7|14|5|2|265.0||1|False
+2077|1|Warbringer Nemesis Titan|4|3|8|8|100|3|2|3800.0||1|False
+2079|1|Makari|4|4|3|3|4|2|6|50.0||1|False
+2080|1|Big Mek with Kustom Force Field|3|4|5|5|5|3|4|85.0||1|False
+2081|1|Serberys Sulphurhound|4|3|3|4|2|2|4|20.0||2-8|False
+2081|2|Serberys Sulphurhound Alpha|4|3|3|4|2|3|4|20.0||1|False
+2082|1|Serberys Raider|4|3|3|4|2|2|4|18.0||2-8|False
+2082|2|Serberys Raider Alpha|4|3|3|4|2|3|4|18.0||1|False
+2083|1|Pteraxii Sterylizor|3|3|4|3|2|2|4|19.0||4-9|False
+2083|2|Pteraxii Sterylizor Alpha|3|3|4|3|2|3|4|19.0||1|False
+2084|1|Pteraxii Skystalker|3|3|4|3|2|2|4|17.0||4-9|False
+2084|2|Pteraxii Skystalker Alpha|3|3|4|3|2|3|4|17.0||1|False
+2085|1|Archaeopter Transvector|5|3|6|7|10|3|3|110.0||1|False
+2086|1|Archaeopter Stratoraptor|5|3|6|7|10|3|3|180.0||1|False
+2087|1|Archaeopter Fusilave|5|3|6|7|10|3|3|150.0||1|False
+2088|1|Aleya|2|2|3|3|5|5|3|75.0||1|False
+2089|1|Tacticus Bunker|-|4|8|8|20|-|3|||1|False
+2089|2|Bunker Annex|-|4|8|8|12|-|3|||3|False
+2090|1|Lord Inquisitor Kyria Draxus|2|3|3|3|5|4|3|85.0||1|False
+2091|1|Ephrael Stern|2|3|4|3|6|5|3|||1|True
+2091|2|Kyganil|2|3|3|3|5|4|6|||1|True
+2092|1|Illuminor Szeras|3|3|6|6|7|4|3|145.0||1|False
+2093|1|The Archivist|3|3|5|4|6|4|3|90.0||1|True
+2094|1|Casan Sabius|2|2|4|4|6|5|2|145.0||1|False
+2098|1|Judiciar|2|3|4|4|5|4|3|85.0||1|False
+2099|1|Bladeguard Veteran|3|3|4|4|3|3|3|35.0||2-5|False
+2099|2|Bladeguard Veteran Sergeant|3|3|4|4|3|4|3|35.0||1|False
+2100|1|Bladeguard Ancient|3|3|4|4|5|4|3|85.0||1|False
+2101|1|Assault Intercessor|3|3|4|4|2|2|3|19.0||4-9|False
+2101|2|Assault Intercessor Sergeant|3|3|4|4|2|3|3|19.0||1|False
+2102|1|Outrider|3|3|4|5|4|2|3|45.0||2|False
+2102|2|Outrider Sergeant|3|3|4|5|4|3|3|45.0||1|False
+2103|1|Eradicator|3|3|4|5|3|2|3|45.0||2-5|False
+2103|2|Eradicator Sergeant|3|3|4|5|3|3|3|45.0||1|False
+2104|1|Invader ATV|3|3|4|5|8|4|3|80.0||1-3|False
+2105|1|Firestrike Servo-turret|3|2|4|5|5|2|2|80.0||1-3|False
+2108|1|Plasmancer|3|3|4|4|4|1|4|65.0||1|False
+2109|1|Skorpekh Lord|2|2|6|6|6|4|3|130.0||1|False
+2110|1|Skorpekh Destroyer|3|3|5|5|3|3|3|30.0||3-6|False
+2111|1|Cryptothrall|4|4|5|5|2|3|3|||2|False
+2112|1|Canoptek Reanimator|4|4|5|5|6|4|3|80.0||1|False
+2114|1|Scarab Swarm|4|-|3|3|4|4|6|15.0||3-9|False
+2115|1|Canoptek Doomstalker|4|4|6|6|12|3|3|130.0||1|False
+2116|1|Lokhust Heavy Destroyer|3|3|4|5|4|2|3|50.0||1-3|False
+2163|1|Captain with Master-crafted Heavy Bolt Rifle|2|2|4|5|7|5|3|105.0||1|False
+2173|1|Lieutenant in Reiver Armour|2|2|4|4|5|4|3|75.0||1|False
+2190|1|Primaris Chaplain on Bike|2|3|4|5|7|4|3|125.0||1|False
+2199|1|Primaris Techmarine|3|2|4|4|5|4|2|80.0||1|False
+2202|1|Heavy Intercessor|3|3|4|5|3|2|3|28.0||4-9|False
+2202|2|Heavy Intercessor Sergeant|3|3|4|5|3|3|3|28.0||1|False
+2203|1|Helbrute|3|3|6|7|8|5|3|105.0||1|False
+2217|1|Veteran Intercessor|3|3|4|4|2|3|3|22.0||4-9|False
+2217|2|Veteran Intercessor Sergeant|3|3|4|4|2|4|3|22.0||1|False
+2234|1|Relic Terminator|3|3|4|4|3|2|2|34.0||4-9|False
+2234|2|Relic Terminator Sergeant|3|3|4|4|3|3|2|34.0||1|False
+2252|1|Storm Speeder Hailstrike|3|3|5|6|10|3|3|125.0||1|False
+2255|1|Storm Speeder Thunderstrike|3|2|5|6|10|3|3|150.0||1|False
+2258|1|Storm Speeder Hammerstrike|3|3|5|6|10|3|3|145.0||1|False
+2263|1|Land Speeder Typhoon|3|3|4|6|6|2|3|100.0||1-3|False
+2266|1|Predator Annihilator|6|3|6|7|11|3|3|115.0||1|False
+2267|1|Gladiator Lancer|6|3|7|8|12|3|3|150.0||1|False
+2268|1|Gladiator Reaper|6|3|7|8|12|3|3|180.0||1|False
+2269|1|Gladiator Valiant|6|3|7|8|12|3|3|200.0||1|False
+2270|1|Hammerfall Bunker|-|4|6|8|14|-|3|175.0||1|False
+2271|1|Commander Dante|2|2|4|4|6|6|2|165.0||1|False
+2272|1|Gabriel Seth|2|2|4|4|6|5|3|145.0||1|False
+2273|1|The Sanguinor|2|2|4|4|5|5|2|150.0||1|False
+2274|1|Brother Corbulo|2|2|4|4|5|4|3|115.0||1|False
+2275|1|Sanguinary Priest|2|3|4|4|4|3|3|90.0||1|False
+2276|1|Chief Librarian Mephiston|2|2|5|5|6|5|2|140.0||1|False
+2277|1|Librarian Dreadnought|3|3|6|7|8|4|3|150.0||1|False
+2278|1|Astorath|2|2|4|4|5|4|2|140.0||1|False
+2279|1|Lemartes|2|3|4|4|4|4|3|120.0||1|False
+2280|1|Captain Tycho|2|2|4|4|5|4|2|95.0||1|False
+2281|1|Tycho the Lost|2|2|4|4|5|4|2|95.0||1|False
+2282|1|Sanguinary Guard|3|3|4|4|2|3|2|30.0||4-10|False
+2283|1|Sanguinary Ancient|3|3|4|4|4|3|2|110.0||1|False
+2284|1|Death Company Dreadnought|3|3|6|7|8|5|3|125.0||1|False
+2285|1|Death Company Marine|3|3|4|4|2|2|3|18.0||5-10|False
+2286|1|Death Company Intercessor|3|3|4|4|2|3|3|20.0||5-10|False
+2287|1|Furioso Dreadnought|3|3|6|7|8|4|3|120.0||1|False
+2288|1|Baal Predator|6|3|6|7|11|3|3|110.0||1|False
+2289|1|Azrael|2|2|4|4|6|5|2|160.0||1|False
+2290|1|Belial|2|2|4|4|6|4|2|140.0||1|False
+2291|1|Sammael|2|2|4|5|8|4|3|150.0||1|False
+2292|1|Ezekiel|2|2|4|4|5|3|2|115.0||1|True
+2293|1|Asmodai|2|3|4|4|5|4|3|130.0||1|False
+2294|1|Interrogator-Chaplain|2|3|4|4|5|4|3|85.0||1|False
+2295|1|Ravenwing Talonmaster|2|2|4|6|8|3|3|175.0||1|False
+2296|1|Lazarus|2|2|4|4|6|5|3|110.0||1|False
+2297|1|Interrogator-Chaplain in Terminator Armour|2|3|4|4|6|4|2|100.0||1|False
+2298|1|Deathwing Apothecary|3|3|4|4|5|3|2|100.0||1|False
+2299|1|Deathwing Champion|2|3|4|4|5|4|2|80.0||1|False
+2300|1|Deathwing Terminator|3|3|4|4|3|2|2|33.0||4-9|False
+2300|2|Deathwing Sergeant|3|3|4|4|3|3|2|33.0||1|False
+2301|1|Deathwing Knight|2|2|4|4|3|2|2|43.0||4-9|False
+2301|2|Knight Master|2|2|4|4|3|3|2|43.0||1|False
+2302|1|Deathwing Terminator|3|3|4|4|3|2|2|35.0||1-4|False
+2302|2|Deathwing Sergeant|3|3|4|4|3|3|2|35.0||1|False
+2303|1|Ravenwing Apothecary|3|3|4|5|5|3|3|100.0||1|False
+2304|1|Ravenwing Champion|2|3|4|5|5|4|3|70.0||1|False
+2305|1|Ravenwing Ancient|3|3|4|5|5|3|3|100.0||1|False
+2306|1|Ravenwing Black Knight|3|3|4|5|3|2|3|35.0||2-9|False
+2306|2|Ravenwing Huntmaster|3|3|4|5|3|3|3|35.0||1|False
+2307|1|Ravenwing Darkshroud|3|3|4|6|9|3|3|120.0||1|False
+2308|1|Ravenwing Land Speeder Vengeance|3|3|4|6|9|3|3|110.0||1|False
+2309|1|Ravenwing Dark Talon|6|3|6|6|11|3|3|195.0||1|False
+2310|1|Nephilim Jetfighter|6|3|6|6|11|3|3|175.0||1|False
+2311|1|Watch Master|2|2|4|4|6|4|2|130.0||1|False
+2312|1|Watch Captain Artemis|2|2|4|4|5|4|3|105.0||1|False
+2313|1|Chaplain Cassius|2|3|4|4|4|4|3|95.0||1|False
+2314|1|Codicier Natorian|2|3|4|4|4|3|3|100.0||1|False
+2315|1|Deathwatch Veteran|3|3|4|4|2|2|3|20.0||4-9|False
+2315|2|Watch Sergeant|3|3|4|4|2|3|3|20.0||1|False
+2315|3|Black Shield|2|3|4|4|2|3|3|25.0||0-1|False
+2316|1|Veteran|3|3|4|4|2|2|3|||4|True
+2316|2|Watch Sergeant|3|3|4|4|2|3|3|||1|True
+2316|3|Terminator|3|3|4|4|3|2|2|||1|True
+2316|4|Veteran Biker|3|3|4|5|3|2|3|||1|True
+2316|5|Vanguard Veteran|3|3|4|4|2|2|3|||2|True
+2317|1|Deathwatch Terminator|3|3|4|4|3|2|2|33.0||4-9|False
+2317|2|Deathwatch Terminator Sergeant|3|3|4|4|3|3|2|33.0||1|False
+2318|1|Veteran Biker|3|3|4|5|3|2|3|30.0||2-5|False
+2318|2|Veteran Biker Sergeant|3|3|4|5|3|3|3|30.0||1|False
+2318|3|Veteran Attack Bike|3|3|4|5|4|4|3|30.0||0-1|False
+2319|1|Corvus Blackstar|6|3|8|7|14|3|3|165.0||1|False
+2322|1|Logan Grimnar|2|2|4|4|7|5|2|155.0||1|False
+2323|1|Njal Stormcaller|2|2|4|4|6|3|2|140.0||1|False
+2324|1|Logan Grimnar on Stormrider|2|2|4|6|14|5|2|180.0||1|False
+2325|1|Bjorn the Fell-handed|2|2|7|8|8|5|3|175.0||1|False
+2326|1|Arjac Rockfist|2|2|5|4|5|4|2|110.0||1|False
+2327|1|Ulrik the Slayer|2|2|4|4|5|4|3|110.0||1|False
+2328|1|Ragnar Blackmane|2|2|4|4|6|7|3|120.0||1|False
+2329|1|Krom Dragongaze|2|2|4|4|5|5|3|100.0||1|False
+2330|1|Harald Deathwolf|2|2|4|5|7|5|3|130.0||1|False
+2331|1|Canis Wolfborn|2|5|4|5|6|6|3|110.0||1|False
+2332|1|Wolf Guard Battle Leader in Terminator Armour|2|2|4|4|5|3|2|85.0||1|False
+2333|1|Wolf Lord on Thunderwolf|2|2|4|5|7|4|3|110.0||1|False
+2334|1|Wolf Guard Battle Leader on Thunderwolf|2|2|4|5|6|3|3|95.0||1|False
+2335|1|Blood Claw|3|3|4|4|2|1|3|18.0||4-14|False
+2335|2|Blood Claw Pack Leader|3|3|4|4|2|2|3|18.0||1|False
+2335|3|Wolf Guard Pack Leader|3|3|4|4|2|2|3|18.0||0-1|False
+2335|4|Wolf Guard Terminator Pack Leader|3|3|4|4|3|2|2|33.0||0-1|False
+2336|1|Grey Hunter|3|3|4|4|2|1|3|18.0||4-9|False
+2336|2|Grey Hunter Pack Leader|3|3|4|4|2|2|3|18.0||1|False
+2336|3|Wolf Guard Pack Leader|3|3|4|4|2|2|3|18.0||0-1|False
+2336|4|Wolf Guard Terminator Pack Leader|3|3|4|4|3|2|2|33.0||0-1|False
+2337|1|Wolf Guard|3|3|4|4|2|2|3|19.0||4-9|False
+2337|2|Wolf Guard Pack Leader|3|3|4|4|2|3|3|19.0||1|False
+2338|1|Lukas the Trickster|2|3|4|4|4|5|3|80.0||1|False
+2339|1|Wolf Guard Terminator|3|3|4|4|3|2|2|33.0||4-9|False
+2339|2|Wolf Guard Terminator Pack Leader|3|3|4|4|3|3|2|33.0||1|False
+2340|1|Wulfen|3|5|5|5|2|3|4|20.0||4-9|False
+2340|2|Wulfen Pack Leader|3|5|5|5|2|4|4|20.0||1|False
+2341|1|Wulfen Dreadnought|3|5|6|7|8|4|3|120.0||1|False
+2342|1|Murderfang|2|5|6|7|8|5|3|150.0||1|False
+2343|1|Cyberwolf|3|-|4|4|2|3|4|15.0||1-5|False
+2344|1|Thunderwolf Cavalry|3|3|4|5|4|2|3|40.0||2-5|False
+2344|2|Thunderwolf Cavalry Pack Leader|3|3|4|5|4|3|3|40.0||1|False
+2345|1|Fenrisian Wolf|3|-|4|4|1|2|6|7.0||5-15|False
+2345|2|Cyberwolf|3|-|4|4|2|3|4|15.0||0-1|False
+2346|1|Skyclaw|3|3|4|4|2|1|3|18.0||4-14|False
+2346|2|Skyclaw Pack Leader|3|3|4|4|2|2|3|18.0||1|False
+2346|3|Wolf Guard Skyclaw Pack Leader|3|3|4|4|2|2|3|20.0||0-1|False
+2347|1|Long Fang|3|3|4|4|2|1|3|18.0||4-5|False
+2347|2|Long Fang Pack Leader|3|3|4|4|2|2|3|18.0||1|False
+2347|3|Wolf Guard Pack Leader|3|3|4|4|2|2|3|18.0||0-1|False
+2347|4|Wolf Guard Terminator Pack Leader|3|3|4|4|3|2|2|33.0||0-1|False
+2348|1|Stormfang Gunship|6|3|8|7|14|6|3|250.0||1|False
+2349|1|Stormwolf|6|3|8|7|14|6|3|250.0||1|False
+2350|1|Royal Warden|3|3|5|5|4|3|3|70.0||1|False
+2351|1|Lokhust Lord|3|3|5|6|6|4|3|100.0||1|False
+2352|1|Technomancer|3|3|4|4|4|1|4|70.0||1|False
+2353|1|Psychomancer|3|3|4|4|4|1|4|65.0||1|False
+2354|1|Chronomancer|3|3|4|4|4|1|4|75.0||1|False
+2355|1|Hexmark Destroyer|3|2|5|5|5|4|3|65.0||1|False
+2356|1|Canoptek Plasmacyte|4|4|4|5|1|1|4|15.0||1|False
+2357|1|C’tan Shard of the Void Dragon|2|2|6|7|9|5|3|300.0||1|False
+2358|1|Ophydian Destroyer|3|3|4|4|3|3|4|30.0||3-6|False
+2359|1|Lokhust Destroyer|3|3|4|5|3|2|3|40.0||1-6|False
+2359|2|Lokhust Heavy Destroyer|3|3|4|5|4|2|3|40.0||0-1|False
+2360|1|Szarekh|2|2|5|7|16|6|3|||1|False
+2360|2|Triarchal Menhir|6|2|5|7|5|1|3|||2|False
+2361|1|Starstele|-|3|6|8|10|-|3|||3|False
+2362|1|Tomb Ziggurat|-|3|9|9|20|-|3|||1|False
+2362|2|Power Crucible|-|3|9|9|20|-|3|||1|False
+2362|3|Gun Emplacement Mount|-|3|9|9|14|-|3|||2|False
+2363|1|Guardian Drone|3|3|5|6|7|4|3|90.0||1|True
+2364|1|Khorne Berzerker|3|3|5|4|2|5|3|22.0||4-9|False
+2364|2|Berzerker Champion|3|3|5|4|2|6|3|22.0||1|False
+2367|1|Storm Eagle Gunship|6|3|8|7|18|6|3|335.0||1|False
+2368|1|Razorback|6|3|6|7|10|3|3|100.0||1|False
+2369|1|Tarantula Sentry Gun|-|4|4|5|4|-|3|40.0||1-3|False
+2370|1|Razorback|6|3|6|7|10|3|3|100.0||1|False
+2371|1|Dreadnought|3|3|6|7|8|5|3|130.0||1|False
+2372|1|Land Speeder Tornado|3|3|4|6|6|2|3|70.0||1-3|False
+2373|1|Death Korps Marshal Karis Venner|3|3|3|3|4|3|4|50.0||1|True
+2374|1|Death Korps Grenadier|3|3|3|3|1|1|4|7.0||4-9|False
+2374|2|Death Korps Watchmaster|3|3|3|3|1|2|4|7.0||1|False
+2374|3|Death Korps Grenadier Weapons Team|3|3|3|3|2|2|4|7.0||1|False
+2375|1|Medicae-servitor|5|5|3|3|1|1|4|5.0||2-4|False
+2375|2|Quartermaster Revenant|3|3|3|3|2|2|4|5.0||1|False
+2376|1|Drop Sentinel|4|4|5|5|6|1|4|50.0||1-3|False
+2377|1|Sniper Team|4|3|3|3|2|2|5|||3|False
+2378|1|Death Rider Commissar|3|3|3|4|4|3|4|25.0||1|False
+2379|1|Storm Chimera|6|4|6|7|10|3|3|95.0||1|True
+2380|1|Gate Section|-|-|10|10|8|-|2|80.0|Extra gate section|1|False
+2380|2|Gate Tower Section|-|4|10|10|16|-|2|160.0|Extra gate tower section|2|False
+2380|3|Tower Section|-|4|10|10|12|-|2|120.0|Extra tower section|2|False
+2380|4|Wall Section|-|-|10|10|12|-|2|120.0|Extra wall section|2|False
+2381|1|Primaris Redoubt|-|4|8|8|20|-|3|750.0||1|False
+2382|1|Chimera|6|4|6|7|10|3|3|65.0||1|False
+2383|1|Hellhound|6|4|6|7|11|3|3|110.0||1-3|False
+2383|2|Devil Dog|6|-|6|7|11|0|3|110.0|||False
+2383|3|Bane Wolf|6|-|6|7|11|0|3|100.0|||False
+2384|1|Leman Russ Battle Tank|6|4|7|8|12|3|2|130.0||1-3|False
+2385|1|Death Korps Marshal|3|3|3|3|4|3|4|35.0||1|False
+2386|1|Squadron Commander|3|3|3|4|5|3|4|45.0||1|False
+2387|1|Death Rider Veteran|4|3|3|4|3|2|4|||4|False
+2388|1|Engineer|4|3|3|3|1|1|4|8.0||4-9|False
+2388|2|Engineer Weapons Team|4|3|3|3|2|2|4|25.0||0-1|False
+2388|3|Engineer Watchmaster|4|3|3|3|1|2|4|8.0||1|False
+2389|1|Death Rider|4|3|3|4|3|1|4|20.0||4-9|False
+2389|2|Ridemaster|4|3|3|4|3|2|4|20.0||1|False
+2390|1|Chaos Sicaran Punisher|6|3|6|7|14|3|2|155.0||1|False
+2391|1|Chaos Contemptor Dreadnought|3|3|7|7|9|4|3|140.0||1|False
+2392|1|Chaos Land Raider Proteus|6|3|8|8|16|6|2|220.0||1|False
+2393|1|Decimator|3|3|7|7|12|5|3|160.0||1|False
+2394|1|Chaos Terrax-pattern Termite|4|3|7|8|14|3|3|180.0||1|False
+2395|1|Chaos Sicaran Punisher|6|3|6|7|14|3|2|155.0||1|False
+2396|1|Chaos Land Raider Achilles|6|3|8|8|16|6|2|270.0||1|False
+2397|1|Chaos Whirlwind Scorpius|6|3|6|7|11|3|3|170.0||1|False
+2398|1|Hellforged Sicaran|6|3|6|7|14|3|2|165.0||1|False
+2399|1|Chaos Sicaran Venator|6|3|6|7|14|3|2|170.0||1|False
+2400|1|Chaos Spartan|5|3|8|8|20|6|2|420.0||1|False
+2401|1|Chaos Deredeo Dreadnought|3|3|6|7|12|4|3|190.0||1|False
+2402|1|Chaos Rapier Carrier|3|3|4|5|5|2|3|75.0||1|False
+2403|1|Chaos Leviathan Dreadnought|3|3|7|7|14|4|2|220.0||1|False
+2404|1|Dreadclaw Drop Pod|4|-|6|6|9|4|3|115.0||1|False
+2405|1|Kharybdis Assault Claw|4|4|8|8|20|4|3|400.0||1|False
+2406|1|Chaos Cerberus|5|3|8|8|20|6|2|370.0||1|False
+2407|1|Chaos Typhon|5|3|8|8|20|6|2|320.0||1|False
+2408|1|Chaos Fellblade|5|3|8|8|26|6|2|550.0||1|False
+2409|1|Chaos Falchion|5|3|8|8|26|6|2|550.0||1|False
+2410|1|Chaos Mastodon|5|3|9|9|30|6|2|750.0||1|False
+2411|1|Hell Blade|6|3|6|6|9|2|3|135.0||1|False
+2412|1|Hell Talon|6|3|7|7|14|6|3|210.0||1|False
+2413|1|Chaos Storm Eagle Gunship|6|3|8|7|18|6|3|335.0||1|False
+2414|1|Chaos Fire Raptor Gunship|6|3|8|7|18|6|3|340.0||1|False
+2415|1|Chaos Thunderhawk Gunship|6|3|10|8|30|6|2|800.0||1|False
+2416|1|Chaos Sokar-pattern Stormbird|6|3|10|8|40|6|2|1000.0||1|False
+2417|1|Chaos Xiphon Interceptor|6|3|6|7|12|3|3|235.0||1|False
+2418|1|Chaos Contemptor Dreadnought|3|3|7|7|9|4|3|140.0||1|False
+2419|1|Chaos Land Raider Proteus|6|3|8|8|16|6|2|220.0||1|False
+2421|1|Decimator|3|3|7|7|12|5|3|160.0||1|False
+2422|1|Chaos Terrax-pattern Termite|4|3|7|8|14|3|3|180.0||1|False
+2423|1|Chaos Sicaran Punisher|6|3|6|7|14|3|2|155.0||1|False
+2424|1|Chaos Land Raider Achilles|6|3|8|8|16|6|2|270.0||1|False
+2425|1|Chaos Whirlwind Scorpius|6|3|6|7|11|3|3|170.0||1|False
+2426|1|Hellforged Sicaran|6|3|6|7|14|3|2|165.0||1|False
+2427|1|Chaos Sicaran Venator|6|3|6|7|14|3|2|170.0||1|False
+2428|1|Chaos Spartan|5|3|8|8|20|6|2|420.0||1|False
+2429|1|Chaos Deredeo Dreadnought|3|3|6|7|12|4|3|190.0||1|False
+2430|1|Chaos Rapier Carrier|3|3|4|5|5|2|3|75.0||1|False
+2431|1|Chaos Leviathan Dreadnought|3|3|7|7|14|4|2|220.0||1|False
+2432|1|Dreadclaw Drop Pod|4|-|6|6|9|4|3|115.0||1|False
+2433|1|Kharybdis Assault Claw|4|4|8|8|20|4|3|400.0||1|False
+2434|1|Chaos Cerberus|5|3|8|8|20|6|2|370.0||1|False
+2435|1|Chaos Typhon|5|3|8|8|20|6|2|320.0||1|False
+2436|1|Chaos Fellblade|5|3|8|8|26|6|2|550.0||1|False
+2437|1|Chaos Falchion|5|3|8|8|26|6|2|550.0||1|False
+2438|1|Chaos Mastodon|5|3|9|9|30|6|2|750.0||1|False
+2439|1|Hell Blade|6|3|6|6|9|2|3|135.0||1|False
+2440|1|Hell Talon|6|3|7|7|14|6|3|210.0||1|False
+2441|1|Chaos Storm Eagle Gunship|6|3|8|7|18|6|3|335.0||1|False
+2442|1|Chaos Fire Raptor Gunship|6|3|8|7|18|6|3|340.0||1|False
+2443|1|Chaos Thunderhawk Gunship|6|3|10|8|30|6|2|800.0||1|False
+2444|1|Chaos Sokar-pattern Stormbird|6|3|10|8|40|6|2|1000.0||1|False
+2445|1|Chaos Xiphon Interceptor|6|3|6|7|12|3|3|235.0||1|False
+2446|1|Chaos Deimos Predator|6|3|6|7|11|3|3|115.0||1|False
+2447|1|Chaos Deimos Predator|6|3|6|7|11|3|3|115.0||1|False
+2448|1|Chaos Warhound Titan|-|-|8|8|50|4|2|2000.0||1|True
+2449|1|Chaos Reaver Titan|-|-|8|8|70|4|2|3000.0||1|True
+2450|1|Chaos Warbringer Nemesis Titan|-|-|8|8|100|3|2|3800.0||1|True
+2451|1|Chaos Warlord Titan|-|-|9|9|120|4|2|5500.0||1|True
+2452|1|Nob on Warbike|3|5|5|5|3|3|4|30.0||2-8|False
+2452|2|Boss Nob on Warbike|3|5|5|5|3|3|4|30.0||1|False
+2453|1|Mega Dread|3|5|7|7|16|5|3|175.0||1|False
+2454|1|Hammerhead Gunship|6|4|6|7|14|3|3|145.0||1|False
+2454|2|Gun Drone|5|5|3|4|1|1|4|||2|False
+2455|1|Corsair Reaver|3|3|3|3|1|1|5|9.0||5-15|False
+2455|2|Corsair Reaver Felarch|3|3|3|3|1|2|5|9.0||0-1|False
+2456|1|Corsair Skyreaver|3|3|3|3|1|1|5|12.0||5-15|False
+2456|2|Corsair Skyreaver Felarch|3|3|3|3|1|2|5|12.0||0-1|False
+2457|1|Corsair Cloud Dancer|3|3|3|4|2|1|4|22.0||3-9|False
+2457|2|Corsair Cloud Dancer Felarch|3|3|3|4|2|2|4|22.0||0-1|False
+2460|1|Lord of Virulence|2|2|4|5|6|5|2|120.0||1|False
+2461|1|Chaos Predator Destructor|6|3|6|7|11|3|3|130.0||1|False
+2462|1|Miasmic Malignifier|-|6|7|8|12|-|3|75.0||1|False
+2463|1|Hound of Morkai|3|3|4|4|2|2|3|20.0||4-9|True
+2463|2|Hound of Morkai Pack Leader|3|3|4|4|2|3|3|20.0||1|True
+2464|1|Captain Nasiem|2|2|4|4|6|5|3|100.0||1|True
+2465|1|Epistolary Lykandos|3|3|4|4|5|4|3|100.0||1|True
+2466|1|Orator Sephax|2|3|4|4|5|4|3|90.0||1|True
+2467|1|Ancient Kae|3|3|4|4|5|4|3|95.0||1|True
+2468|1|Deathwing Strikemaster|2|2|4|4|5|3|2|95.0||1|False
+2471|1|Lhamaean|3|3|3|3|3|2|5|16.0||0-4|False
+2471|2|Medusae|3|3|3|3|3|1|5|22.0||0-4|False
+2471|3|Sslyth|3|3|5|3|3|3|5|18.0||0-4|False
+2471|4|Ur-Ghul|3|-|4|3|3|4|7|16.0||0-4|False
+2472|1|Palatine|2|2|3|3|4|3|3|45.0||1|False
+2473|1|Uriel Ventris|2|2|4|4|6|5|3|110.0||1|False
+2474|1|Grukk Face-rippa|2|5|6|5|7|5|4|||1|False
+2475|1|Skull-Nob|2|5|5|4|2|3|4|||4-9|False
+2475|2|Skrak Head-smasha|2|5|5|4|3|3|4|||1|False
+2475|3|Ammo Runt|5|4|2|2|1|1|6|||0-2|False
+2476|1|Goff Rokker|3|5|5|4|4|3|4|||1|False
+2477|1|Technoarcheologist|4|3|4|4|4|2|3|55.0||1|False
+2478|1|Skitarii Marshal|3|2|3|3|4|3|4|55.0||1|False
+2479|1|Morvenn Vahl|2|2|5|5|8|5|2|280.0||1|False
+2480|1|Aestred Thurga|3|3|3|3|5|3|3|||1|True
+2480|2|Agathae Dolan|4|4|3|3|4|3|6|||1|True
+2481|1|Celestian Sacresant|3|3|3|3|1|2|2|14.0||4-9|False
+2481|2|Sacresant Superior|3|3|3|3|1|3|2|14.0||1|False
+2482|1|Dogmata|3|3|3|3|4|3|3|65.0||1|False
+2483|1|Paragon|3|3|5|5|4|3|2|||2|False
+2483|2|Paragon Superior|3|3|5|5|4|4|2|||1|False
+2484|1|Castigator|6|3|6|7|11|3|3|135.0||1|False
+2485|1|Colonel-Commissar Ibram Gaunt|2|2|3|3|4|3|4|||1|True
+2485|2|Colonel CoIm Corbec|3|3|3|3|4|3|5|||1|True
+2485|3|Major Elim Rawne|3|3|3|3|3|3|5|||1|True
+2485|4|Master Sniper Hlaine Larkin|3|2|3|3|2|1|5|||1|True
+2485|5|Trooper ‘Try Again’ Bragg|3|5|4|3|2|2|5|||1|True
+2485|6|Scout Sergeant Oan Mkoll|2|2|3|3|2|4|5|||1|True
+2486|1|Taddeus the Purifier|4|4|3|3|4|3|6|55.0||1|True
+2487|1|Technoarcheologist|4|3|4|4|4|2|3|55.0||1|False
+2488|1|Zodgrod Wortsnagga|2|5|5|5|6|4|6|65.0||1|False
+2489|1|Beastboss|2|5|6|6|6|5|4|95.0||1|False
+2490|1|Beastboss on Squigosaur|2|5|6|7|9|5|4|160.0||1|False
+2491|1|Painboss|3|5|5|5|5|4|4|80.0||1|False
+2492|1|Wurrboy|3|5|5|5|5|3|6|70.0||1|False
+2493|1|Mozrog Skragbad|2|5|6|7|9|6|3|185.0||1|False
+2494|1|Beast Snagga Boy|3|5|5|5|1|2|6|10.0||9-19|False
+2494|2|Beast Snagga Nob|3|5|5|5|2|3|6|10.0||1|False
+2495|1|Nob on Smasha Squig|3|5|5|6|5|4|4|65.0||1|False
+2496|1|Squighog Boy|3|5|5|6|3|3|4|25.0||3-6|False
+2497|1|Kill Rig|3|5|6|8|16|6|3|190.0||1|False
+2498|1|Hunta Rig|3|5|6|8|16|6|3|160.0||1|False
+2499|1|Big’ed Bossbunka|-|5|6|8|12|-|3|75.0||1|False
+2500|1|Infernal Master|3|3|4|4|4|4|3|90.0||1|False
+2501|1|Chaos Predator Annihilator|6|3|6|7|11|3|3|115.0||1|False
+2502|1|Pious Vorne|3|4|3|3|3|3|7|30.0||1|True
+2503|1|Gotfret de Montbard|3|4|3|3|4|4|4|40.0||1|True
+2505|1|Primaris Initiate|3|3|4|4|2|2|3|19.0||5-11|False
+2505|2|Primaris Neophyte|3|3|4|4|2|2|4|16.0||4-8|False
+2505|3|Primaris Sword Brother|3|3|4|4|2|3|3|19.0||1|False
+2506|1|Primaris Sword Brother|3|3|4|4|2|3|3|22.0||4-10|False
+2507|1|Sister Novitiate|4|3|3|3|1|1|4|||9|False
+2507|2|Novitiate Superior|4|3|3|3|1|2|3|||1|False
+2508|1|Cartographica Rogue Trader|3|3|3|3|4|3|4|60.0||1|False
+2508|2|Death Cult Executioner|2|4|3|3|2|5|5|15.0||0-1|False
+2508|3|Lectro-Maester|4|3|3|3|2|1|5|15.0||0-1|False
+2508|4|Rejuvenat Adept|4|4|3|3|2|1|5|10.0||0-1|False
+2509|1|Voidsmen|4|4|3|3|1|1|4|10.0||4-8|False
+2509|2|Voidmaster|4|4|3|3|1|2|4|10.0||1|False
+2509|3|Canid|3|-|4|3|1|3|4|10.0||0-1|False
+2510|1|Looted Wagon|5|5|6|7|10|3|4|||1|True
+2511|1|Looted ‘Eavy Wagon|5|5|7|7|12|3|3|||1|True
+2512|1|Battle Fortress|5|5|9|8|26|9|3|||1|True
+2513|1|Watch Sergeant|3|3|4|4|2|3|3|20.0||1|False
+2513|2|Deathwatch Veteran|3|3|4|4|2|2|3|20.0||4-9|False
+2513|3|Deathwatch Terminator|3|3|4|4|3|2|2|33.0||0-5|False
+2513|4|Veteran Biker|3|3|4|5|3|2|3|30.0||0-5|False
+2513|5|Vanguard Veteran|3|3|4|4|2|2|3|19.0||0-5|False
+2513|6|Black Shield|2|3|4|4|2|3|3|25.0||0-1|False
+2514|1|Intercessor Sergeant|3|3|4|4|2|3|3|20.0||1|False
+2514|2|Intercessor|3|3|4|4|2|2|3|20.0||4-9|False
+2514|3|Assault Intercessor|3|3|4|4|2|2|3|19.0||0-5|False
+2514|4|Outrider|3|3|4|5|4|2|3|45.0||0-5|False
+2514|5|Hellblaster|3|3|4|4|2|2|3|33.0||0-5|False
+2515|1|Heavy Intercessor Sergeant|3|3|4|5|3|3|3|28.0||1|False
+2515|2|Heavy Intercessor|3|3|4|5|3|2|3|28.0||4-9|False
+2515|3|Aggressor|3|3|4|5|3|3|3|40.0||0-5|False
+2515|4|Inceptor|3|3|4|5|3|2|3|40.0||0-5|False
+2515|5|Eradicator|3|3|4|5|3|2|3|45.0||0-5|False
+2516|1|Infiltrator Sergeant|3|3|4|4|2|3|3|24.0||1|False
+2516|2|Infiltrator|3|3|4|4|2|2|3|24.0||4-9|False
+2516|3|Incursor|3|3|4|4|2|2|3|21.0||0-5|False
+2516|4|Reiver|3|3|4|4|2|2|3|18.0||0-5|False
+2516|5|Eliminator|3|2|4|4|2|2|3|25.0||0-5|False
+2517|1|Da Red Gobbo on Bounca|4|3|3|5|5|3|4|50.0||1|True
+2518|1|Blade Champion|2|2|5|5|7|6|3|120.0||1|False
+2519|1|Valerian|2|2|5|5|7|6|2|130.0||1|False
+2520|1|Knight-Centura|2|2|3|3|5|4|3|50.0||1|False
+2521|1|Prosecutor|3|3|3|3|1|2|3|12.0||4-9|False
+2521|2|Prosecutor Sister Superior|3|3|3|3|1|3|3|12.0||1|False
+2522|1|Vigilator|3|3|3|3|1|2|3|14.0||4-9|False
+2522|2|Vigilator Sister Superior|3|3|3|3|1|3|3|14.0||1|False
+2523|1|Witchseeker|3|3|3|3|1|2|3|14.0||4-9|False
+2523|2|Witchseeker Sister Superior|3|3|3|3|1|3|3|14.0||1|False
+2524|1|Anathema Psykana Rhino|6|3|6|7|10|3|3|75.0||1|False
+2525|1|Reductus Saboteur|3|2|3|3|4|3|5|80.0||1|False
+2526|1|<b>Advanced Guardian Drone</b>, <b>Command-link Drone</b>, <b>Grav-inhibitor Drone</b>, <b>Guardian Drone</b>, <b>Gun Drone</b>, <b>Marker Drone</b>, <b>Missile Drone</b>, <b>Pulse Accelerator Drone</b>, <b>Sniper Drone</b> and <b>Stealth Drone</b>|5|5|3|4|1|1|4||||True
+2526|2|<b>Shield Drone</b> and <b>Shielded Missile Drone</b>|5|5|3|4|2|1|4||||True
+2526|3|<b>Interceptor Drone</b>|5|5|3|4|1|1|4||||True
+2526|4|<b>Recon Drone</b>|5|5|3|4|3|1|4||||True
+2527|1|Erasmus Cartavolnus|3|3|3|3|5|4|3|80.0||1|False
+2528|1|Winged Hive Tyrant|2|2|7|7|12|5|3|210.0||1|False
+2529|1|Parasite of Mortrex|2|3|5|5|6|6|4|80.0||1|False
+2530|1|Primaris Company Champion|2|2|4|4|5|5|3|70.0||1|False
+2531|1|Corsair Voidreaver|3|3|3|3|1|2|4|10.0||4-9|False
+2531|2|Voidreaver Felarch|3|3|3|3|1|3|4|10.0||1|False
+2532|1|Corsair Voidscarred|3|3|3|3|1|3|4|12.0||4-9|False
+2532|2|Voidscarred Felarch|3|3|3|3|1|4|4|12.0||1|False
+2532|3|Shade Runner|2|3|3|3|1|4|4|20.0||0-1|False
+2532|4|Soul Weaver|3|3|3|3|1|3|4|20.0||0-1|False
+2532|5|Way Seeker|3|3|3|3|1|3|4|25.0||0-1|False
+2533|1|Shroud Runner|3|2|3|4|3|2|4|35.0||3-6|False
+2534|1|Troupe Master|2|2|3|3|5|6|6|75.0||1|False
+2535|1|Shadowseer|2|2|3|3|5|4|6|100.0||1|False
+2536|1|Player|3|3|3|3|1|4|6|13.0||4-11|False
+2536|2|Lead Player|3|3|3|3|2|4|6|13.0||1|False
+2537|1|Death Jester|2|2|3|3|5|5|6|70.0||1|False
+2538|1|Solitaire|2|2|4|4|5|8|6|110.0||1|False
+2539|1|Skyweaver|3|3|3|4|3|4|4|45.0||2-6|False
+2540|1|Voidweaver|3|3|5|5|6|4|4|130.0||1-3|False
+2541|1|Starweaver|3|3|5|5|6|4|4|95.0||1|False
+2542|1|Yvraine|2|2|3|3|5|4|6|140.0||1|False
+2543|1|The Visarch|2|2|3|3|6|5|2|100.0||1|False
+2544|1|The Yncarne|2|2|7|7|12|6|3|260.0||1|False
+2545|1|Beastmaster|3|3|3|4|3|3|5|40.0||1|False
+2546|1|Raider|4|3|6|6|10|3|4|95.0||1|False
+2547|1|Venom|4|3|5|5|6|3|4|65.0||1|False
+2548|1|Reaver|3|3|3|4|2|3|4|20.0||2-11|False
+2548|2|Arena Champion|3|3|3|4|2|4|4|20.0||1|False
+2549|1|Hellion|3|3|3|4|2|3|5|17.0||4-19|False
+2549|2|Helliarch|3|3|3|4|2|4|5|17.0||1|False
+2550|1|Razorwing Jetfighter|6|3|6|6|10|3|4|150.0||1|False
+2551|1|Voidraven Bomber|6|3|6|6|12|3|4|175.0||1|False
+2552|1|Scourge|3|3|3|3|1|2|4|14.0||4-9|False
+2552|2|Solarite|3|3|3|3|1|3|4|14.0||1|False
+2553|1|Ravager|4|3|6|6|11|3|4|130.0||1|False
+2554|1|Lhamaean|3|3|3|3|3|2|5|16.0||0-4|False
+2554|2|Medusae|3|3|3|3|3|1|5|22.0||0-4|False
+2554|3|Sslyth|3|3|5|3|3|3|5|18.0||0-4|False
+2554|4|Ur-Ghul|3|-|4|3|3|4|7|16.0||0-4|False
+2555|1|Archon|2|2|3|3|5|5|4|70.0||1|False
+2556|1|Succubus|2|2|3|3|5|6|6|80.0||1|False
+2557|1|Kabalite Warrior|3|3|3|3|1|2|4|8.0||4-19|False
+2557|2|Sybarite|3|3|3|3|1|3|4|8.0||1|False
+2558|1|Wych|3|3|3|3|1|3|6|11.0||4-19|False
+2558|2|Hekatrix|3|3|3|3|1|4|6|11.0||1|False
+2559|1|Incubi|2|3|3|3|1|3|3|22.0||4-9|True
+2559|2|Klaivex|2|3|3|3|2|4|3|22.0||1|True
+2560|1|Corsair Voidscarred|3|3|3|3|1|3|4|12.0||4-9|False
+2560|2|Voidscarred Felarch|3|3|3|3|1|4|4|12.0||1|False
+2560|3|Shade Runner|2|3|3|3|1|4|4|20.0||0-1|False
+2560|4|Soul Weaver|3|3|3|3|1|3|4|20.0||0-1|False
+2560|5|Way Seeker|3|3|3|3|1|3|4|25.0||0-1|False
+2561|1|Corsair Voidreaver|3|3|3|3|1|2|4|10.0||4-9|False
+2561|2|Voidreaver Felarch|3|3|3|3|1|3|4|10.0||1|False
+2562|1|War Dog Executioner|3|3|6|7|12|4|3|155.0||1-3|False
+2563|1|War Dog Stalker|3|3|6|7|12|4|3|145.0||1-3|False
+2564|1|War Dog Karnivore|2|3|6|7|12|5|3|140.0||1-3|False
+2565|1|War Dog Brigand|3|3|6|7|12|4|3|155.0||1-3|False
+2566|1|War Dog Huntsman|3|3|6|7|12|4|3|145.0||1-3|False
+2567|1|Knight Abominant|3|3|8|8|24|3|3|430.0||1|False
+2568|1|Kratos|6|3|8|8|18|6|2|320.0||1|False
+2569|1|Cult Demagogue|4|4|3|3|3|3|6|||1|False
+2569|2|Mindwitch|4|4|3|3|3|1|6|||1|False
+2569|3|Iconarch|4|4|3|3|2|2|6|||1|False
+2569|4|Blessed Blades|4|4|4|3|1|2|6|||2|False
+2570|1|Legionary|3|3|4|4|2|3|3|18.0||4-9|False
+2570|2|Aspiring Champion|3|3|4|4|2|4|3|18.0||1|False
+2571|1|Mutant|4|4|4|4|1|2|6|6.0||5-10|False
+2571|2|Torment|4|4|5|4|3|2D3|6|15.0|This unit cannot contain more than 3 Torment models unless it also contains 10 Mutant models.|3-6|False
+2572|1|Chaos Predator Annihilator|6|3|6|8|11|3|3|130.0||1|False
+2573|1|Chaos Lord|2|2|4|4|6|6|3|90.0||1|False
+2574|1|Chaos Lord in Terminator Armour|2|2|4|4|7|6|2|110.0||1|False
+2575|1|Exalted Champion|2|2|4|4|5|5|3|90.0||1|False
+2576|1|Sorcerer|3|3|4|4|5|5|3|95.0||1|False
+2577|1|Sorcerer in Terminator Armour|3|3|4|4|6|5|2|110.0||1|False
+2578|1|Warpsmith|3|2|4|4|5|5|2|80.0||1|False
+2579|1|Rubric Marine|3|3|4|4|2|2|3|21.0||4-9|False
+2579|2|Aspiring Sorcerer|3|3|4|4|2|3|3|21.0||1|False
+2580|1|Plague Marine|3|3|4|5|2|2|3|21.0||4-9|False
+2580|2|Plague Champion|3|3|4|5|2|3|3|21.0||1|False
+2581|1|Noise Marine|3|3|4|4|2|3|3|21.0||4-9|False
+2581|2|Noise Champion|3|3|4|4|2|4|3|21.0||1|False
+2582|1|Bloodthirster|2|2|8|8|20|8|4/4|310.0||1|False
+2583|1|Blue Horror|5|4|2|3|1|1|6/4|||10|False
+2583|2|Brimstone Horror|5|4|1|3|1|1|6/5|||-|False
+2584|1|Pink Horror|4|3|3|3|1|1|6/3|||9|False
+2584|2|Iridescent Horror|4|3|3|3|1|2|6/3|||1|False
+2584|3|Blue Horror|5|4|2|3|1|1|6/4|||-|False
+2584|4|Brimstone Horror|5|4|1|3|1|1|6/5|||-|False
+2585|1|Gellerpox Mutants|4|4|4|4|1|2|6|||3|False
+2585|2|Nightmare Hulks|4|6|5|4|5|4|5|||4|False
+2586|1|Mutoid Vermin|4|-|2|2|1|2|7|||16|False
+2587|1|Navis Armsman|4|4|3|3|1|1|4|||9|False
+2587|2|Navis Sergeant-at-Arms|4|4|3|3|1|2|4|||1|False
+2588|1|Kroot Farstalker|3|4|4|3|1|2|6|||9|False
+2588|2|Kroot Kill-broker|3|4|4|3|1|3|6|||1|False
+2589|1|Traitor Enforcer|3|3|3|3|4|3|5|45.0||1|False
+2589|2|Traitor Ogryn|3|4|6|5|6|5|5|65.0||0-1|False
+2590|1|Traitor Guardsman|4|4|3|3|1|1|5|||9|False
+2590|2|Traitor Sergeant|4|4|3|3|1|2|5|||1|False
+2591|1|Mutoid Vermin|4|-|2|2|1|2|7|||16|False
+2592|1|Gellerpox Mutants|4|4|4|4|1|2|6|||3|False
+2592|2|Nightmare Hulks|4|6|5|4|5|4|5|||4|False
+2593|1|Ûthar the Destined|2|2|5|5|6|5|3|160.0||1|False
+2594|1|Kâhl|2|2|4|4|5|4|3|80.0||1|False
+2595|1|Einhyr Champion|2|2|5|5|5|4|2|110.0||1|False
+2596|1|Grimnyr|3|3|4|4|4|2|4|||1|False
+2596|2|CORV|4|4|3|4|1|1|4|||2|False
+2597|1|Brôkhyr Iron-master|3|2|4|4|4|3|4|||1|False
+2597|2|Ironkin Assistant|3|3|4|4|2|2|4|||1|False
+2597|3|E-COG|4|4|3|4|1|1|4|||3|False
+2598|1|Hearthkyn Warrior|3|3|4|4|1|2|4|12.0||9-19|False
+2598|2|Theyn|3|3|4|4|2|3|4|12.0||1|False
+2599|1|Hearthguard|3|3|5|5|2|2|2|45.0||4-9|False
+2599|2|Hesyr|3|3|5|5|2|3|2|45.0||1|False
+2600|1|Beserk|3|3|5|5|2|3|6|30.0||5-10|False
+2601|1|Pioneer|3|3|4|5|3|3|4|35.0||3-6|False
+2602|1|Sagitaur|6|3|6|7|9|3|3|130.0||1-2|False
+2603|1|Brôkhyr Thunderkyn|3|3|5|5|3|2|3|40.0||3-6|False
+2604|1|Hekaton Land Fortress|6|3|8|8|16|6|2|300.0||1|False
