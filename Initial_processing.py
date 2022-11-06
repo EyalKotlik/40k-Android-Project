@@ -61,7 +61,7 @@ def main():
     data.to_csv("Data Processing/Wargear_list.csv",
                 sep="|", index=False)
 
-    # print(data)
+    print("Data Processing Complete")
 
 
 if __name__ == "__main__":
