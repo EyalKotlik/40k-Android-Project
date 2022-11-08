@@ -1254,7 +1254,7 @@ datasheet_id|line|wargear_id|cost|model|is_upgrade
 402|5|000000344|10/+15/+25||False
 402|6|000000347|10/+15/+25||False
 402|7|000003725|5/+10/+15||False
-403|1|000000351|0|Gun Drone|False
+403|1|000000351|0|gun drone|False
 404|1|000003730|0||False
 405|1|000003726|0||False
 406|1|000001981|0||False
@@ -1320,41 +1320,41 @@ datasheet_id|line|wargear_id|cost|model|is_upgrade
 422|3|000000351|0||False
 422|4|000000356|0||False
 422|5|000003739|0||False
-423|1|000003740|0|Piranhas|False
-423|2|000003741|10|Piranhas|False
-423|3|000000358|5|Piranhas|False
-423|4|000000351|0|Gun Drones|False
-424|1|000003736|0|Devilfish|False
-424|2|000000358|5|Devilfish|False
-424|3|000000359|5|Devilfish|False
-424|4|000000351|0|Gun Drone|False
+423|1|000003740|0|piranhas|False
+423|2|000003741|10|piranhas|False
+423|3|000000358|5|piranhas|False
+423|4|000000351|0|gun drones|False
+424|1|000003736|0|devilfish|False
+424|2|000000358|5|devilfish|False
+424|3|000000359|5|devilfish|False
+424|4|000000351|0|gun drone|False
 425|1|000003736|0||False
 425|2|000000344|0||False
 425|3|000000355|0||False
 425|4|000000358|0||False
-426|1|000000344|0|Sun Shark Bomber|False
-426|2|000000358|0|Sun Shark Bomber|False
-426|3|000000339|0|Interceptor Drones|False
+426|1|000000344|0|sun shark bomber|False
+426|2|000000358|0|sun shark bomber|False
+426|3|000000339|0|interceptor drones|False
 427|1|000000345|0||False
 427|2|000003742|0||False
-428|1|000000353|0|Firesight Marksman|False
-428|2|000000342|0|Sniper Drone|False
-430|1|000003747|0|Sky Ray Gunship|False
-430|2|000000359|5|Sky Ray Gunship|False
-430|3|000003736|5|Sky Ray Gunship|False
-430|4|000000351|0|Gun Drones|False
-431|1|000003736|5|Longstrike|False
-431|2|000000338|10|Longstrike|False
-431|3|000000357|0|Longstrike|False
-431|4|000000358|5|Longstrike|False
-431|5|000000359|5|Longstrike|False
-431|6|000000351|0|Gun Drones|False
-432|1|000003736|5|Hammerhead|False
-432|2|000000338|10|Hammerhead|False
-432|3|000000357|0|Hammerhead|False
-432|4|000000358|5|Hammerhead|False
-432|5|000000359|5|Hammerhead|False
-432|6|000000351|0|Gun Drones|False
+428|1|000000353|0|firesight marksman|False
+428|2|000000342|0|sniper drone|False
+430|1|000003747|0|sky ray gunship|False
+430|2|000000359|5|sky ray gunship|False
+430|3|000003736|5|sky ray gunship|False
+430|4|000000351|0|gun drones|False
+431|1|000003736|5|longstrike|False
+431|2|000000338|10|longstrike|False
+431|3|000000357|0|longstrike|False
+431|4|000000358|5|longstrike|False
+431|5|000000359|5|longstrike|False
+431|6|000000351|0|gun drones|False
+432|1|000003736|5|hammerhead|False
+432|2|000000338|10|hammerhead|False
+432|3|000000357|0|hammerhead|False
+432|4|000000358|5|hammerhead|False
+432|5|000000359|5|hammerhead|False
+432|6|000000351|0|gun drones|False
 433|1|000000334|0||False
 433|2|000000336|10||False
 433|3|000000358|5||False
@@ -7951,11 +7951,11 @@ datasheet_id|line|wargear_id|cost|model|is_upgrade
 2525|3|000000485|0||False
 2525|4|000000488|0||False
 2525|5|000003881|0||False
-2526|1|000000351|0|Gun Drone|False
-2526|2|000000339|0|Interceptor Drone|False
-2526|3|000000344|0|Missile Drone and Shielded Missile Drone|False
-2526|4|000000326|0|Recon Drone|False
-2526|5|000000342|0|Sniper Drone|False
+2526|1|000000351|0|gun drone|False
+2526|2|000000339|0|interceptor drone|False
+2526|3|000000344|0|missile drone and shielded missile drone|False
+2526|4|000000326|0|recon drone|False
+2526|5|000000342|0|sniper drone|False
 2527|1|000001071|0||False
 2527|2|000003760|0||False
 2528|1|000000445|15||False

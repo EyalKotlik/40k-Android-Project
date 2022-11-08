@@ -17,12 +17,18 @@ def main():
     data.drop('psyker', inplace=True, axis=1)
     data.drop('transport', inplace=True, axis=1)
     data.drop('Unnamed: 16', inplace=True, axis=1)
-    data.to_csv("Data Processing/Datasheets.csv", sep="|", index=False)
+    for col in data.columns:
+        if data[col].dtype == object:
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Datasheets.csv", sep="|", index=False)
 
     print("Processing data from Datasheets_keywords.csv...")
     data = pandas.read_csv("Raw Data/Datasheets_keywords.csv", sep='|')
     data.drop('Unnamed: 4', inplace=True, axis=1)
-    data.to_csv("Data Processing/Datasheets_keywords.csv",
+    for col in data.columns:
+        if data[col].dtype == object:
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Datasheets_keywords.csv",
                 sep="|", index=False)
 
     print("Processing data from Datasheets_models.csv...")
@@ -35,21 +41,28 @@ def main():
     for col in data.columns:
         if data[col].dtype == object:
             data[col] = data[col].str.replace('[+"]', '')
-    data.to_csv("Data Processing/Datasheets_models.csv", sep="|", index=False)
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Datasheets_models.csv", sep="|", index=False)
 
     print("Processing data from Datasheets_weapons.csv...")
     data = pandas.read_csv("Raw Data/Datasheets_wargear.csv", sep='|')
     data.drop('Unnamed: 7', inplace=True, axis=1)
     data.drop('is_index_wargear', inplace=True, axis=1)
-    data.to_csv("Data Processing/Datasheets_wargear.csv",
+    for col in data.columns:
+        if data[col].dtype == object:
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Datasheets_wargear.csv",
                 sep="|", index=False)
 
     print("Processing data from Wargear.csv...")
     data = pandas.read_csv("Raw Data/Wargear.csv", sep='|')
     data.drop('Unnamed: 9', inplace=True, axis=1)
     data.drop('legend', inplace=True, axis=1)
+    for col in data.columns:
+        if data[col].dtype == object:
+            data[col] = data[col].str.lower()
     data.drop('source_id', inplace=True, axis=1)
-    data.to_csv("Data Processing/Wargear.csv",
+    data.to_csv("Processed Data/Wargear.csv",
                 sep="|", index=False)
 
     print("Processing data from Wargear_list.csv...")
@@ -58,7 +71,8 @@ def main():
     for col in data.columns:
         if data[col].dtype == object:
             data[col] = data[col].str.replace('["]', '')
-    data.to_csv("Data Processing/Wargear_list.csv",
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Wargear_list.csv",
                 sep="|", index=False)
 
     print("Data Processing Complete")
