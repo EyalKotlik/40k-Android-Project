@@ -59,6 +59,9 @@ def main():
     data.drop('Unnamed: 9', inplace=True, axis=1)
     data.drop('legend', inplace=True, axis=1)
     for col in data.columns:
+        if col == "id":
+            data[col] = pandas.to_numeric(data[col], errors="coerce", downcast="integer")
+            data[col] = data[col].astype("Int64")
         if data[col].dtype == object:
             data[col] = data[col].str.lower()
     data.drop('source_id', inplace=True, axis=1)
