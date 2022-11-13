@@ -1,5 +1,6 @@
-import pandas
 import math
+
+import pandas
 
 
 class Model:
@@ -125,5 +126,5 @@ class WargearProfile:
         return output
 
 
-warrior = Model("szarekh")
+warrior = Model("triarch stalker")
 print(warrior.__str__())
