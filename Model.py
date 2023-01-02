@@ -126,5 +126,5 @@ class WargearProfile:
         return output
 
 
-warrior = Model("triarch stalker")
+warrior = Model("necron warrior")
 print(warrior.__str__())

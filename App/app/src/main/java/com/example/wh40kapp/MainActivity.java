@@ -9,6 +9,8 @@ import android.os.StrictMode;
 import android.provider.Settings;
 import android.util.Log;
 
+import com.opencsv.exceptions.CsvValidationException;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -28,5 +30,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.context = this;
+        try {
+            Model necron = new Model(context, "necron warrior");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (CsvValidationException e) {
+            throw new RuntimeException();
+            //e.printStackTrace();
+        }
     }
 }

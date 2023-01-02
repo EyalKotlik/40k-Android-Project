@@ -23,6 +23,7 @@ public class Model {
     private int id, line, ws, bs, s, t, w, a;
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
+    private ArrayList<Wargear> wargear;
 
     public Model(Context context, String name) throws IOException, CsvValidationException {
         this.name = name;
@@ -67,6 +68,11 @@ public class Model {
                 break;
         }
 
-
+        reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_wargear.csv")).withCSVParser(parser).build();
+        this.wargear = new ArrayList<Wargear>();
+        while((nextLine = reader.readNext()) != null){
+            if (Integer.parseInt(nextLine[0])==this.id)
+                this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
+        }
     }
 }

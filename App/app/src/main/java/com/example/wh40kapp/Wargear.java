@@ -12,10 +12,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Wargear {
     private int id;
     private String name, profileChoice;
+    private ArrayList<WargearProfile> profiles;
 
     public Wargear(Context context, int id) throws IOException, CsvValidationException {
         this.id = id;
@@ -45,7 +47,7 @@ public class Wargear {
         reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Wargear_list.csv")).withCSVParser(parser).build();
         while ((nextLine = reader.readNext()) != null){
             if(Integer.parseInt(nextLine[0])== id){
-
+                profiles.add(new WargearProfile(context,Integer.parseInt(nextLine[0]),Integer.parseInt(nextLine[1])));
             }
         }
     }
