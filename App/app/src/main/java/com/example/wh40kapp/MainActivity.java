@@ -30,13 +30,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.context = this;
-        try {
-            Model necron = new Model(context, "necron warrior");
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (CsvValidationException e) {
-            throw new RuntimeException();
-            //e.printStackTrace();
-        }
     }
 }
