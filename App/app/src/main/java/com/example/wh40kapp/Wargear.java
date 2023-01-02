@@ -43,9 +43,10 @@ public class Wargear {
         this.name = nextLine[1];
 
         reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Wargear_list.csv")).withCSVParser(parser).build();
-        while (Integer.parseInt((nextLine = reader.readNext())[0]) != id){
-            if (nextLine == null)
-                throw new RuntimeException(("Weapon doesn't have any profiles"));
+        while ((nextLine = reader.readNext()) != null){
+            if(Integer.parseInt(nextLine[0])== id){
+
+            }
         }
     }
 }
