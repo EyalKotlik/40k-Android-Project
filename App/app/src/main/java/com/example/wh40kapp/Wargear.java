@@ -19,6 +19,38 @@ public class Wargear {
     private String name, profileChoice;
     private ArrayList<WargearProfile> profiles;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getProfileChoice() {
+        return profileChoice;
+    }
+
+    public void setProfileChoice(String profileChoice) {
+        this.profileChoice = profileChoice;
+    }
+
+    public ArrayList<WargearProfile> getProfiles() {
+        return profiles;
+    }
+
+    public void setProfiles(ArrayList<WargearProfile> profiles) {
+        this.profiles = profiles;
+    }
+
     public Wargear(Context context, int id) throws IOException, CsvValidationException {
         this.id = id;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();

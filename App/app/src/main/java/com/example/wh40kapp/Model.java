@@ -20,12 +20,117 @@ import java.util.Hashtable;
 
 public class Model {
     private String name;
-    private int id, line, ws, bs, s, t, w, a;
+    private int id, line, ws, bs, s, t, w, a, model_num;
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
     private ArrayList<Wargear> wargear;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line = line;
+    }
+
+    public int getWs() {
+        return ws;
+    }
+
+    public void setWs(int ws) {
+        this.ws = ws;
+    }
+
+    public int getBs() {
+        return bs;
+    }
+
+    public void setBs(int bs) {
+        this.bs = bs;
+    }
+
+    public int getS() {
+        return s;
+    }
+
+    public void setS(int s) {
+        this.s = s;
+    }
+
+    public int getT() {
+        return t;
+    }
+
+    public void setT(int t) {
+        this.t = t;
+    }
+
+    public int getW() {
+        return w;
+    }
+
+    public void setW(int w) {
+        this.w = w;
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getModel_num() {
+        return model_num;
+    }
+
+    public void setModel_num(int model_num) {
+        this.model_num = model_num;
+    }
+
+    public Dictionary<String, int[]> getSaves() {
+        return saves;
+    }
+
+    public void setSaves(Dictionary<String, int[]> saves) {
+        this.saves = saves;
+    }
+
+    public ArrayList<String> getKeywords() {
+        return keywords;
+    }
+
+    public void setKeywords(ArrayList<String> keywords) {
+        this.keywords = keywords;
+    }
+
+    public ArrayList<Wargear> getWargear() {
+        return wargear;
+    }
+
+    public void setWargear(ArrayList<Wargear> wargear) {
+        this.wargear = wargear;
+    }
+
     public Model(Context context, String name) throws IOException, CsvValidationException {
+        this.model_num = 1;
         this.name = name;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
         CSVReader reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_models.csv")).withCSVParser(parser).build();
