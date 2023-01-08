@@ -2,15 +2,21 @@ package com.example.wh40kapp.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+
+import com.example.wh40kapp.Model;
 import com.example.wh40kapp.R;
-import com.example.wh40kapp.fragments.placeholder.PlaceholderContent;
+import com.opencsv.exceptions.CsvValidationException;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * A fragment representing a list of Items.
@@ -63,7 +69,15 @@ public class ModelViewerFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyModelRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            ArrayList<Model> items = new ArrayList<Model>();
+            try {
+                items.add(new Model(context, "necron warrior"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (CsvValidationException e) {
+                e.printStackTrace();
+            }
+            recyclerView.setAdapter(new ModelRecyclerViewAdapter(items));
         }
         return view;
     }

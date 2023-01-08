@@ -9,13 +9,10 @@ import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Dictionary;
-import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class Model {
@@ -162,7 +159,7 @@ public class Model {
         if (sv.indexOf('/') == -1)
             this.saves.put("armour", new int[]{Integer.parseInt(sv), Integer.parseInt(sv)});
         else
-            this.saves.put("armour", new int[]{Integer.parseInt(String.valueOf(sv.charAt(0))), Integer.parseInt(String.valueOf(sv.charAt(2)))});
+            this.saves.put("daemonic", new int[]{Integer.parseInt(String.valueOf(sv.charAt(0))), Integer.parseInt(String.valueOf(sv.charAt(2)))});
 
         reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_keywords.csv")).withCSVParser(parser).build();
         this.keywords = new ArrayList<>();

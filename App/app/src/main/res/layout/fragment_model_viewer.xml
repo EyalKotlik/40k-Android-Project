@@ -3,41 +3,323 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
-    <TableLayout
+    <TextView
+        android:id="@+id/textView_strengthValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_strength"
+        app:layout_constraintStart_toStartOf="@+id/textView_strength"
+        app:layout_constraintTop_toBottomOf="@+id/textView_toughness" />
+
+    <TextView
+        android:id="@+id/textView_bsValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6+"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_bs"
+        app:layout_constraintStart_toStartOf="@+id/textView_bs"
+        app:layout_constraintTop_toBottomOf="@+id/textView_toughness" />
+
+    <TextView
+        android:id="@+id/textView_wsValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6+"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_ws"
+        app:layout_constraintStart_toStartOf="@+id/textView_ws"
+        app:layout_constraintTop_toBottomOf="@+id/textView_toughness" />
+
+    <TextView
+        android:id="@+id/textView_modelName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Necron Warrior"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView_numOfModels"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:text="No."
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <EditText
+        android:id="@+id/editText_numOfModelValue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="number"
+        android:numeric="integer"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_numOfModels"
+        app:layout_constraintStart_toStartOf="@+id/textView_numOfModels"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numOfModels" />
+
+    <TextView
+        android:id="@+id/textView_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:text="Save"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_modelName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_saveValue"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="3+"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_save"
+        app:layout_constraintStart_toStartOf="@+id/textView_save"
+        app:layout_constraintTop_toBottomOf="@+id/textView_save" />
+
+    <TextView
+        android:id="@+id/textView_attacks"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="A"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView_save"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_attacksValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_attacks"
+        app:layout_constraintStart_toStartOf="@+id/textView_attacks"
+        app:layout_constraintTop_toBottomOf="@+id/textView_attacks" />
+
+    <TextView
+        android:id="@+id/textView_woundsValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_wounds"
+        app:layout_constraintStart_toStartOf="@+id/textView_wounds"
+        app:layout_constraintTop_toBottomOf="@+id/textView_attacks" />
+
+    <TextView
+        android:id="@+id/textView_toughness"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="T"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView_wounds"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_toughnessValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView_toughness"
+        app:layout_constraintStart_toStartOf="@+id/textView_toughness"
+        app:layout_constraintTop_toBottomOf="@+id/textView_toughness" />
+
+    <TextView
+        android:id="@+id/textView_strength"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="S"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView_toughness"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_bs"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="BS"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView_strength"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_ws"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="WS"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView_bs"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_wounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="W"
+        app:layout_constraintEnd_toStartOf="@+id/textView_attacks"
+        app:layout_constraintTop_toBottomOf="@+id/textView_modelName" />
+
+    <TextView
+        android:id="@+id/textView_equipmentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="equipment description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/editText_numOfModelValue" />
 
-        <TableRow android:textAlignment="center" android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/textView_weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Weapon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_equipmentDescription" />
 
-            <TextView
-                android:id="@+id/textview_modelName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Necron Warrior"
-                android:textAlignment="center" />
-        </TableRow>
+    <TextView
+        android:id="@+id/textView_weaponRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Range"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintStart_toEndOf="@+id/textView_weapon"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textView_weaponType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Type"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintStart_toEndOf="@+id/textView_weaponRange"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textView_weaponStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="S"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintStart_toEndOf="@+id/textView_weaponType"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
+    <TextView
+        android:id="@+id/textView_weaponAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="AP"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintStart_toEndOf="@+id/textView_weaponStrength"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
+
+    <TextView
+        android:id="@+id/textView_weaponDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintStart_toEndOf="@+id/textView_weaponAP"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
+
+    <TextView
+        android:id="@+id/textView_weaponAbilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Abilities"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weapon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_weaponDamage"
+        app:layout_constraintTop_toTopOf="@+id/textView_weapon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_wargearList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_weapon"
+        app:layout_constraintTop_toBottomOf="@+id/textView_weapon" />
+
+    <TextView
+        android:id="@+id/textView_wargearOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Wargear Options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_wargearList" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView_wargearOptions"
+        app:layout_constraintTop_toBottomOf="@+id/textView_wargearOptions" />
+
+    <TextView
+        android:id="@+id/textView_abilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Abilities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_abilities"
+        app:layout_constraintTop_toBottomOf="@+id/textView_abilities" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

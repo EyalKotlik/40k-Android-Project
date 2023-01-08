@@ -1,28 +1,18 @@
 package com.example.wh40kapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.os.Bundle;
-import android.os.FileUtils;
-import android.os.StrictMode;
-import android.provider.Settings;
-import android.util.Log;
 
-import com.opencsv.exceptions.CsvValidationException;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
+import com.example.wh40kapp.fragments.ModelViewerFragmentAdapter;
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "dataLoad";
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
+    private ModelViewerFragmentAdapter modelViewerFragmentAdapter;
     private Context context;
 
     @Override
@@ -30,5 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.context = this;
+
+        tabLayout = findViewById(R.id.tab_layout_battle);
+        viewPager2 = findViewById(R.id.viewpager2_battle);
+        modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);
+        viewPager2.setAdapter(modelViewerFragmentAdapter);
+        viewPager2.setCurrentItem(0);
+        
     }
 }
