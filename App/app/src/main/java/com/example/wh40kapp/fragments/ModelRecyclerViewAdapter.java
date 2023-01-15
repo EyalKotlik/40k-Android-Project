@@ -40,9 +40,9 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
         holder.textView_woundsValue.setText(holder.mItem.getW()+"");
         holder.textView_attacksValue.setText(holder.mItem.getA()+"");
         if (holder.mItem.getSaves().get("armour") != null)
-            holder.textView_saveValue.setText("(A) "+holder.mItem.getSaves().get("armour")[0]+"/"+holder.mItem.getSaves().get("armour")[1]);
+            holder.textView_saveValue.setText("(A.) "+holder.mItem.getSaves().get("armour")[0]+"/"+holder.mItem.getSaves().get("armour")[1]);
         else
-            holder.textView_saveValue.setText("(D) "+holder.mItem.getSaves().get("daemonic")[0]+"/"+holder.mItem.getSaves().get("daemonic")[1]);
+            holder.textView_saveValue.setText("(D.) "+holder.mItem.getSaves().get("daemonic")[0]+"/"+holder.mItem.getSaves().get("daemonic")[1]);
     }
 
     @Override
