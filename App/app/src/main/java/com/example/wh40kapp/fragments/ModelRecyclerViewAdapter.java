@@ -33,16 +33,16 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.textView_wsValue.setText(holder.mItem.getWs());
-        holder.textView_bsValue.setText(holder.mItem.getBs());
-        holder.textView_strengthValue.setText(holder.mItem.getS());
-        holder.textView_toughnessValue.setText(holder.mItem.getT());
-        holder.textView_woundsValue.setText(holder.mItem.getW());
-        holder.textView_attacksValue.setText(holder.mItem.getA());
+        holder.textView_wsValue.setText(holder.mItem.getWs()+"");
+        holder.textView_bsValue.setText(holder.mItem.getBs()+"");
+        holder.textView_strengthValue.setText(holder.mItem.getS()+"");
+        holder.textView_toughnessValue.setText(holder.mItem.getT()+"");
+        holder.textView_woundsValue.setText(holder.mItem.getW()+"");
+        holder.textView_attacksValue.setText(holder.mItem.getA()+"");
         if (holder.mItem.getSaves().get("armour") != null)
-            holder.textView_saveValue.setText("A. "+holder.mItem.getSaves().get("armour")[0]+"+/"+holder.mItem.getSaves().get("armour")[1]);
+            holder.textView_saveValue.setText("(A) "+holder.mItem.getSaves().get("armour")[0]+"/"+holder.mItem.getSaves().get("armour")[1]);
         else
-            holder.textView_saveValue.setText("D. "+holder.mItem.getSaves().get("daemonic")[0]+"+/"+holder.mItem.getSaves().get("daemonic")[1]);
+            holder.textView_saveValue.setText("(D) "+holder.mItem.getSaves().get("daemonic")[0]+"/"+holder.mItem.getSaves().get("daemonic")[1]);
     }
 
     @Override

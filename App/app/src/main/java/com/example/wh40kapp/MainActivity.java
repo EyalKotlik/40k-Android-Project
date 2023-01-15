@@ -25,7 +25,30 @@ public class MainActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewpager2_battle);
         modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);
         viewPager2.setAdapter(modelViewerFragmentAdapter);
-        viewPager2.setCurrentItem(0);
-        
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager2.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                tabLayout.getTabAt(position).select();
+            }
+        });
     }
 }

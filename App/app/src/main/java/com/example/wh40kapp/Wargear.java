@@ -8,10 +8,8 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvValidationException;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Wargear {
@@ -54,12 +52,14 @@ public class Wargear {
     public Wargear(Context context, int id) throws IOException, CsvValidationException {
         this.id = id;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
-        CSVReader reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Wargear.csv")).withCSVParser(parser).build();
+        InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear.csv"));
+        CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
 
         String[] nextLine, wargear= new String[7];
         boolean initializedWargear = false;
+        nextLine = reader.readNext();
         while ((nextLine = reader.readNext()) != null) {
-            if (Integer.parseInt(nextLine[0]) == this.id ){
+            if (nextLine[0].length()!=0 && Integer.parseInt(nextLine[0]) == this.id ){
                 wargear = nextLine;
                 reader.close();
                 initializedWargear=true;
@@ -75,12 +75,17 @@ public class Wargear {
         if (!initializedWargear)
             throw   new RuntimeException("the model named '"+name+"' does not exist");
         this.name = nextLine[1];
+        reader.close();
 
-        reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Wargear_list.csv")).withCSVParser(parser).build();
+        inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear_list.csv"));
+        reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
+        nextLine = reader.readNext();
+        profiles = new ArrayList<>();
         while ((nextLine = reader.readNext()) != null){
             if(Integer.parseInt(nextLine[0])== id){
                 profiles.add(new WargearProfile(context,Integer.parseInt(nextLine[0]),Integer.parseInt(nextLine[1])));
             }
         }
+        reader.close();
     }
 }

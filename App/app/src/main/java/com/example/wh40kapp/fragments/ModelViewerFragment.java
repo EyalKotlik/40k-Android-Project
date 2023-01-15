@@ -2,6 +2,7 @@ package com.example.wh40kapp.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,6 +63,7 @@ public class ModelViewerFragment extends Fragment {
 
         // Set the adapter
         if (view instanceof RecyclerView) {
+            Log.d("TAG", "onCreateView: 1");
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
             if (mColumnCount <= 1) {
@@ -78,6 +80,7 @@ public class ModelViewerFragment extends Fragment {
                 e.printStackTrace();
             }
             recyclerView.setAdapter(new ModelRecyclerViewAdapter(items));
+            recyclerView.setLayoutManager(new LinearLayoutManager(context));
         }
         return view;
     }

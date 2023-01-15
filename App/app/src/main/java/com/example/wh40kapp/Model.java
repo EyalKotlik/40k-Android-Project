@@ -8,9 +8,8 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvValidationException;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -130,12 +129,13 @@ public class Model {
         this.model_num = 1;
         this.name = name;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
-        CSVReader reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_models.csv")).withCSVParser(parser).build();
+        InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_models.csv"));
+        CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         String[] nextLine, model= new String[14];
         boolean initializedModel = false;
 
         while ((nextLine = reader.readNext()) != null) {
-            if (nextLine[2] == name){
+            if (nextLine[2].equals(name)) {
                 model = nextLine;
                 reader.close();
                 initializedModel=true;
@@ -144,15 +144,15 @@ public class Model {
         }
         if (!initializedModel)
             throw   new RuntimeException("the model named '"+name+"' does not exist");
-
+        reader.close();
         this.id = Integer.parseInt(model[0]);
         this.line = Integer.parseInt(model[1]);
-        this.ws = Integer.parseInt(model[2]);
-        this.bs = Integer.parseInt(model[3]);
-        this.s = Integer.parseInt(model[4]);
-        this.t = Integer.parseInt(model[5]);
-        this.w = Integer.parseInt(model[6]);
-        this.a = Integer.parseInt(model[7]);
+        this.ws = Integer.parseInt(model[3]);
+        this.bs = Integer.parseInt(model[4]);
+        this.s = Integer.parseInt(model[5]);
+        this.t = Integer.parseInt(model[6]);
+        this.w = Integer.parseInt(model[7]);
+        this.a = Integer.parseInt(model[8]);
 
         String sv = model[8];
         this.saves = new Hashtable<String, int[]>();
@@ -161,20 +161,25 @@ public class Model {
         else
             this.saves.put("daemonic", new int[]{Integer.parseInt(String.valueOf(sv.charAt(0))), Integer.parseInt(String.valueOf(sv.charAt(2)))});
 
-        reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_keywords.csv")).withCSVParser(parser).build();
+        inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_keywords.csv"));
+        reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         this.keywords = new ArrayList<>();
+        nextLine = reader.readNext();
         while((nextLine = reader.readNext()) != null){
             if ((Integer.parseInt(nextLine[0]) == this.id) && nextLine[2] == this.name)
                 keywords.add(nextLine[1]);
             else if (Integer.parseInt(nextLine[0]) > this.id)
                 break;
         }
-
-        reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Datasheets_wargear.csv")).withCSVParser(parser).build();
+        reader.close();
+        inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_wargear.csv"));
+        reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         this.wargear = new ArrayList<Wargear>();
+        nextLine = reader.readNext();
         while((nextLine = reader.readNext()) != null){
             if (Integer.parseInt(nextLine[0])==this.id)
                 this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
         }
+        reader.close();
     }
 }

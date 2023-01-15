@@ -8,10 +8,8 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvValidationException;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class WargearProfile {
     private int id, line, range, ap, attacks_chosen;
@@ -95,9 +93,10 @@ public class WargearProfile {
         this.line = line;
         this.attacks_chosen = 0; //if it is a ranged weapon any value above a 0 will be counted as maximum attacks.
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
-        CSVReader reader = new CSVReaderBuilder(new FileReader(context.getApplicationInfo().dataDir + File.separatorChar + "Wargear_list.csv")).withCSVParser(parser).build();
+        InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear_list.csv"));
+        CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         String[] nextLine, profile = new String[9];
-
+        nextLine = reader.readNext();
         while ((nextLine = reader.readNext()) != null) {
             if (Integer.parseInt(nextLine[0]) == id && Integer.parseInt(nextLine[1]) == line){
                 profile = nextLine;
@@ -106,6 +105,7 @@ public class WargearProfile {
         }
         if (profile == new String[9])
             throw new RuntimeException("Profile does not exist");
+        reader.close();
 
         this.name = profile[2];
         this.range = Integer.parseInt(profile[3]);
