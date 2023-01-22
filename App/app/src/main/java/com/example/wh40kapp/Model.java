@@ -154,7 +154,7 @@ public class Model {
         this.w = Integer.parseInt(model[7]);
         this.a = Integer.parseInt(model[8]);
 
-        String sv = model[8];
+        String sv = model[9];
         this.saves = new Hashtable<String, int[]>();
         if (sv.indexOf('/') == -1)
             this.saves.put("armour", new int[]{Integer.parseInt(sv), Integer.parseInt(sv)});

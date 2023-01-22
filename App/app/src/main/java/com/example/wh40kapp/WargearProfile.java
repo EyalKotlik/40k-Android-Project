@@ -108,7 +108,10 @@ public class WargearProfile {
         reader.close();
 
         this.name = profile[2];
-        this.range = Integer.parseInt(profile[3]);
+        if (!profile[3].equals("melee"))
+            this.range = Integer.parseInt(profile[3]);
+        else
+            this.range = -1;
         this.type = profile[4].split(" ");
         if (this.type[0] == "rapid")
             this.type = new String[]{"rapid fire", this.type[2]};

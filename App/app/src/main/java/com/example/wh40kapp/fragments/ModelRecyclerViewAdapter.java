@@ -33,6 +33,7 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
+        holder.textView_modelName.setText(holder.mItem.getName()+"");
         holder.textView_wsValue.setText(holder.mItem.getWs()+"");
         holder.textView_bsValue.setText(holder.mItem.getBs()+"");
         holder.textView_strengthValue.setText(holder.mItem.getS()+"");
@@ -51,13 +52,14 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView textView_wsValue, textView_bsValue, textView_strengthValue, textView_toughnessValue, textView_woundsValue, textView_attacksValue, textView_saveValue;
+        public final TextView textView_modelName, textView_wsValue, textView_bsValue, textView_strengthValue, textView_toughnessValue, textView_woundsValue, textView_attacksValue, textView_saveValue;
         public Model mItem;
 
     public ViewHolder(
             FragmentModelViewerBinding binding
     ) {
       super(binding.getRoot());
+        this.textView_modelName = binding.textViewModelName;
         this.textView_wsValue = binding.textViewWsValue;
         this.textView_bsValue = binding.textViewBsValue;
         this.textView_strengthValue = binding.textViewStrengthValue;
