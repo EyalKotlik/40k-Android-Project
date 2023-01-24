@@ -1,21 +1,26 @@
 package com.example.wh40kapp.fragments;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wh40kapp.Model;
+import com.example.wh40kapp.Wargear;
 import com.example.wh40kapp.databinding.FragmentModelViewerBinding;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link Model}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecyclerViewAdapter.ViewHolder> {
+public class ModelRecyclerViewAdapter extends
+        RecyclerView.Adapter<ModelRecyclerViewAdapter.ViewHolder> {
 
     private final List<Model> mValues;
 
@@ -26,24 +31,41 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-    return new ViewHolder(FragmentModelViewerBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new ViewHolder(FragmentModelViewerBinding.inflate(
+                LayoutInflater.from(parent.getContext()),
+                parent,
+                false
+        ));
 
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.textView_modelName.setText(holder.mItem.getName()+"");
-        holder.textView_wsValue.setText(holder.mItem.getWs()+"");
-        holder.textView_bsValue.setText(holder.mItem.getBs()+"");
-        holder.textView_strengthValue.setText(holder.mItem.getS()+"");
-        holder.textView_toughnessValue.setText(holder.mItem.getT()+"");
-        holder.textView_woundsValue.setText(holder.mItem.getW()+"");
-        holder.textView_attacksValue.setText(holder.mItem.getA()+"");
+        holder.textView_modelName.setText(holder.mItem.getName() + "");
+        holder.textView_wsValue.setText(holder.mItem.getWs() + "");
+        holder.textView_bsValue.setText(holder.mItem.getBs() + "");
+        holder.textView_strengthValue.setText(holder.mItem.getS() + "");
+        holder.textView_toughnessValue.setText(holder.mItem.getT() + "");
+        holder.textView_woundsValue.setText(holder.mItem.getW() + "");
+        holder.textView_attacksValue.setText(holder.mItem.getA() + "");
         if (holder.mItem.getSaves().get("armour") != null)
-            holder.textView_saveValue.setText("(A.) "+holder.mItem.getSaves().get("armour")[0]+"/"+holder.mItem.getSaves().get("armour")[1]);
+            holder.textView_saveValue.setText("(A.) " + holder.mItem.getSaves()
+                    .get("armour")[0] + "/" + holder.mItem.getSaves().get("armour")[1]);
         else
-            holder.textView_saveValue.setText("(D.) "+holder.mItem.getSaves().get("daemonic")[0]+"/"+holder.mItem.getSaves().get("daemonic")[1]);
+            holder.textView_saveValue.setText("(D.) " + holder.mItem.getSaves()
+                    .get("daemonic")[0] + "/" + holder.mItem.getSaves().get("daemonic")[1]);
+        ArrayList<Wargear> wargear = new ArrayList<Wargear>();
+        try {
+            for (int i = 0; i < holder.mItem.getWargear().size(); i++) {
+                wargear.add(holder.mItem.getWargear().get(i));
+                Log.d("TAG", "onBindViewHolder: "+wargear.get(i).getName()+" "+wargear.get(i).getProfileChoice());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        holder.recyclerView_wargearList.setAdapter(new WargearRecyclerViewAdapter(wargear));
+        holder.recyclerView_wargearList.setLayoutManager(new LinearLayoutManager(holder.recyclerView_wargearList.getContext()));
     }
 
     @Override
@@ -52,22 +74,26 @@ public class ModelRecyclerViewAdapter extends RecyclerView.Adapter<ModelRecycler
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView textView_modelName, textView_wsValue, textView_bsValue, textView_strengthValue, textView_toughnessValue, textView_woundsValue, textView_attacksValue, textView_saveValue;
+        public final TextView textView_modelName, textView_wsValue, textView_bsValue,
+                textView_strengthValue, textView_toughnessValue, textView_woundsValue,
+                textView_attacksValue, textView_saveValue;
+        public final RecyclerView recyclerView_wargearList;
         public Model mItem;
 
-    public ViewHolder(
-            FragmentModelViewerBinding binding
-    ) {
-      super(binding.getRoot());
-        this.textView_modelName = binding.textViewModelName;
-        this.textView_wsValue = binding.textViewWsValue;
-        this.textView_bsValue = binding.textViewBsValue;
-        this.textView_strengthValue = binding.textViewStrengthValue;
-        this.textView_toughnessValue = binding.textViewToughnessValue;
-        this.textView_woundsValue = binding.textViewWoundsValue;
-        this.textView_attacksValue = binding.textViewAttacksValue;
-        this.textView_saveValue = binding.textViewSaveValue;
-    }
+        public ViewHolder(
+                FragmentModelViewerBinding binding
+        ) {
+            super(binding.getRoot());
+            this.textView_modelName = binding.textViewModelName;
+            this.textView_wsValue = binding.textViewWsValue;
+            this.textView_bsValue = binding.textViewBsValue;
+            this.textView_strengthValue = binding.textViewStrengthValue;
+            this.textView_toughnessValue = binding.textViewToughnessValue;
+            this.textView_woundsValue = binding.textViewWoundsValue;
+            this.textView_attacksValue = binding.textViewAttacksValue;
+            this.textView_saveValue = binding.textViewSaveValue;
+            this.recyclerView_wargearList = binding.recyclerViewWargearList;
+        }
 
         @Override
         public String toString() {

@@ -76,6 +76,7 @@ public class ModelViewerFragment extends Fragment {
                 items.add(new Model(context, "necron warrior"));
                 items.add(new Model(context, "immortal"));
                 items.add(new Model(context, "overlord"));
+                items.add(new Model(context, "triarch stalker"));
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (CsvValidationException e) {

@@ -66,8 +66,10 @@ public class Wargear {
                 if (wargear[3] != ""){
                     if (wargear[3].contains("before selecting targets, select one or both of the profiles below to make attacks with"))
                         this.profileChoice = "inclusive";
-                    else
+                    else if (wargear[3].contains("before selecting targets, select one of the profiles below to make attacks with"))
                         this.profileChoice = "exclusive";
+                    else
+                        this.profileChoice = "none";
                 }
                 break;
             }

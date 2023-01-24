@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wh40kapp.R;
@@ -13,7 +14,8 @@ import com.example.wh40kapp.Wargear;
 
 import java.util.List;
 
-public class WargearRecyclerViewAdapter extends RecyclerView.Adapter<WargearRecyclerViewAdapter.ViewHolder>{
+public class WargearRecyclerViewAdapter extends
+        RecyclerView.Adapter<WargearRecyclerViewAdapter.ViewHolder> {
 
     private final List<Wargear> mValues;
 
@@ -27,29 +29,51 @@ public class WargearRecyclerViewAdapter extends RecyclerView.Adapter<WargearRecy
             @NonNull ViewGroup parent,
             int viewType
     ) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.wargear_viewer, parent, false));
+        return new ViewHolder(LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.wargear_viewer, parent, false));
     }
 
     @Override
     public void onBindViewHolder(
-            @NonNull WargearRecyclerViewAdapter.ViewHolder holder,
+            final ViewHolder holder,
             int position
     ) {
-
+        holder.textView_wargearName.setText(mValues.get(position).getName());
+        // TO DO:  holder.textView_wargearPointsCost.setText(mValues.get(position).getPointsCost() + "");
+        holder.textView_wargearPointsCost.setText("-1");
+        if (mValues.get(position).getProfileChoice().equals("exclusive")) {
+            holder.textView_wargearDesc.setText(
+                    "Before selecting targets, select one of the profiles below to make attacks with.");
+        } else if (mValues.get(position).getProfileChoice().equals("inclusive")) {
+            holder.textView_wargearDesc.setText(
+                    "Before selecting targets, select one of the profiles below to make attacks with. If you do not select a profile, you can make attacks with the profile that is not selected.");
+        } else if (mValues.get(position).getProfileChoice().equals("none")) {
+            holder.textView_wargearDesc.setText("");
+        }
+        holder.recyclerView_wargearProfiles.setAdapter(
+                new WargearProfileRecyclerViewAdapter(mValues.get(position).getProfiles()));
+        holder.recyclerView_wargearProfiles.setLayoutManager(
+                new LinearLayoutManager(holder.recyclerView_wargearProfiles.getContext()));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mValues.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView textView_wargearName, textView_wargearPointsCost, textView_wargearDesc;
+        public final TextView textView_wargearName, textView_wargearPointsCost,
+                textView_wargearDesc;
+        public final RecyclerView recyclerView_wargearProfiles;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.textView_wargearName = itemView.findViewById(R.id.textView_wargearName);
-            this.textView_wargearPointsCost = itemView.findViewById(R.id.textView_wargearPointsCost);
+            this.textView_wargearPointsCost =
+                    itemView.findViewById(R.id.textView_wargearPointsCost);
             this.textView_wargearDesc = itemView.findViewById(R.id.textView_wargearDesc);
+            this.recyclerView_wargearProfiles =
+                    itemView.findViewById(R.id.recyclerView_wargearProfileList);
         }
     }
 }

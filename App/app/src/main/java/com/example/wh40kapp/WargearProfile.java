@@ -115,6 +115,8 @@ public class WargearProfile {
         this.type = profile[4].split(" ");
         if (this.type[0] == "rapid")
             this.type = new String[]{"rapid fire", this.type[2]};
+        if (this.type.length == 1)
+            this.type = new String[]{this.type[0], ""};
         this.s = profile[5];
         this.ap = Integer.parseInt(profile[6]);
         this.d = profile[7];
