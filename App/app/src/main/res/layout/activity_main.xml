@@ -31,5 +31,7 @@
         android:id="@+id/viewpager2_battle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tab_layout_battle" />
+        android:layout_below="@+id/tab_layout_battle"
+        android:background="#000000"
+        android:backgroundTint="#000000" />
 </RelativeLayout>
