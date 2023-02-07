@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -59,8 +60,8 @@ public class ModelViewerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_model_viewer_list, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_model_viewer_list, container, false).findViewById(R.id.recyclerview_modelList);
+        ArrayList<Model> items = new ArrayList<Model>();
         // Set the adapter
         if (view instanceof RecyclerView) {
             Log.d("TAG", "onCreateView: 1");
@@ -71,7 +72,6 @@ public class ModelViewerFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            ArrayList<Model> items = new ArrayList<Model>();
             try {
                 items.add(new Model(context, "necron warrior"));
                 items.add(new Model(context, "immortal"));
@@ -85,6 +85,20 @@ public class ModelViewerFragment extends Fragment {
             recyclerView.setAdapter(new ModelRecyclerViewAdapter(items));
             recyclerView.setLayoutManager(new LinearLayoutManager(context));
         }
+
+        Button button = (Button) inflater.inflate(R.layout.fragment_model_viewer_list, container, false).findViewById(R.id.button_AddModel);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                try {
+                    items.add(new Model(getContext(), "necron warrior"));
+                } catch (IOException e) {
+                    // failed to read file
+                } catch (CsvValidationException e) {
+                    // failed to read file
+                }
+            }
+        });
+
         return view;
     }
 }
