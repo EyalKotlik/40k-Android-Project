@@ -24,7 +24,6 @@ public class ModelRecyclerViewAdapter extends
         RecyclerView.Adapter<ModelRecyclerViewAdapter.ViewHolder> {
 
     private final List<Model> mValues;
-    private TextWatcher numOfModelValueTextWatcher;
 
     public ModelRecyclerViewAdapter(List<Model> items) {
         mValues = items;
@@ -52,7 +51,8 @@ public class ModelRecyclerViewAdapter extends
         holder.textView_woundsValue.setText(holder.mItem.getW() + "");
         holder.textView_attacksValue.setText(holder.mItem.getA() + "");
         holder.textView_modelCostValue.setText(holder.mItem.getCost() + "");
-        numOfModelValueTextWatcher = new TextWatcher() {
+        holder.editText_numOfModelValue.setText(holder.mItem.getModel_num() + "");
+        TextWatcher numOfModelValueTextWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
