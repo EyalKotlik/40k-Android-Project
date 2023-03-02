@@ -17,7 +17,7 @@ import java.util.Objects;
 
 public class Model {
     private String name;
-    private int id, line, ws, bs, s, t, w, a, model_num;
+    private int id, line, ws, bs, s, t, w, a, model_num, cost;
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
     private ArrayList<Wargear> wargear;
@@ -142,6 +142,7 @@ public class Model {
         this.t = Integer.parseInt(model[6]);
         this.w = Integer.parseInt(model[7]);
         this.a = Integer.parseInt(model[8]);
+        this.cost = (int) Double.parseDouble(model[10]);
 
         String sv = model[9];
         this.saves = new Hashtable<String, int[]>();
@@ -171,6 +172,14 @@ public class Model {
         }
         reader.close();
         inputStreamReader.close();
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
     public static String[] canCreateModel(Context context, String name) throws IOException, CsvValidationException {
