@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -89,9 +90,9 @@ public class ModelViewerFragment extends Fragment {
         button_AddModel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
-                    String[] model = Model.canCreateModel(requireContext(), editText_addedModelName.getText().toString().toLowerCase());
+                    String[] model = Model.canCreateModel(requireContext(), editText_addedModelName.getText().toString().toLowerCase().trim());
                     if (model == null) {
-                        //TODO: notify user that model not found
+                        Toast.makeText(requireContext(), "Model not found", Toast.LENGTH_SHORT).show();
                         Log.d("ModelViewerFragment", "onClick: model not found");
                         return;
                     }
