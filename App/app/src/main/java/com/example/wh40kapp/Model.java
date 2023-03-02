@@ -13,6 +13,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
+import java.util.Objects;
 
 public class Model {
     private String name;
@@ -125,28 +126,16 @@ public class Model {
         this.wargear = wargear;
     }
 
-    public Model(Context context, String name) throws IOException, CsvValidationException {
+    public Model(Context context, String[] model) throws IOException, CsvValidationException {
         this.model_num = 1;
-        this.name = name;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
         InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_models.csv"));
         CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
-        String[] nextLine, model= new String[14];
-        boolean initializedModel = false;
+        String[] nextLine;
 
-        while ((nextLine = reader.readNext()) != null) {
-            if (nextLine[2].equals(name)) {
-                model = nextLine;
-                reader.close();
-                initializedModel=true;
-                break;
-            }
-        }
-        if (!initializedModel)
-            throw   new RuntimeException("the model named '"+name+"' does not exist");
-        reader.close();
         this.id = Integer.parseInt(model[0]);
         this.line = Integer.parseInt(model[1]);
+        this.name = model[2];
         this.ws = Integer.parseInt(model[3]);
         this.bs = Integer.parseInt(model[4]);
         this.s = Integer.parseInt(model[5]);
@@ -166,7 +155,7 @@ public class Model {
         this.keywords = new ArrayList<>();
         nextLine = reader.readNext();
         while((nextLine = reader.readNext()) != null){
-            if ((Integer.parseInt(nextLine[0]) == this.id) && nextLine[2] == this.name)
+            if ((Integer.parseInt(nextLine[0]) == this.id) && Objects.equals(nextLine[2], this.name))
                 keywords.add(nextLine[1]);
             else if (Integer.parseInt(nextLine[0]) > this.id)
                 break;
@@ -181,5 +170,28 @@ public class Model {
                 this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
         }
         reader.close();
+        inputStreamReader.close();
+    }
+
+    public static String[] canCreateModel(Context context, String name) throws IOException, CsvValidationException {
+        CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
+        InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_models.csv"));
+        CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
+        String[] nextLine, model = new String[14];
+        boolean initializedModel = false;
+        while ((nextLine = reader.readNext()) != null) {
+            if (nextLine[2].equals(name)) {
+                model = nextLine;
+                reader.close();
+                initializedModel=true;
+                break;
+            }
+        }
+        if (!initializedModel) {
+            reader.close();
+            inputStreamReader.close();
+            return null;
+        }
+        return model;
     }
 }

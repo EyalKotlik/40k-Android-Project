@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link Model}.
- * TODO: Replace the implementation with code for your data type.
  */
 public class ModelRecyclerViewAdapter extends
         RecyclerView.Adapter<ModelRecyclerViewAdapter.ViewHolder> {

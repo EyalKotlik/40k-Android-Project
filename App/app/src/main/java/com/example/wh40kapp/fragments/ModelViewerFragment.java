@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -27,13 +28,11 @@ import java.util.Objects;
 public class ModelViewerFragment extends Fragment {
 
 
-    // TODO: Customize parameters
     private int mColumnCount = 1;
     private Button button_AddModel;
-    // TODO: Customize parameter argument names
+    private EditText editText_addedModelName;
     private static final String ARG_COLUMN_COUNT = "column-count";
 
-    // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static ModelViewerFragment newInstance(int columnCount) {
         ModelViewerFragment fragment = new ModelViewerFragment();
@@ -74,10 +73,10 @@ public class ModelViewerFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
         try {
-            items.add(new Model(context, "necron warrior"));
-            items.add(new Model(context, "immortal"));
-            items.add(new Model(context, "overlord"));
-            items.add(new Model(context, "triarch stalker"));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "necron warrior"))));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "immortal"))));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "overlord"))));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "triarch stalker"))));
         } catch (IOException | CsvValidationException e) {
             e.printStackTrace();
         }
@@ -85,13 +84,19 @@ public class ModelViewerFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
+        editText_addedModelName = (EditText) view.findViewById(R.id.editText_addedModelName);
         button_AddModel = (Button) view.findViewById(R.id.button_AddModel);
         button_AddModel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
-                    items.add(new Model(requireContext(), "lord"));
+                    String[] model = Model.canCreateModel(requireContext(), editText_addedModelName.getText().toString().toLowerCase());
+                    if (model == null) {
+                        //TODO: notify user that model not found
+                        Log.d("ModelViewerFragment", "onClick: model not found");
+                        return;
+                    }
+                    items.add(new Model(requireContext(), model));
                     adapter.notifyItemInserted(items.size() - 1);
-
                 } catch (IOException | CsvValidationException e) {
                     Log.d("ModelViewerFragment", "onClick: failed to add model");
                 }
