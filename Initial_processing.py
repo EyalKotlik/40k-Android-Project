@@ -20,6 +20,7 @@ def main():
     for col in data.columns:
         if data[col].dtype == object:
             data[col] = data[col].str.lower()
+            data[col] = data[col].apply(lambda x: re.sub(re.compile('<.*?>'), '', x) if isinstance(x, str) else x)
     data.to_csv("Processed Data/Datasheets.csv", sep="|", index=False)
 
     print("Processing data from Datasheets_keywords.csv...")
