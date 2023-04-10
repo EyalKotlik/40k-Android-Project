@@ -78,6 +78,22 @@ def main():
     data.to_csv("Processed Data/Wargear_list.csv",
                 sep="|", index=False)
 
+    print("Processing data from Datasheets_options.csv...")
+    data = pandas.read_csv("Raw Data/Datasheets_options.csv", sep='|')
+    data.drop('Unnamed: 5', inplace=True, axis=1)
+    data.drop('is_index_wargear', inplace=True, axis=1)
+    for col in data.columns:
+        if col == "datasheet_id" or col == "line":
+            data[col] = pandas.to_numeric(data[col], errors="coerce", downcast="integer")
+            data[col] = data[col].astype("Int64")
+        elif data[col].dtype == object:
+            data[col] = data[col].str.replace('["]', '')
+            data[col] = data[col].str.lower()
+    data.to_csv("Processed Data/Datasheets_options.csv",
+                sep="|", index=False)
+        
+
+
     print("Data Processing Complete")
 
 
