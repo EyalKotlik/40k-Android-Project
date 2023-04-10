@@ -53,6 +53,7 @@ public class ModelRecyclerViewAdapter extends
         holder.textView_modelCostValue.setText(holder.mItem.getCost() + "");
         holder.editText_numOfModelValue.setText(holder.mItem.getModel_num() + "");
         holder.textView_equipmentDescription.setText(holder.mItem.getUnitComposition()+"");
+        holder.textView_wargearOptions.setText(holder.mItem.getWargearOptions()+"");
         TextWatcher numOfModelValueTextWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -98,7 +99,7 @@ public class ModelRecyclerViewAdapter extends
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView textView_modelName, textView_wsValue, textView_bsValue,
                 textView_strengthValue, textView_toughnessValue, textView_woundsValue,
-                textView_attacksValue, textView_saveValue, textView_modelCostValue, textView_equipmentDescription;
+                textView_attacksValue, textView_saveValue, textView_modelCostValue, textView_equipmentDescription, textView_wargearOptions;
         public final RecyclerView recyclerView_wargearList;
         public Model mItem;
         public final EditText editText_numOfModelValue;
@@ -119,6 +120,7 @@ public class ModelRecyclerViewAdapter extends
             this.textView_modelCostValue = binding.textViewModelCostValue;
             this.editText_numOfModelValue = binding.editTextNumOfModelValue;
             this.textView_equipmentDescription = binding.textViewEquipmentDescription;
+            this.textView_wargearOptions = binding.textViewWargearOptions;
         }
 
         @Override

@@ -16,7 +16,7 @@ import java.util.Hashtable;
 import java.util.Objects;
 
 public class Model {
-    private String name, unitComposition;
+    private String name, unitComposition, wargearOptions;
     private int id, line, ws, bs, s, t, w, a, model_num, cost;
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
@@ -134,6 +134,14 @@ public class Model {
         this.unitComposition = unitComposition;
     }
 
+    public String getWargearOptions() {
+        return wargearOptions;
+    }
+
+    public void setWargearOptions(String wargearOptions) {
+        this.wargearOptions = wargearOptions;
+    }
+
     public Model(Context context, String[] model) throws IOException, CsvValidationException {
         this.model_num = 1;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
@@ -163,7 +171,7 @@ public class Model {
         reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         this.keywords = new ArrayList<>();
         nextLine = reader.readNext();
-        while((nextLine = reader.readNext()) != null){
+        while ((nextLine = reader.readNext()) != null) {
             if ((Integer.parseInt(nextLine[0]) == this.id) && Objects.equals(nextLine[2], this.name))
                 keywords.add(nextLine[1]);
             else if (Integer.parseInt(nextLine[0]) > this.id)
@@ -175,8 +183,8 @@ public class Model {
         reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         this.wargear = new ArrayList<Wargear>();
         nextLine = reader.readNext();
-        while((nextLine = reader.readNext()) != null){
-            if (Integer.parseInt(nextLine[0])==this.id)
+        while ((nextLine = reader.readNext()) != null) {
+            if (Integer.parseInt(nextLine[0]) == this.id)
                 this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
         }
         reader.close();
@@ -184,10 +192,21 @@ public class Model {
         inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets.csv"));
         reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         nextLine = reader.readNext();
-        while((nextLine = reader.readNext()) != null){
-            if (Integer.parseInt(nextLine[0])==this.id)
+        while ((nextLine = reader.readNext()) != null) {
+            if (Integer.parseInt(nextLine[0]) == this.id)
                 this.unitComposition = nextLine[5];
         }
+        reader.close();
+
+        inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_options.csv"));
+        reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
+        nextLine = reader.readNext();
+        wargearOptions = "";
+        while ((nextLine = reader.readNext()) != null) {
+            if (Integer.parseInt(nextLine[0]) == this.id)
+                this.wargearOptions = this.wargearOptions + nextLine[2].toString() + nextLine[3].toString() + "\n";
+        }
+        reader.close();
         inputStreamReader.close();
     }
 
@@ -209,7 +228,7 @@ public class Model {
             if (nextLine[2].equals(name)) {
                 model = nextLine;
                 reader.close();
-                initializedModel=true;
+                initializedModel = true;
                 break;
             }
         }
