@@ -30,13 +30,13 @@ public class WargearProfileRecyclerViewAdapter extends
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        //TO DO: holder.recyclerView_wargearProfileAbilities.setAdapter(new WargearProfileAbilityRecyclerViewAdapter(mValues.get(position).getAbilities()));
+        //TODO: holder.recyclerView_wargearProfileAbilities.setAdapter(new WargearProfileAbilityRecyclerViewAdapter(mValues.get(position).getAbilities()));
         holder.textView_wargearProfileName.setText(mValues.get(position).getName());
         holder.textView_wargearProfileRange.setText(mValues.get(position).getRange()+"\"");
         holder.textView_wargearProfileType.setText(mValues.get(position).getType()[0].toString()+" "+mValues.get(position).getType()[1].toString());
-        holder.textView_wargearProfileS.setText(mValues.get(position).getS());
-        holder.textView_wargearProfileAP.setText("-"+mValues.get(position).getAp());
-        holder.textView_wargearProfileD.setText(mValues.get(position).getD());
+        holder.textView_wargearProfileS.setText(mValues.get(position).getS().toString());
+        holder.textView_wargearProfileAP.setText(mValues.get(position).getAp()+"");
+        holder.textView_wargearProfileD.setText(mValues.get(position).getD().toString());
     }
 
     @Override

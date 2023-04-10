@@ -16,7 +16,7 @@ import java.util.Hashtable;
 import java.util.Objects;
 
 public class Model {
-    private String name;
+    private String name, unitComposition;
     private int id, line, ws, bs, s, t, w, a, model_num, cost;
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
@@ -126,6 +126,14 @@ public class Model {
         this.wargear = wargear;
     }
 
+    public String getUnitComposition() {
+        return unitComposition;
+    }
+
+    public void setUnitComposition(String unitComposition) {
+        this.unitComposition = unitComposition;
+    }
+
     public Model(Context context, String[] model) throws IOException, CsvValidationException {
         this.model_num = 1;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
@@ -162,6 +170,7 @@ public class Model {
                 break;
         }
         reader.close();
+
         inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets_wargear.csv"));
         reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
         this.wargear = new ArrayList<Wargear>();
@@ -171,6 +180,14 @@ public class Model {
                 this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
         }
         reader.close();
+
+        inputStreamReader = new InputStreamReader(context.getAssets().open("Datasheets.csv"));
+        reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
+        nextLine = reader.readNext();
+        while((nextLine = reader.readNext()) != null){
+            if (Integer.parseInt(nextLine[0])==this.id)
+                this.unitComposition = nextLine[5];
+        }
         inputStreamReader.close();
     }
 
