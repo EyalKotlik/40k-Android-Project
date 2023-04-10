@@ -185,7 +185,7 @@ public class Model {
         nextLine = reader.readNext();
         while ((nextLine = reader.readNext()) != null) {
             if (Integer.parseInt(nextLine[0]) == this.id)
-                this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2])));
+                this.wargear.add(new Wargear(context, Integer.parseInt(nextLine[2]), Integer.parseInt(nextLine[3])));
         }
         reader.close();
 

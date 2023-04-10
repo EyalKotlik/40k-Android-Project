@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Wargear {
-    private int id;
+    private int id, cost;
     private String name, profileChoice;
     private ArrayList<WargearProfile> profiles;
 
@@ -49,8 +49,17 @@ public class Wargear {
         this.profiles = profiles;
     }
 
-    public Wargear(Context context, int id) throws IOException, CsvValidationException {
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public Wargear(Context context, int id, int cost) throws IOException, CsvValidationException {
         this.id = id;
+        this.cost = cost;
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
         InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear.csv"));
         CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();

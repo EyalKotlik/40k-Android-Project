@@ -39,16 +39,20 @@ public class WargearRecyclerViewAdapter extends
             int position
     ) {
         holder.textView_wargearName.setText(mValues.get(position).getName());
-        // TO DO:  holder.textView_wargearPointsCost.setText(mValues.get(position).getPointsCost() + "");
-        holder.textView_wargearPointsCost.setText("-1");
-        if (mValues.get(position).getProfileChoice().equals("exclusive")) {
-            holder.textView_wargearDesc.setText(
-                    "Before selecting targets, select one of the profiles below to make attacks with.");
-        } else if (mValues.get(position).getProfileChoice().equals("inclusive")) {
-            holder.textView_wargearDesc.setText(
-                    "Before selecting targets, select one of the profiles below to make attacks with. If you do not select a profile, you can make attacks with the profile that is not selected.");
-        } else if (mValues.get(position).getProfileChoice().equals("none")) {
-            holder.textView_wargearDesc.setText("");
+        holder.textView_wargearPointsCost.setText(mValues.get(position).getCost() + "");
+        //holder.textView_wargearPointsCost.setText("-1");
+        switch (mValues.get(position).getProfileChoice()) {
+            case "exclusive":
+                holder.textView_wargearDesc.setText(
+                        "Before selecting targets, select one of the profiles below to make attacks with.");
+                break;
+            case "inclusive":
+                holder.textView_wargearDesc.setText(
+                        "Before selecting targets, select one of the profiles below to make attacks with. If you do not select a profile, you can make attacks with the profile that is not selected.");
+                break;
+            case "none":
+                holder.textView_wargearDesc.setText("");
+                break;
         }
         holder.recyclerView_wargearProfiles.setAdapter(
                 new WargearProfileRecyclerViewAdapter(mValues.get(position).getProfiles()));
