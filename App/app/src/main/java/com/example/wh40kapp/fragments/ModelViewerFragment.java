@@ -34,6 +34,12 @@ public class ModelViewerFragment extends Fragment {
     private EditText editText_addedModelName;
     private static final String ARG_COLUMN_COUNT = "column-count";
 
+    public ArrayList<Model> getItems() {
+        return items;
+    }
+
+    private ArrayList<Model> items;
+
     @SuppressWarnings("unused")
     public static ModelViewerFragment newInstance(int columnCount) {
         ModelViewerFragment fragment = new ModelViewerFragment();
@@ -64,7 +70,7 @@ public class ModelViewerFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_model_viewer_list, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recyclerview_modelList);
-        ArrayList<Model> items = new ArrayList<Model>();
+        items = new ArrayList<Model>();
         // Set the adapter
         Log.d("TAG", "onCreateView: 1");
         Context context = recyclerView.getContext();
@@ -74,9 +80,7 @@ public class ModelViewerFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
         try {
-            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "necron warrior"))));
-            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "immortal"))));
-            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "overlord"))));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "skorpekh destroyer"))));
             items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "triarch stalker"))));
         } catch (IOException | CsvValidationException e) {
             e.printStackTrace();

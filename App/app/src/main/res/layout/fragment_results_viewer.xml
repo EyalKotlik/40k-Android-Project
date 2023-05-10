@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434">
+
+    <Button
+        android:id="@+id/button_oneAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculate Single Attack"
+        app:layout_constraintEnd_toEndOf="@+id/textView_optionsTitle"
+        app:layout_constraintStart_toStartOf="@+id/textView_optionsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textView_optionsTitle" />
+
+    <TextView
+        android:id="@+id/textView_optionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Options"
+        android:textColor="#B9D2D2"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_averageResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculate Average Result"
+        app:layout_constraintEnd_toEndOf="@+id/button_oneAttack"
+        app:layout_constraintStart_toStartOf="@+id/button_oneAttack"
+        app:layout_constraintTop_toBottomOf="@+id/button_oneAttack" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#B9D2D2"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_averageResult"
+        app:layout_constraintStart_toStartOf="@+id/button_averageResult"
+        app:layout_constraintTop_toBottomOf="@+id/button_averageResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>

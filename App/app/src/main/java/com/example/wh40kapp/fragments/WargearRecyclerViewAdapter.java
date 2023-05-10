@@ -40,7 +40,6 @@ public class WargearRecyclerViewAdapter extends
     ) {
         holder.textView_wargearName.setText(mValues.get(position).getName());
         holder.textView_wargearPointsCost.setText(mValues.get(position).getCost() + "");
-        //holder.textView_wargearPointsCost.setText("-1");
         switch (mValues.get(position).getProfileChoice()) {
             case "exclusive":
                 holder.textView_wargearDesc.setText(
