@@ -1,5 +1,7 @@
 package com.example.wh40kapp;
 
+import android.util.Log;
+
 public class DiceRoller {
     /**
      * @return a random number between 1 and 6 (inclusive)
@@ -98,8 +100,9 @@ public class DiceRoller {
                         result += DiceRoller.rollD3(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
             }
         }
-        else
-            result = Integer.parseInt(notation.substring(0, Math.max(notation.indexOf("+"),1))) + (modifiers[3] > 0 ? modifiers[1] : 0);
+        else {
+            result = Integer.parseInt(notation.substring(0, Math.max(notation.indexOf("+"), 1))) + (modifiers[3] > 0 ? modifiers[1] : 0);
+        }
 
         if (notation.contains("+")) {
             result += Integer.parseInt(notation.substring(notation.indexOf("+") + 1));

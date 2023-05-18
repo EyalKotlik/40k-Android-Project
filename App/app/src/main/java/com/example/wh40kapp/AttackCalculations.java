@@ -2,6 +2,7 @@ package com.example.wh40kapp;
 
 import android.util.Log;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class AttackCalculations {
@@ -17,7 +18,6 @@ public class AttackCalculations {
      * @return an array of two integers, the first one is the number of dead models, the second one is the damage dealt to the last model.
      */
     public static void singleModelAttackResult(Model attacker, Model defender, int[] hitMod, int[] woundMod, int[] saveMod, int[] damageMod, boolean melee, int distance, int[] result) {
-        //TODO: make ranged attacks work
         //TODO: account for daemonic, invulnerable saves
         boolean attacked = false;
         for (int n = 0; n < attacker.getModel_num(); n++) {
@@ -39,7 +39,7 @@ public class AttackCalculations {
                                 continue;
                             else { //this is the place to add abilities that trigger on a 6 to hit
                                 int woundRoll = DiceRoller.rollD6(woundMod[0], woundMod[1]);
-                                int rollNeededToWound = rollNeededToWound(modifiedMeleeStrength(attacker.getS(), profile.getS()), defender.getT());
+                                int rollNeededToWound = rollNeededToWound(modifiedStrength(attacker.getS(), profile.getS()), defender.getT());
                                 if (woundRoll < rollNeededToWound)
                                     continue;
                                 else { //this is the place to add abilities that trigger on a 6 to wound
@@ -60,19 +60,21 @@ public class AttackCalculations {
                         }
                     }
 
-                    if (!melee){
+                    // attacks with the model's ranged weapons
+                    if (!melee) {
                         if (Objects.equals(profile.getType()[0], "melee") || (Objects.equals(profile.getType()[0], "pistol") && attacked))
                             continue;
                         attacked = true;
-
-                        for (int i = 0; i < profile.getAttacks_chosen(); i++) {
-                            Log.d("TAG", "singleModelAttackResult [Dead, Wounded]: " + result[0] + " " + result[1]);
+                        int attacks = DiceRoller.diceNotationToRoll(profile.getType()[1], new int[]{0, 0, 0, 0});
+                        attacks = Objects.equals(profile.getType()[0], "rapid fire") && distance > profile.getRange() / 2 ? attacks * 2 : attacks;
+                        for (int i = 0; i < attacks; i++) {
+                            Log.d("TAG", "singleModelAttackResult attack with: " + profile.getName() + "; [Dead, Wounded]: " + result[0] + " " + result[1]);
                             int hitRoll = DiceRoller.rollD6(hitMod[0], hitMod[1]);
-                            if (hitRoll < attacker.getWs())
+                            if (hitRoll < attacker.getBs())
                                 continue;
                             else { //this is the place to add abilities that trigger on a 6 to hit
                                 int woundRoll = DiceRoller.rollD6(woundMod[0], woundMod[1]);
-                                int rollNeededToWound = rollNeededToWound(modifiedMeleeStrength(attacker.getS(), profile.getS()), defender.getT());
+                                int rollNeededToWound = rollNeededToWound(profile.getS().matches("\\d+") ? Integer.parseInt(profile.getS()) : modifiedStrength(attacker.getS(), profile.getS()), defender.getT());
                                 if (woundRoll < rollNeededToWound)
                                     continue;
                                 else { //this is the place to add abilities that trigger on a 6 to wound
@@ -95,15 +97,15 @@ public class AttackCalculations {
                 }
 
                 // if the model fights in melee, and hasn't attacked with a melee weapon yet, attack with the model's unarmed profile
-                if (melee && !attacked){
-                    for (int i=0; i < attacker.getA(); i++){
+                if (melee && !attacked) {
+                    for (int i = 0; i < attacker.getA(); i++) {
                         attacked = true;
                         int hitRoll = DiceRoller.rollD6(hitMod[0], hitMod[1]);
                         if (hitRoll < attacker.getWs())
                             continue;
                         else { //this is the place to add abilities that trigger on a 6 to hit
                             int woundRoll = DiceRoller.rollD6(woundMod[0], woundMod[1]);
-                            int rollNeededToWound = rollNeededToWound(modifiedMeleeStrength(attacker.getS(), "User"), defender.getT());
+                            int rollNeededToWound = rollNeededToWound(modifiedStrength(attacker.getS(), "User"), defender.getT());
                             if (woundRoll < rollNeededToWound)
                                 continue;
                             else { //this is the place to add abilities that trigger on a 6 to wound
@@ -143,7 +145,7 @@ public class AttackCalculations {
         }
     }
 
-    public static int modifiedMeleeStrength(int attackerStrength, String strengthString) {
+    public static int modifiedStrength(int attackerStrength, String strengthString) {
         int S = attackerStrength;
         if (strengthString.contains("+")) {
             S += Integer.parseInt(strengthString.substring(strengthString.indexOf("+") + 1));

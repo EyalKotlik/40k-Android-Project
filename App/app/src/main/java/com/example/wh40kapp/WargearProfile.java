@@ -10,6 +10,7 @@ import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Objects;
 
 public class WargearProfile {
     private int id, line, range, ap, attacks_chosen;
@@ -114,7 +115,7 @@ public class WargearProfile {
         else
             this.range = -1;
         this.type = profile[4].split(" ");
-        if (this.type[0] == "rapid")
+        if (Objects.equals(this.type[0], "rapid"))
             this.type = new String[]{"rapid fire", this.type[2]};
         if (this.type.length == 1)
             this.type = new String[]{this.type[0], ""};

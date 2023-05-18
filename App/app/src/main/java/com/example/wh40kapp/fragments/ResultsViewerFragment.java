@@ -46,7 +46,7 @@ public class ResultsViewerFragment extends Fragment {
                 int[] modifiers = new int[4];
                 Model attacker = ((ModelViewerFragment) fragments[0]).getItems().get(0);
                 Model defender = ((ModelViewerFragment) fragments[1]).getItems().get(0);
-                AttackCalculations.singleModelAttackResult(attacker, defender, modifiers, modifiers, modifiers, modifiers, true, 10, result);
+                AttackCalculations.singleModelAttackResult(attacker, defender, modifiers, modifiers, modifiers, modifiers, false, 10, result);
                 Log.d("TAG", "ATTACK RESULT: " + result[0] + " " + result[1]);
             }
         });
