@@ -19,10 +19,11 @@ public class AttackCalculations {
      */
     public static void singleModelAttackResult(Model attacker, Model defender, int[] hitMod, int[] woundMod, int[] saveMod, int[] damageMod, boolean melee, int distance, int[] result) {
         //TODO: account for daemonic, invulnerable saves
-        //TODO: account for distance in ranged attacks
-        boolean attacked = false;
+        boolean attacked, attackedWithWeapon;
         for (int n = 0; n < attacker.getModel_num(); n++) {
+            attacked = false;
             for (Wargear wargear : attacker.getWargear()) {
+                attackedWithWeapon = false;
                 boolean exclusivity = wargear.getProfileChoice().equals("exclusive");
 
                 // attacks with the model's weapons
@@ -63,11 +64,12 @@ public class AttackCalculations {
 
                     // attacks with the model's ranged weapons
                     if (!melee) {
-                        if (Objects.equals(profile.getType()[0], "melee") || (Objects.equals(profile.getType()[0], "pistol") && attacked) || profile.getAttacks_chosen() == 0)
+                        if (Objects.equals(profile.getType()[0], "melee") || (Objects.equals(profile.getType()[0], "pistol") && attacked) || profile.getAttacks_chosen() == 0 || profile.getRange() < distance || (exclusivity && attackedWithWeapon))
                             continue;
                         attacked = true;
+                        attackedWithWeapon = true; //TODO: add the -1 modifier for shooting with multiple profiles of the same weapon
                         int attacks = DiceRoller.diceNotationToRoll(profile.getType()[1], new int[]{0, 0, 0, 0});
-                        attacks = Objects.equals(profile.getType()[0], "rapid fire") && distance < profile.getRange() / 2 ? attacks * 2 : attacks;
+                        attacks = Objects.equals(profile.getType()[0], "rapid fire") && distance <= profile.getRange() / 2 ? attacks * 2 : attacks;
                         Log.d("TAG", "singleModelAttackResult: Type: "+profile.getType()[0]+"; Range: "+profile.getRange()+"; Distance: "+distance+"; Attacks: "+attacks);
                         Log.d("TAG", "singleModelAttackResult: attacks: " + attacks);
                         for (int i = 0; i < attacks; i++) {
