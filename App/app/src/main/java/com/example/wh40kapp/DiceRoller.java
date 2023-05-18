@@ -83,8 +83,8 @@ public class DiceRoller {
     public static int diceNotationToRoll(String notation, int[] modifiers){
         int result = 0;
         char[] modArray = notation.toCharArray();
-        if (notation.contains("D")) {
-            if (modArray[0] == 'D') {
+        if (notation.contains("d")) {
+            if (modArray[0] == 'd') {
                 if (modArray[1] == '6')
                     result = DiceRoller.rollD6(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
                 else

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#62A388">
+
+    <TextView
+        android:id="@+id/textView_combatants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Necron vs. Marine"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_dead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dead="
+        app:layout_constraintStart_toStartOf="@+id/textView_combatants"
+        app:layout_constraintTop_toBottomOf="@+id/textView_combatants" />
+
+    <TextView
+        android:id="@+id/textView_deadNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        app:layout_constraintStart_toEndOf="@+id/textView_dead"
+        app:layout_constraintTop_toTopOf="@+id/textView_dead" />
+
+    <TextView
+        android:id="@+id/textView_wounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="wounds="
+        app:layout_constraintStart_toEndOf="@+id/textView_deadNum"
+        app:layout_constraintTop_toTopOf="@+id/textView_deadNum" />
+
+    <TextView
+        android:id="@+id/textView_woundsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        app:layout_constraintStart_toEndOf="@+id/textView_wounds"
+        app:layout_constraintTop_toTopOf="@+id/textView_wounds" />
+</androidx.constraintlayout.widget.ConstraintLayout>
