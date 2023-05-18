@@ -3,12 +3,15 @@ package com.example.wh40kapp.fragments;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wh40kapp.R;
+import com.example.wh40kapp.Wargear;
 import com.example.wh40kapp.WargearProfile;
 
 import java.util.List;
@@ -37,6 +40,17 @@ public class WargearProfileRecyclerViewAdapter extends
         holder.textView_wargearProfileS.setText(mValues.get(position).getS().toString());
         holder.textView_wargearProfileAP.setText(mValues.get(position).getAp()+"");
         holder.textView_wargearProfileD.setText(mValues.get(position).getD().toString());
+        holder.setCheckboxListener(new CheckBox.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                // Handle checkbox status change event
+                if (isChecked) {
+                    mValues.get(holder.getBindingAdapterPosition()).setAttacks_chosen(1);
+                }
+                else {
+                    mValues.get(holder.getBindingAdapterPosition()).setAttacks_chosen(0);
+                }
+            }});
     }
 
     @Override
@@ -48,6 +62,7 @@ public class WargearProfileRecyclerViewAdapter extends
         public final TextView textView_wargearProfileName, textView_wargearProfileRange,
                 textView_wargearProfileType, textView_wargearProfileS, textView_wargearProfileAP,
                 textView_wargearProfileD;
+        public final CheckBox checkBox_selectProfile;
         public final RecyclerView recyclerView_wargearProfileAbilities;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -58,6 +73,11 @@ public class WargearProfileRecyclerViewAdapter extends
             this.textView_wargearProfileS = itemView.findViewById(R.id.textView_wargearProfileS);
             this.textView_wargearProfileAP = itemView.findViewById(R.id.textView_wargearProfileAP);
             this.textView_wargearProfileD = itemView.findViewById(R.id.textView_wargearProfileD);
+            this.checkBox_selectProfile = itemView.findViewById(R.id.checkBox_selectProfile);
+        }
+
+        public void setCheckboxListener(CheckBox.OnCheckedChangeListener listener) {
+            checkBox_selectProfile.setOnCheckedChangeListener(listener);
         }
     }
 }

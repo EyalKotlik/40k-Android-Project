@@ -62,7 +62,7 @@ public class AttackCalculations {
 
                     // attacks with the model's ranged weapons
                     if (!melee) {
-                        if (Objects.equals(profile.getType()[0], "melee") || (Objects.equals(profile.getType()[0], "pistol") && attacked))
+                        if (Objects.equals(profile.getType()[0], "melee") || (Objects.equals(profile.getType()[0], "pistol") && attacked) || profile.getAttacks_chosen() == 0)
                             continue;
                         attacked = true;
                         int attacks = DiceRoller.diceNotationToRoll(profile.getType()[1], new int[]{0, 0, 0, 0});

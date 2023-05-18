@@ -92,8 +92,7 @@ public class WargearProfile {
     public WargearProfile(Context context, int id, int line) throws IOException, CsvValidationException {
         this.id = id;
         this.line = line;
-        //TODO: connect the attacks_chosen to the value selected in the UI
-        this.attacks_chosen = 1; //if it is a ranged weapon any value above a 0 will be counted as maximum attacks.
+        this.attacks_chosen = 0; //if it is a ranged weapon any value above a 0 will be counted as maximum attacks.
         CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
         InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear_list.csv"));
         CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();

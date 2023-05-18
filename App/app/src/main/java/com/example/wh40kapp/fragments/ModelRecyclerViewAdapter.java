@@ -1,11 +1,13 @@
 package com.example.wh40kapp.fragments;
 
+import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -89,6 +91,25 @@ public class ModelRecyclerViewAdapter extends
         }
         holder.recyclerView_wargearList.setAdapter(new WargearRecyclerViewAdapter(wargear));
         holder.recyclerView_wargearList.setLayoutManager(new LinearLayoutManager(holder.recyclerView_wargearList.getContext()));
+        holder.setTexEditListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (editable.toString().matches("\\d+")) {
+                    holder.mItem.setModel_num(Integer.parseInt(editable.toString()));
+                    Log.d("TAG", "afterTextChanged: " + holder.mItem.getModel_num() + " " + holder.mItem.getName());
+                    return;
+                }
+                Toast.makeText(holder.editText_numOfModelValue.getContext(), "Model num can only be a positive integer", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -126,6 +147,10 @@ public class ModelRecyclerViewAdapter extends
         @Override
         public String toString() {
             return super.toString() + " '" + "'";
+        }
+
+        public void setTexEditListener(TextWatcher textEditListener) {
+            editText_numOfModelValue.addTextChangedListener(textEditListener);
         }
     }
 }
