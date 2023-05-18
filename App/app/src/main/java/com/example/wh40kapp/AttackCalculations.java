@@ -88,15 +88,33 @@ public class AttackCalculations {
         return S;
     }
 
+    /**
+     * Calculates the damage dealt by a single attack
+     * @param damageString the damage string of the weapon (like D6, 2D3, 3, D3+6, etc.)
+     * @param damageMod    the modifiers to the damage roll, first one is the re-roll threshold, second one is the modifier, third one is remaining re-rolls, forth is remaining bonuses.
+     * @return the damage dealt by the attack
+     */
     public static int damageDealt(String damageString, int[] damageMod) {
         // TODO: account for things like 2D3 damage
         int damage = 0;
-        if (damageString.contains("D6")) {
-            damage = DiceRoller.rollD6(damageMod[0], damageMod[1]);
-        } else if (damageString.contains("D3")) {
-            damage = DiceRoller.rollD3(damageMod[0], damageMod[1]);
-        } else {
-            damage = Integer.parseInt(damageString) + damageMod[1];
+        char[] damageArray = damageString.toCharArray();
+        if(damageString.contains("D")){
+            if (damageArray[0]=='D'){
+                if(damageArray[1] == 6)
+                    damage = DiceRoller.rollD6(damageMod[0], damageMod[1], damageMod[2] > 0, damageMod[3] > 0);
+                else
+                    damage = DiceRoller.rollD3(damageMod[0], damageMod[1], damageMod[2] > 0, damageMod[3] > 0);
+                damageMod[2]--;
+                damageMod[3]--;
+            }
+            else{
+                if (damageArray[2] == 6)
+                    for (int i = 0; i < Character.getNumericValue(damageArray[0]); i++)
+                        damage += DiceRoller.rollD6(damageMod[0], damageMod[1], damageMod[2] > 0, damageMod[3] > 0);
+                else
+                    for (int i = 0; i < Character.getNumericValue(damageArray[0]); i++)
+                        damage += DiceRoller.rollD3(damageMod[0], damageMod[1], damageMod[2] > 0, damageMod[3] > 0);
+            }
         }
         if (damageString.contains("+")) {
             damage += Integer.parseInt(damageString.substring(damageString.indexOf("+") + 1));

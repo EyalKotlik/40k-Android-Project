@@ -21,7 +21,6 @@ public class ModelViewerFragmentAdapter extends FragmentStateAdapter {
             fragments[position] = new ModelViewerFragment();
             return fragments[position];
         }
-        //TODO: add the battle results fragment
         fragments[position] = new ResultsViewerFragment(fragments);
         return fragments[position];
     }
