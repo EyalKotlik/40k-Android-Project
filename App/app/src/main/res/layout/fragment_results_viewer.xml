@@ -14,7 +14,7 @@
         android:text="Calculate Single Attack"
         app:layout_constraintEnd_toEndOf="@+id/textView_optionsTitle"
         app:layout_constraintStart_toStartOf="@+id/textView_optionsTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textView_optionsTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/switch_melee" />
 
     <TextView
         android:id="@+id/textView_optionsTitle"
@@ -44,11 +44,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text="Results"
         android:textColor="#B9D2D2"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/button_averageResult"
         app:layout_constraintStart_toStartOf="@+id/button_averageResult"
         app:layout_constraintTop_toBottomOf="@+id/button_averageResult" />
+
+    <Switch
+        android:id="@+id/switch_melee"
+        android:layout_width="98dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Melee"
+        android:textColor="#B9D2D2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_optionsTitle" />
+
+    <EditText
+        android:id="@+id/editText_distanceToTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Distance to Target"
+        android:inputType="number"
+        android:textColor="#B9D2D2"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_melee"
+        app:layout_constraintStart_toEndOf="@+id/switch_melee"
+        app:layout_constraintTop_toTopOf="@+id/switch_melee" />
+
+    <TextView
+        android:id="@+id/textView_singleAttackResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sample attack result:"
+        android:textColor="#B9D2D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView_averageAttackResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Average attack result: "
+        android:textColor="#B9D2D2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_singleAttackResult"
+        app:layout_constraintStart_toStartOf="@+id/textView_singleAttackResult"
+        app:layout_constraintTop_toBottomOf="@+id/textView_singleAttackResult" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@ public class AttackCalculations {
      */
     public static void singleModelAttackResult(Model attacker, Model defender, int[] hitMod, int[] woundMod, int[] saveMod, int[] damageMod, boolean melee, int distance, int[] result) {
         //TODO: account for daemonic, invulnerable saves
+        //TODO: account for distance in ranged attacks
         boolean attacked = false;
         for (int n = 0; n < attacker.getModel_num(); n++) {
             for (Wargear wargear : attacker.getWargear()) {
@@ -66,7 +67,9 @@ public class AttackCalculations {
                             continue;
                         attacked = true;
                         int attacks = DiceRoller.diceNotationToRoll(profile.getType()[1], new int[]{0, 0, 0, 0});
-                        attacks = Objects.equals(profile.getType()[0], "rapid fire") && distance > profile.getRange() / 2 ? attacks * 2 : attacks;
+                        attacks = Objects.equals(profile.getType()[0], "rapid fire") && distance < profile.getRange() / 2 ? attacks * 2 : attacks;
+                        Log.d("TAG", "singleModelAttackResult: Type: "+profile.getType()[0]+"; Range: "+profile.getRange()+"; Distance: "+distance+"; Attacks: "+attacks);
+                        Log.d("TAG", "singleModelAttackResult: attacks: " + attacks);
                         for (int i = 0; i < attacks; i++) {
                             Log.d("TAG", "singleModelAttackResult attack with: " + profile.getName() + "; [Dead, Wounded]: " + result[0] + " " + result[1]);
                             int hitRoll = DiceRoller.rollD6(hitMod[0], hitMod[1]);
@@ -93,6 +96,8 @@ public class AttackCalculations {
                                 }
                             }
                         }
+                        if (Objects.equals(profile.getType()[0], "pistol"))
+                            break; //if the model has a pistol, it can only shoot with the pistol
                     }
                 }
 
