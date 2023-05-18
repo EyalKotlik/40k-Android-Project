@@ -71,4 +71,41 @@ public class DiceRoller {
         }
         return Math.max(roll, 1);
     }
+
+    /**
+     *
+     * @param notation dice notation like 2D6+1, 3D3+2, 1D6-1, 2D3-2, 3, 4, etc.
+     * @param modifiers [rerollUnder, rollMod, canReroll, canHaveBonus]
+     * @return the result of the roll
+     */
+    public static int diceNotationToRoll(String notation, int[] modifiers){
+        int result = 0;
+        char[] modArray = notation.toCharArray();
+        if (notation.contains("D")) {
+            if (modArray[0] == 'D') {
+                if (modArray[1] == '6')
+                    result = DiceRoller.rollD6(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
+                else
+                    result = DiceRoller.rollD3(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
+                modifiers[2]--;
+                modifiers[3]--;
+            } else {
+                if (modArray[2] == '6')
+                    for (int i = 0; i < Character.getNumericValue(modArray[0]); i++)
+                        result += DiceRoller.rollD6(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
+                else
+                    for (int i = 0; i < Character.getNumericValue(modArray[0]); i++)
+                        result += DiceRoller.rollD3(modifiers[0], modifiers[1], modifiers[2] > 0, modifiers[3] > 0);
+            }
+        }
+        else
+            result = Integer.parseInt(notation.substring(0, Math.max(notation.indexOf("+"),1))) + (modifiers[3] > 0 ? modifiers[1] : 0);
+
+        if (notation.contains("+")) {
+            result += Integer.parseInt(notation.substring(notation.indexOf("+") + 1));
+        } else if (notation.contains("-")) {
+            result -= Integer.parseInt(notation.substring(notation.indexOf("-") + 1));
+        }
+        return result;
+    }
 }

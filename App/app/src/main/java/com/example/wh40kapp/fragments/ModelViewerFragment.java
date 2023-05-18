@@ -80,7 +80,7 @@ public class ModelViewerFragment extends Fragment {
             recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
         try {
-            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "skorpekh destroyer"))));
+            items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "necron warrior"))));
             items.add(new Model(context, Objects.requireNonNull(Model.canCreateModel(context, "triarch stalker"))));
         } catch (IOException | CsvValidationException e) {
             e.printStackTrace();
