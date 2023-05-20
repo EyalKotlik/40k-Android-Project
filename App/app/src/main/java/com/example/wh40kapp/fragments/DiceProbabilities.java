@@ -2,6 +2,7 @@ package com.example.wh40kapp.fragments;
 
 import android.util.Log;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction;
 import org.apache.commons.math4.legacy.core.Pair;
 import org.apache.commons.math4.legacy.distribution.EnumeratedDistribution;
@@ -9,9 +10,12 @@ import org.apache.commons.math4.legacy.distribution.EnumeratedIntegerDistributio
 import org.apache.commons.statistics.distribution.BinomialDistribution;
 import org.apache.commons.statistics.distribution.GeometricDistribution;
 import org.apache.commons.statistics.distribution.UniformDiscreteDistribution;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class DiceProbabilities {
 
@@ -137,6 +141,10 @@ public class DiceProbabilities {
         int modifier = Integer.parseInt(diceNotation[2]);
         double probability = 1.0 / numberOfSides;
         double[] coefficients = new double[numberOfSides+1];
+        if (numberOfDice == 0) {
+            coefficients[modifier] = 1;
+            return new PolynomialFunction(coefficients);
+        }
         coefficients[0] = 0;
         for (int i = 1; i <= numberOfSides; i++) {
             coefficients[i] = probability;
@@ -148,19 +156,47 @@ public class DiceProbabilities {
         }
         coefficients = polynomial1.getCoefficients();
         double[] newCoefficients = new double[coefficients.length + modifier];
-        System.arraycopy(coefficients, 0, newCoefficients, modifier, coefficients.length);
+        System.arraycopy(coefficients, 0, newCoefficients, modifier, coefficients.length); //TODO: crashes for negative modifiers
 
         return new PolynomialFunction(newCoefficients);
     }
 
 
-    public static PolynomialFunction attackResultsPolynomial(String attacks,int skill, int toWound, int save, int[] hitModifiers, int[] woundModifiers, int[] saveModifiers, String damage){
-        double[] hitProbabilities = probabilityToHit(skill, hitModifiers);
-        double[] woundProbabilities = probabilityToWound(toWound, woundModifiers);
-        double saveProbability = probabilityToNOTSave(save, saveModifiers);
-
-
-        return null;
+    /**
+     * @param polynomial polynomial function describing the probability of a dice roll
+     *                  (in the form of a polynomial function where the coefficients are the probabilities and the index is the number of successes)
+     * @param chanceToPass chance to pass the test
+     * @return the probability distribution of the dice roll
+     *         (in the form of a polynomial function where the coefficients are the probabilities and the index is the number of successes)
+     */
+    public static PolynomialFunction applyChanceToPass(PolynomialFunction polynomial, double chanceToPass) {
+        //TODO: add support for things that happen on an unmodified 6
+        double[] coefficients = polynomial.getCoefficients();
+        double[] newCoefficients = new double[coefficients.length];
+        BinomialDistribution binomialDistribution;
+        for (int i = 0; i < coefficients.length; i++) {
+            binomialDistribution = BinomialDistribution.of(i, chanceToPass);
+            for (int j = 0; j <= i; j++) {
+                newCoefficients[j] += coefficients[i] * binomialDistribution.probability(j);
+            }
+        }
+        return new PolynomialFunction(newCoefficients);
     }
 
+    public static PolynomialFunction applyDamage(PolynomialFunction hits, PolynomialFunction damage){
+        double[] hitsCoefficients = hits.getCoefficients();
+        double[] damageCoefficients = damage.getCoefficients();
+        double[] originalDamageCoefficients = damageCoefficients.clone();
+        PolynomialFunction originalDamage = new PolynomialFunction(damageCoefficients);
+        double[] newCoefficients = new double[hitsCoefficients.length*damageCoefficients.length];
+        newCoefficients[0] = hitsCoefficients[0];
+        for (int i = 1; i < hitsCoefficients.length; i++) {
+            damageCoefficients = damage.getCoefficients();
+            for(int j = 0; j < damageCoefficients.length; j++){
+                newCoefficients[j] += hitsCoefficients[i]*damageCoefficients[j];
+            }
+            damage = damage.multiply(originalDamage);
+        }
+        return new PolynomialFunction(newCoefficients);
+    }
 }
