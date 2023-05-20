@@ -40,6 +40,8 @@ dependencies {
     implementation('com.opencsv:opencsv:5.7.1')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation fileTree(dir: 'libs\\commons-math-4.0-beta1', include: ['*.aar', '*.jar'], exclude: [])
+    implementation 'org.testng:testng:6.9.6'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
