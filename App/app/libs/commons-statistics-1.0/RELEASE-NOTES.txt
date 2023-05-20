@@ -1,0 +1,32 @@
+                     Apache Commons Statistics
+                            Version 1.0
+                           Release Notes
+
+
+INTRODUCTION:
+
+This document contains the release notes for the 1.0 version of Apache Commons Statistics.
+
+The Apache Commons Statistics project provides tools for statistics.
+
+This is the first release of Apache Commons Statistics.
+
+Contains the following modules:
+
+  commons-statistics-distribution.
+
+Requires Java 8.
+
+No changes defined in this version.
+
+Historical list of changes: https://commons.apache.org/proper/commons-statistics/changes-report.html
+
+For complete information on Apache Commons Statistics, including instructions on how to submit bug
+reports, patches, or suggestions for improvement, see the Apache Commons Statistics website:
+
+https://commons.apache.org/proper/commons-statistics/
+
+Download page: https://commons.apache.org/proper/commons-statistics/download_text.cgi
+
+Have fun!
+-Apache Commons Team

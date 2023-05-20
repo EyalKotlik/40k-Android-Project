@@ -3,7 +3,6 @@ package com.example.wh40kapp.fragments;
 import android.util.Log;
 
 import org.apache.commons.math4.legacy.core.Pair;
-import org.apache.commons.math4.legacy.distribution.EnumeratedDistribution;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -121,4 +120,5 @@ public class DiceProbabilities {
 
         return notation;
     }
+
 }
