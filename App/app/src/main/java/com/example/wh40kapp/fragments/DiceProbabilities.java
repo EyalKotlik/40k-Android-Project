@@ -2,7 +2,10 @@ package com.example.wh40kapp.fragments;
 
 import android.util.Log;
 
+import org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction;
 import org.apache.commons.math4.legacy.core.Pair;
+import org.apache.commons.math4.legacy.distribution.EnumeratedDistribution;
+import org.apache.commons.math4.legacy.distribution.EnumeratedIntegerDistribution;
 import org.apache.commons.statistics.distribution.BinomialDistribution;
 import org.apache.commons.statistics.distribution.GeometricDistribution;
 import org.apache.commons.statistics.distribution.UniformDiscreteDistribution;
@@ -96,7 +99,7 @@ public class DiceProbabilities {
      * @param diceNotation the dice notation to be converted (e.g. 2d6+1, d6-1, 3, d6, 2d6, etc.)
      * @return [number of dice, number of sides, modifier]
      */
-    public static String[] diceNotationToCharacterArray(String diceNotation) {
+    public static String[] diceNotationToArray(String diceNotation) {
         String[] notation = new String[3];
 
         if (diceNotation.contains("d"))
@@ -120,8 +123,44 @@ public class DiceProbabilities {
             notation[2] = diceNotation.substring(diceNotation.indexOf('-'));
         } else
             notation[2] = "0";
-        
+
         return notation;
+    }
+
+    /**
+     * @param diceNotation [number of dice, number of sides, modifier]
+     * @return the probability distribution of the dice roll (in the form of a polynomial function where the coefficients are the probabilities)
+     */
+    public static PolynomialFunction diceArrayProbabilities(String[] diceNotation) {
+        int numberOfDice = Integer.parseInt(diceNotation[0]);
+        int numberOfSides = Integer.parseInt(diceNotation[1]);
+        int modifier = Integer.parseInt(diceNotation[2]);
+        double probability = 1.0 / numberOfSides;
+        double[] coefficients = new double[numberOfSides+1];
+        coefficients[0] = 0;
+        for (int i = 1; i <= numberOfSides; i++) {
+            coefficients[i] = probability;
+        }
+        PolynomialFunction polynomial1 = new PolynomialFunction(coefficients);
+        PolynomialFunction polynomial2 = new PolynomialFunction(coefficients);
+        for (int i = 1; i < numberOfDice; i++) {
+            polynomial1 = polynomial1.multiply(polynomial2);
+        }
+        coefficients = polynomial1.getCoefficients();
+        double[] newCoefficients = new double[coefficients.length + modifier];
+        System.arraycopy(coefficients, 0, newCoefficients, modifier, coefficients.length);
+
+        return new PolynomialFunction(newCoefficients);
+    }
+
+
+    public static PolynomialFunction attackResultsPolynomial(String attacks,int skill, int toWound, int save, int[] hitModifiers, int[] woundModifiers, int[] saveModifiers, String damage){
+        double[] hitProbabilities = probabilityToHit(skill, hitModifiers);
+        double[] woundProbabilities = probabilityToWound(toWound, woundModifiers);
+        double saveProbability = probabilityToNOTSave(save, saveModifiers);
+
+
+        return null;
     }
 
 }
