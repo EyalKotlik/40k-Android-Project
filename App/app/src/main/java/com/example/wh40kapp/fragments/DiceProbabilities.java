@@ -3,6 +3,9 @@ package com.example.wh40kapp.fragments;
 import android.util.Log;
 
 import org.apache.commons.math4.legacy.core.Pair;
+import org.apache.commons.statistics.distribution.BinomialDistribution;
+import org.apache.commons.statistics.distribution.GeometricDistribution;
+import org.apache.commons.statistics.distribution.UniformDiscreteDistribution;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,7 +120,7 @@ public class DiceProbabilities {
             notation[2] = diceNotation.substring(diceNotation.indexOf('-'));
         } else
             notation[2] = "0";
-
+        
         return notation;
     }
 
