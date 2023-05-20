@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp;
 
 import android.util.Log;
 
@@ -183,6 +183,12 @@ public class DiceProbabilities {
         return new PolynomialFunction(newCoefficients);
     }
 
+    /**
+     *
+     * @param hits     polynomial function describing the probability of each number of hits
+     * @param damage   polynomial function describing the probability of each damage roll
+     * @return         polynomial function describing the probability of each number of wounds
+     */
     public static PolynomialFunction applyDamage(PolynomialFunction hits, PolynomialFunction damage){
         double[] hitsCoefficients = hits.getCoefficients();
         double[] damageCoefficients = damage.getCoefficients();
@@ -197,6 +203,20 @@ public class DiceProbabilities {
             }
             damage = damage.multiply(originalDamage);
         }
+        //System.out.println(Arrays.stream(newCoefficients).sum());
         return new PolynomialFunction(newCoefficients);
+    }
+
+    public static EnumeratedDistribution polynomialToDistribution(PolynomialFunction polynomial){
+        double[] coefficients = polynomial.getCoefficients();
+        List<Pair<Integer,Double>> probabilities = new ArrayList<>();
+        for (int i = 0; i < coefficients.length; i++) {
+            probabilities.add(i, new Pair<Integer, Double>(i, coefficients[i]));
+        }
+        return new EnumeratedDistribution(probabilities);
+    }
+
+    public static PolynomialFunction combineResultPolynomials(PolynomialFunction result1, PolynomialFunction result2){
+        return result1.multiply(result2);
     }
 }

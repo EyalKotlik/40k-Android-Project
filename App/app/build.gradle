@@ -32,6 +32,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
@@ -41,6 +42,7 @@ dependencies {
     implementation('com.opencsv:opencsv:5.7.1')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation fileTree('libs\\commons-math-4.0-beta1')
     implementation ('org.testng:testng:6.9.6'){
         exclude group: 'junit', module: 'junit'
@@ -50,3 +52,5 @@ dependencies {
     androidTestImplementation ('androidx.test.ext:junit:1.1.5')
     androidTestImplementation ('androidx.test.espresso:espresso-core:3.4.0')
 }
+
+
