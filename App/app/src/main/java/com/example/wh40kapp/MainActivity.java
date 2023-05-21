@@ -1,6 +1,8 @@
 package com.example.wh40kapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -9,19 +11,29 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.wh40kapp.fragments.ModelViewerFragmentAdapter;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     private ModelViewerFragmentAdapter modelViewerFragmentAdapter;
     private Context context;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //TODO: prevent app from rotating - it crashes when rotating
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.context = this;
+        FirebaseApp.initializeApp(this);
+        mAuth = FirebaseAuth.getInstance();
+        if (mAuth.getCurrentUser() == null) {
+            Intent intent = new Intent(this, LandingPage.class);
+            startActivity(intent);
+        }
 
+        this.context = this;
         tabLayout = findViewById(R.id.tab_layout_battle);
         viewPager2 = findViewById(R.id.viewpager2_battle);
         modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);
