@@ -4,64 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#343434"
     tools:context=".CreateActivity">
 
-<<<<<<< HEAD
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout_create"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_returnToLandingPage2">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Models" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wargear" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profiles" />
-    </com.google.android.material.tabs.TabLayout>
-
-    <TextView
-        android:id="@+id/textView_create"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Create Mode"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/button_returnToLandingPage2"
-        app:layout_constraintEnd_toStartOf="@+id/button_returnToLandingPage2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpager2_create"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_below="@+id/tab_layout_create"
-        android:background="#000000"
-        android:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab_layout_create" />
-
     <Button
-        android:id="@+id/button_returnToLandingPage2"
+        android:id="@+id/button_returnToLandingPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Return To Landing Page"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-=======
->>>>>>> parent of f2dad8e (1 idea for createActivity)
+    <TextView
+        android:id="@+id/textView_create"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Create Mode"
+        android:textColor="#62A388"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/button_returnToLandingPage"
+        app:layout_constraintEnd_toStartOf="@+id/button_returnToLandingPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner_typeChoice"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:entries="@array/spinner_createChoice_array"
+        android:outlineAmbientShadowColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/spinner_creativeActionChoice"
+        app:layout_constraintTop_toTopOf="@+id/spinner_creativeActionChoice" />
+
+    <Button
+        android:id="@+id/button_confirmCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_typeChoice"
+        app:layout_constraintStart_toEndOf="@+id/spinner_typeChoice"
+        app:layout_constraintTop_toTopOf="@+id/spinner_typeChoice" />
+
+    <Spinner
+        android:id="@+id/spinner_creativeActionChoice"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/spinner_creativeActionChoice_array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_create" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
