@@ -63,24 +63,50 @@ public class ResultsViewerFragment extends Fragment {
         button_averageResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: make a function to calculate the average result of an attack
                 recyclerView_attackResults.setAdapter(averageAttackResultsAdapter);
                 recyclerView_attackResults.setLayoutManager(new LinearLayoutManager(recyclerView_attackResults.getContext()));
                 averageAttackResults.clear();
                 averageAttackResultsAdapter.notifyDataSetChanged();
 
-                int[] modifiers;
-                Model attacker, defender;
-                List<Pair<Integer, Double>> pmf;
-                for(int attackerIndex = 0; attackerIndex < ((ModelViewerFragment) fragments[0]).getItems().size(); attackerIndex++){
-                    for(int defenderIndex = 0; defenderIndex < ((ModelViewerFragment) fragments[1]).getItems().size(); defenderIndex++){
-                        attacker = ((ModelViewerFragment) fragments[0]).getItems().get(attackerIndex);
-                        defender = ((ModelViewerFragment) fragments[1]).getItems().get(defenderIndex);
-                        modifiers = new int[4];
-                        pmf = AttackCalculations.probabilityDistributionOfAttack(attacker, defender, modifiers, modifiers, modifiers, modifiers, isMelee, distanceToTarget);
-                        averageAttackResults.add(new AverageAttackResultsData(attacker.getName(), defender.getName(), AttackCalculations.averageWounds(pmf), AttackCalculations.averagePointEfficiency(attacker,defender,pmf),AttackCalculations.SD(pmf), pmf));
-                        averageAttackResultsAdapter.notifyItemChanged(averageAttackResults.size()-1);
-                    }
+
+
+                int attackerSize = ((ModelViewerFragment) fragments[0]).getItems().size();
+                int defenderSize = ((ModelViewerFragment) fragments[1]).getItems().size();
+
+                int totalIterations = attackerSize * defenderSize;
+                int numThreads = Runtime.getRuntime().availableProcessors();
+                int iterationsPerThread = totalIterations / numThreads;
+
+                for (int t = 0; t < numThreads; t++) {
+                    final int threadIndex = t;
+                    Thread calculationThread = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            int startIndex = threadIndex * iterationsPerThread;
+                            int endIndex = (threadIndex == numThreads - 1) ? totalIterations : startIndex + iterationsPerThread;
+
+                            for (int i = startIndex; i < endIndex; i++) {
+                                int attackerIndex = i / defenderSize;
+                                int defenderIndex = i % defenderSize;
+                                Model attacker = ((ModelViewerFragment) fragments[0]).getItems().get(attackerIndex);
+                                Model defender = ((ModelViewerFragment) fragments[1]).getItems().get(defenderIndex);
+                                int[] modifiers = new int[4];
+                                List<Pair<Integer, Double>> pmf = AttackCalculations.probabilityDistributionOfAttack(attacker, defender, modifiers, modifiers, modifiers, modifiers, isMelee, distanceToTarget);
+                                AverageAttackResultsData resultData = new AverageAttackResultsData(attacker.getName(), defender.getName(), AttackCalculations.averageWounds(pmf), AttackCalculations.averagePointEfficiency(attacker, defender, pmf), AttackCalculations.SD(pmf), pmf);
+                                synchronized (averageAttackResults) {
+                                    averageAttackResults.add(resultData);
+                                }
+                                getActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        averageAttackResultsAdapter.notifyItemInserted(averageAttackResults.size() - 1);
+                                    }
+                                });
+                            }
+                        }
+                    });
+
+                    calculationThread.start();
                 }
             }
         });

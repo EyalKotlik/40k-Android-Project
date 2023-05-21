@@ -140,7 +140,7 @@ public class DiceProbabilities {
         int numberOfSides = Integer.parseInt(diceNotation[1]);
         int modifier = Integer.parseInt(diceNotation[2]);
         double probability = 1.0 / numberOfSides;
-        double[] coefficients = new double[numberOfSides+1];
+        double[] coefficients = new double[numberOfSides+modifier+1];
         if (numberOfDice == 0) {
             coefficients[modifier] = 1;
             return new PolynomialFunction(coefficients);
