@@ -13,6 +13,14 @@
         android:theme="@style/Theme.Wh40kApp"
         tools:targetApi="31">
         <activity
+            android:name=".LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_landing_page"
+            android:theme="@style/Theme.Wh40kApp" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

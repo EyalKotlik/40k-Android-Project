@@ -6,8 +6,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -30,7 +32,7 @@ public class ModelViewerFragment extends Fragment {
 
 
     private int mColumnCount = 1;
-    private Button button_AddModel;
+    private Button button_confirm;
     private EditText editText_addedModelName;
     private static final String ARG_COLUMN_COUNT = "column-count";
 
@@ -39,6 +41,8 @@ public class ModelViewerFragment extends Fragment {
     }
 
     private ArrayList<Model> items;
+    private Spinner spinner_actionChoice;
+    private String actionChoice;
 
     @SuppressWarnings("unused")
     public static ModelViewerFragment newInstance(int columnCount) {
@@ -89,25 +93,50 @@ public class ModelViewerFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
-        editText_addedModelName = (EditText) view.findViewById(R.id.editText_addedModelName);
-        button_AddModel = (Button) view.findViewById(R.id.button_AddModel);
-        button_AddModel.setOnClickListener(new View.OnClickListener() {
+        editText_addedModelName = (EditText) view.findViewById(R.id.editText_modelName);
+        button_confirm = (Button) view.findViewById(R.id.button_confirm);
+        button_confirm.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                try {
-                    String[] model = Model.canCreateModel(requireContext(), editText_addedModelName.getText().toString().toLowerCase().trim());
-                    if (model == null) {
-                        Toast.makeText(requireContext(), "Model not found", Toast.LENGTH_SHORT).show();
-                        Log.d("ModelViewerFragment", "onClick: model not found");
-                        return;
+                if ( spinner_actionChoice.getSelectedItem().toString().equals("Remove") ) {
+                    for (int i=0; i<items.size();i++){
+                        if (items.get(i).getName().equals(editText_addedModelName.getText().toString().toLowerCase().trim())){
+                            items.remove(i);
+                            adapter.notifyItemRemoved(i);
+                            break;
+                        }
                     }
-                    items.add(new Model(requireContext(), model));
-                    adapter.notifyItemInserted(items.size() - 1);
-                } catch (IOException | CsvValidationException e) {
-                    Log.d("ModelViewerFragment", "onClick: failed to add model");
+                }
+                else if (spinner_actionChoice.getSelectedItem().toString().equals("Add")) {
+                    try {
+                        String[] model = Model.canCreateModel(requireContext(), editText_addedModelName.getText().toString().toLowerCase().trim());
+                        if (model == null) {
+                            Toast.makeText(requireContext(), "Model not found", Toast.LENGTH_SHORT).show();
+                            Log.d("ModelViewerFragment", "onClick: model not found");
+                        }
+                        items.add(new Model(requireContext(), model));
+                        adapter.notifyItemInserted(items.size() - 1);
+                    } catch (IOException | CsvValidationException e) {
+                        Log.d("ModelViewerFragment", "onClick: failed to add model");
+                    }
+                }
+                else if (spinner_actionChoice.getSelectedItem().toString().equals("Add custom")) {
+                    Log.d("Adding Custom Model", "onClick: "+editText_addedModelName.getText().toString().toLowerCase().trim());
                 }
             }
         });
+        spinner_actionChoice = (Spinner) view.findViewById(R.id.spinner_actionChoice);
+        /*/spinner_actionChoice.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                actionChoice = parent.getItemAtPosition(position).toString();
+                Log.d("ModelViewerFragment", "onItemSelected: " + actionChoice);
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Handle the case where no item is selected
+            }
+        });*/
         return view;
     }
 }

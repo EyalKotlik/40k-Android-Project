@@ -3,6 +3,20 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\app\src\main\assets\Datasheets.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="|" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\app\src\main\assets\Datasheets_keywords.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="|" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\app\src\main\assets\Datasheets_models.csv">
           <value>
             <Attribute>
@@ -18,6 +32,13 @@
           </value>
         </entry>
         <entry key="\app\src\main\assets\Datasheets_wargear.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="|" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\app\src\main\assets\Wargear.csv">
           <value>
             <Attribute>
               <option name="separator" value="|" />

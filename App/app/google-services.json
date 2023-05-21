@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911486651520",
+    "project_id": "wh40k-app",
+    "storage_bucket": "wh40k-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911486651520:android:c4bf33fa8c8cec0c6baa65",
+        "android_client_info": {
+          "package_name": "com.example.wh40kapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911486651520-2tghbn1ub4krhga4hqa6hblleg8amtd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtgUd-r1rHfxE6EeWfxtCjrz2-blQoXTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911486651520-2tghbn1ub4krhga4hqa6hblleg8amtd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

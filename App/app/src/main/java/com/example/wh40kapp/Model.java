@@ -10,12 +10,13 @@ import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.Objects;
 
-public class Model {
+public class Model implements Serializable {
     private String name, unitComposition, wargearOptions;
     private int id, line, ws, bs, s, t, w, a, model_num, cost;
     private Dictionary<String, int[]> saves;

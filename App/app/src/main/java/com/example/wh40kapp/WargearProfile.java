@@ -10,9 +10,10 @@ import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.util.Objects;
 
-public class WargearProfile {
+public class WargearProfile implements Serializable {
     private int id, line, range, ap, attacks_chosen;
     private String name, s, d;
     private String[] type;
