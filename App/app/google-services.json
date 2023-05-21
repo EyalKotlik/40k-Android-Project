@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "911486651520",
+    "firebase_url": "https://wh40k-app-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "wh40k-app",
     "storage_bucket": "wh40k-app.appspot.com"
   },

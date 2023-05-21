@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ModelViewerFragmentAdapter modelViewerFragmentAdapter;
     private Context context;
     private FirebaseAuth mAuth;
+    private Button button_returnToLandingPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewpager2_battle);
         modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);
         viewPager2.setAdapter(modelViewerFragmentAdapter);
+        button_returnToLandingPage = findViewById(R.id.button_returnToLandingPage1);
+        button_returnToLandingPage.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LandingPage.class);
+            startActivity(intent);
+        });
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

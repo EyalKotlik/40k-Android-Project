@@ -1,6 +1,7 @@
 package com.example.wh40kapp;
 
 import android.content.Context;
+import android.os.Parcelable;
 
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
@@ -22,6 +23,21 @@ public class Model implements Serializable {
     private Dictionary<String, int[]> saves;
     private ArrayList<String> keywords;
     private ArrayList<Wargear> wargear;
+
+    public Model(String name, int cost, int ws, int bs, int s, int t, int w, int a, int save, ArrayList<Wargear> wargear) {
+        this.name = name;
+        this.cost = cost;
+        this.ws = ws;
+        this.bs = bs;
+        this.s = s;
+        this.t = t;
+        this.w = w;
+        this.a = a;
+        this.saves = new Hashtable<String, int[]>();
+        this.saves.put("armour", new int[]{save, save});
+        this.wargear = wargear;
+        this.model_num = 1;
+    }
 
     public String getName() {
         return name;

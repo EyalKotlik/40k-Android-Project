@@ -1,7 +1,12 @@
 package com.example.wh40kapp;
 
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -11,8 +16,11 @@ import com.google.firebase.auth.FirebaseAuth;
 public class CreateActivity extends AppCompatActivity {
 
     private Spinner spinner_typeChoice,spinner_creativeActionChoice;
-    private Button button_confirmCreate;
+    private Button button_confirmCreate, button_returnToLandingPage;
     private FirebaseAuth mAuth;
+    private Model mResult;
+    private Wargear wResult;
+    private WargearProfile pResult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +33,17 @@ public class CreateActivity extends AppCompatActivity {
             String creativeActionChoice = spinner_creativeActionChoice.getSelectedItem().toString();
 
             //TODO: start activity for result
+            if( creativeActionChoice.equals("Add")){
+                if (typeChoice.equals("Model")){
+                    Intent intent = new Intent(this, CreateModel.class);
+                    startActivity(intent);
+                }
+            }
+        });
+        button_returnToLandingPage = findViewById(R.id.button_returnToLandingPage);
+        button_returnToLandingPage.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LandingPage.class);
+            startActivity(intent);
         });
     }
 }

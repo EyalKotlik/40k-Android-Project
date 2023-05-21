@@ -18,6 +18,17 @@ public class WargearProfile implements Serializable {
     private String name, s, d;
     private String[] type;
 
+    public WargearProfile(int id, int line, int range, int ap, int attacks_chosen, String name, String s, String d, String[] type){
+        this.id = id;
+        this.line = line;
+        this.range = range;
+        this.ap = ap;
+        this.attacks_chosen = attacks_chosen;
+        this.name = name;
+        this.s = s;
+        this.d = d;
+        this.type = type;
+    }
     public int getId() {
         return id;
     }

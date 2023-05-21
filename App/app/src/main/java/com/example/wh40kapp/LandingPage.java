@@ -32,12 +32,12 @@ public class LandingPage extends AppCompatActivity {
         setContentView(R.layout.activity_landing_page);
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
         mAuth = FirebaseAuth.getInstance();
+        textView_account = findViewById(R.id.textView_account);
         if (mAuth.getCurrentUser() != null) {
             textView_account.setText("Welcome, " + mAuth.getCurrentUser().getEmail());
         }
         editText_email = findViewById(R.id.editTextTextEmailAddress);
         editText_password = findViewById(R.id.editTextTextPassword);
-        textView_account = findViewById(R.id.textView_account);
 
         button_signIn = findViewById(R.id.button_signIn);
         button_signIn.setOnClickListener(v -> {

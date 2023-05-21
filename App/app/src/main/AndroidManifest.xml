@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Wh40kApp"
         tools:targetApi="31">
         <activity
+            android:name=".CreateModel"
+            android:exported="false" />
+        <activity
             android:name=".CreateActivity"
             android:exported="false" />
         <activity

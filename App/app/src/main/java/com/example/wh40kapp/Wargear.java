@@ -18,6 +18,14 @@ public class Wargear implements Serializable {
     private String name, profileChoice;
     private ArrayList<WargearProfile> profiles;
 
+    public Wargear(int id, int cost, String name, String profileChoice, ArrayList<WargearProfile> profiles) {
+        this.id = id;
+        this.cost = cost;
+        this.name = name;
+        this.profileChoice = profileChoice;
+        this.profiles = profiles;
+    }
+
     public int getId() {
         return id;
     }
@@ -85,7 +93,7 @@ public class Wargear implements Serializable {
             }
         }
         if (!initializedWargear)
-            throw   new RuntimeException("the model named '"+name+"' does not exist");
+            throw   new RuntimeException("the wargear named '"+name+"' does not exist");
         this.name = nextLine[1];
         reader.close();
 
@@ -99,5 +107,27 @@ public class Wargear implements Serializable {
             }
         }
         reader.close();
+    }
+
+    public static String[] canCreateWargear(Context context, String name) throws IOException, CsvValidationException {
+        CSVParser parser = new CSVParserBuilder().withSeparator('|').build();
+        InputStreamReader inputStreamReader = new InputStreamReader(context.getAssets().open("Wargear_list.csv"));
+        CSVReader reader = new CSVReaderBuilder(inputStreamReader).withCSVParser(parser).build();
+        String[] nextLine, wargear = new String[14];
+        boolean initializedModel = false;
+        while ((nextLine = reader.readNext()) != null) {
+            if (nextLine[2].equals(name)) {
+                wargear = nextLine;
+                reader.close();
+                initializedModel = true;
+                break;
+            }
+        }
+        if (!initializedModel) {
+            reader.close();
+            inputStreamReader.close();
+            return null;
+        }
+        return wargear;
     }
 }

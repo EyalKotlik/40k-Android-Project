@@ -12,17 +12,26 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.wh40kapp.CompressedModel;
 import com.example.wh40kapp.Model;
 import com.example.wh40kapp.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 /**
@@ -112,6 +121,7 @@ public class ModelViewerFragment extends Fragment {
                         if (model == null) {
                             Toast.makeText(requireContext(), "Model not found", Toast.LENGTH_SHORT).show();
                             Log.d("ModelViewerFragment", "onClick: model not found");
+                            return;
                         }
                         items.add(new Model(requireContext(), model));
                         adapter.notifyItemInserted(items.size() - 1);
@@ -121,6 +131,30 @@ public class ModelViewerFragment extends Fragment {
                 }
                 else if (spinner_actionChoice.getSelectedItem().toString().equals("Add custom")) {
                     Log.d("Adding Custom Model", "onClick: "+editText_addedModelName.getText().toString().toLowerCase().trim());
+                    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+                    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child(mAuth.getCurrentUser().getUid()).child("models");
+                    mDatabase.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DataSnapshot> task) {
+                            Log.d("Adding Custom Model", "onComplete: ");
+                            if (task.isSuccessful()) {
+                                DataSnapshot dataSnapshot = task.getResult();
+                                if (dataSnapshot.exists()) {
+                                    HashMap values = (HashMap) ((HashMap) dataSnapshot.getValue()).get(editText_addedModelName.getText().toString().toLowerCase().trim());
+                                    items.add(CompressedModel.compressedModelFromHash(values).uncompressModel());
+                                    adapter.notifyItemInserted(items.size() - 1);
+                                    Log.d("TAG", "onComplete: "+values.toString());
+
+                                } else {
+                                    Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                                }
+                            } else {
+                                // Handle the error
+                                Exception exception = task.getException();
+                                Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
                 }
             }
         });
