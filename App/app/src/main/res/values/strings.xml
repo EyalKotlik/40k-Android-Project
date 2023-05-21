@@ -96,6 +96,17 @@
         <item>Add</item>
         <item>Remove</item>
     </string-array>
+    <string-array name="spinner_createChoice_array">
+        <item>Model</item>
+        <item>Wargear</item>
+        <item>Wargear profile</item>
+        <item>Ability</item>
+    </string-array>
+    <string-array name="spinner_creativeActionChoice_array">
+        <item>Add</item>
+        <item>Edit</item>
+        <item>Remove</item>
+    </string-array>
     <string name="title_activity_landing_page">LandingPageActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
