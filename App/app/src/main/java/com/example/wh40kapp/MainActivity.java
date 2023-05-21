@@ -2,10 +2,8 @@ package com.example.wh40kapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
@@ -21,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private ModelViewerFragmentAdapter modelViewerFragmentAdapter;
     private Context context;
     private FirebaseAuth mAuth;
-    private Button button_returnToLandingPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +31,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, LandingPage.class);
             startActivity(intent);
         }
+
         this.context = this;
         tabLayout = findViewById(R.id.tab_layout_battle);
         viewPager2 = findViewById(R.id.viewpager2_battle);
-        button_returnToLandingPage = findViewById(R.id.button_returnToLandingPage1);
-        button_returnToLandingPage.setOnClickListener(v -> {
-            Intent intent = new Intent(this, LandingPage.class);
-            startActivity(intent);
-        });
         modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);
         viewPager2.setAdapter(modelViewerFragmentAdapter);
 

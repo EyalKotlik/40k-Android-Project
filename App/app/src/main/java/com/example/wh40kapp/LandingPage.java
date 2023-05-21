@@ -32,21 +32,17 @@ public class LandingPage extends AppCompatActivity {
         setContentView(R.layout.activity_landing_page);
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
         mAuth = FirebaseAuth.getInstance();
-        textView_account = findViewById(R.id.textView_account);
         if (mAuth.getCurrentUser() != null) {
             textView_account.setText("Welcome, " + mAuth.getCurrentUser().getEmail());
         }
         editText_email = findViewById(R.id.editTextTextEmailAddress);
         editText_password = findViewById(R.id.editTextTextPassword);
+        textView_account = findViewById(R.id.textView_account);
 
         button_signIn = findViewById(R.id.button_signIn);
         button_signIn.setOnClickListener(v -> {
                     email = editText_email.getText().toString();
                     password = editText_password.getText().toString();
-                    if (email.isEmpty() || password.isEmpty()) {
-                        Toast.makeText(LandingPage.this, "Please enter an email and password", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
                     mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             Toast.makeText(LandingPage.this, "Sign in successful", Toast.LENGTH_SHORT).show();
@@ -63,10 +59,6 @@ public class LandingPage extends AppCompatActivity {
         button_signUp.setOnClickListener(v -> {
             email = editText_email.getText().toString();
             password = editText_password.getText().toString();
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(LandingPage.this, "Please enter an email and password", Toast.LENGTH_SHORT).show();
-                return;
-            }
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(LandingPage.this, "Sign up successful", Toast.LENGTH_SHORT).show();
