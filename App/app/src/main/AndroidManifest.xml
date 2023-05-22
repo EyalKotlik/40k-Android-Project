@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
 
     <application
         android:allowBackup="true"
@@ -10,8 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Wh40kApp"
+        android:theme="@style/Theme.Wh40kApp.NoActionBar"
         tools:targetApi="31">
+        <service
+            android:name=".AppUsageNotifications"
+            android:enabled="true"
+            android:exported="false" />
+
         <activity
             android:name=".CreateWargearProfile"
             android:exported="false" />
@@ -27,11 +34,6 @@
         <activity
             android:name=".LandingPage"
             android:exported="false" />
-        <activity
-            android:name=".LandingPageActivity"
-            android:exported="false"
-            android:label="@string/title_activity_landing_page"
-            android:theme="@style/Theme.Wh40kApp" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

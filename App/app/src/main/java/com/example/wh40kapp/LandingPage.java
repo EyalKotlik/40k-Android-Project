@@ -1,6 +1,7 @@
 package com.example.wh40kapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,9 +14,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import org.w3c.dom.Text;
-
-import java.util.Set;
+import java.util.Date;
 
 
 public class LandingPage extends AppCompatActivity {
@@ -30,7 +29,10 @@ public class LandingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
-        AppUsageNotifications appUsageNotifications = new AppUsageNotifications(this);
+        SharedPreferences preferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
+        preferences.edit().putLong("lastAppUsageTime", new Date().getTime()).apply();
+        Intent notificationIntent = new Intent(this, AppUsageNotifications.class);
+        ContextCompat.startForegroundService(this, notificationIntent);
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
         mAuth = FirebaseAuth.getInstance();
         textView_account = findViewById(R.id.textView_account);
