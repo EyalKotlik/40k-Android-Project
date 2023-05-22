@@ -7,6 +7,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
@@ -88,7 +89,8 @@ public class AppUsageNotifications extends Service {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("The Omnissiah has noticed that you haven't used the app for 14 days")
                 .setContentText("Use the app; or you and the phone's machine spirit will be purged.")
-                .setSmallIcon(R.drawable.cog_mechanicum)
+                .setSmallIcon(R.drawable.necrons)
+                .setColor(getResources().getColor(R.color.white, getTheme()))
                 .setPriority(NotificationCompat.PRIORITY_MAX);
         Log.d("TAG", "sendNotification: ");
         notificationManager.notify(1, builder.build());
@@ -104,7 +106,8 @@ public class AppUsageNotifications extends Service {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("The Omnissiah is watching you")
                 .setContentText("Fail to use the app; and suffer the consequences of your heresy.")
-                .setSmallIcon(R.drawable.cog_mechanicum)
+                .setSmallIcon(R.drawable.necrons)
+                .setColor(getResources().getColor(R.color.white, getTheme()))
                 .setPriority(NotificationCompat.PRIORITY_MAX);
         return builder.build();
     }
