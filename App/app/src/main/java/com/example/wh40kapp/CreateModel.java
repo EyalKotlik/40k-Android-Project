@@ -1,7 +1,6 @@
 package com.example.wh40kapp;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,19 +13,20 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.wh40kapp.fragments.ModelRecyclerViewAdapter;
 import com.example.wh40kapp.fragments.WargearRecyclerViewAdapter;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.SuccessContinuation;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class CreateModel extends AppCompatActivity {
     private EditText editText_modelName, editText_cost, editText_weaponSkill,
@@ -55,7 +55,7 @@ public class CreateModel extends AppCompatActivity {
         button_addWargear = findViewById(R.id.button_confirm2);
         button_discard = findViewById(R.id.button_discard);
         button_confirmCreateModel = findViewById(R.id.button_saveModel);
-        recyclerView_wargearList = findViewById(R.id.recyclerView_newWargear);
+        recyclerView_wargearList = findViewById(R.id.recyclerView_newWargearProfiles);
         spinner_wargearActionChoice = findViewById(R.id.spinner_actionChoice2);
         items = new ArrayList<Wargear>();
         WargearRecyclerViewAdapter adapter = new WargearRecyclerViewAdapter(items);
@@ -87,6 +87,35 @@ public class CreateModel extends AppCompatActivity {
                     }
                 } else if (spinner_wargearActionChoice.getSelectedItem().toString().equals("Add custom")) {
                     Log.d("Adding Custom Wargear", "onClick: " + editText_wargearName.getText().toString().toLowerCase().trim());
+                    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+                    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child(mAuth.getCurrentUser().getUid()).child("wargear");
+                    mDatabase.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DataSnapshot> task) {
+                            Log.d("Adding Custom Wargear", "onComplete: ");
+                            if (task.isSuccessful()) {
+                                DataSnapshot dataSnapshot = task.getResult();
+                                if (dataSnapshot.exists()) {
+                                    HashMap values = (HashMap) ((HashMap) dataSnapshot.getValue()).get(editText_wargearName.getText().toString().toLowerCase().trim());
+                                    if (values == null) {
+                                        Toast.makeText(editText_wargearName.getContext(), "Wargear not found", Toast.LENGTH_SHORT).show();
+                                        Log.d("ModelViewerFragment", "onClick: wargear not found");
+                                        return;
+                                    }
+                                    items.add(CompressedWargear.compressedWargearFromHash(values).uncompressWargear());
+                                    adapter.notifyItemInserted(items.size() - 1);
+                                    Log.d("TAG", "onComplete: "+values.toString());
+
+                                } else {
+                                    Toast.makeText(editText_wargearName.getContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                                }
+                            } else {
+                                // Handle the error
+                                Exception exception = task.getException();
+                                Toast.makeText(editText_wargearName.getContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
                 }
             }
         });

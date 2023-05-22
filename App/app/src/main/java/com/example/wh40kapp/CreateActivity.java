@@ -37,7 +37,14 @@ public class CreateActivity extends AppCompatActivity {
                 if (typeChoice.equals("Model")){
                     Intent intent = new Intent(this, CreateModel.class);
                     startActivity(intent);
+                } else if (typeChoice.equals("Wargear")){
+                    Intent intent = new Intent(this, CreateWargear.class);
+                    startActivity(intent);
+                } else if (typeChoice.equals("Profile")){
+                    Intent intent = new Intent(this, CreateWargearProfile.class);
+                    startActivity(intent);
                 }
+
             }
         });
         button_returnToLandingPage = findViewById(R.id.button_returnToLandingPage);

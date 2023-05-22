@@ -122,7 +122,7 @@ public class WargearProfile implements Serializable {
 
         this.name = profile[2];
         if (!profile[3].equals("melee"))
-            this.range = Integer.parseInt(profile[3]);
+            this.range = Integer.parseInt(profile[3].split("-")[profile[3].contains("-") ? 1 : 0]);
         else
             this.range = -1;
         this.type = profile[4].split(" ");

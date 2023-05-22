@@ -141,6 +141,11 @@ public class ModelViewerFragment extends Fragment {
                                 DataSnapshot dataSnapshot = task.getResult();
                                 if (dataSnapshot.exists()) {
                                     HashMap values = (HashMap) ((HashMap) dataSnapshot.getValue()).get(editText_addedModelName.getText().toString().toLowerCase().trim());
+                                    if (values == null) {
+                                        Toast.makeText(requireContext(), "Model not found", Toast.LENGTH_SHORT).show();
+                                        Log.d("ModelViewerFragment", "onClick: model not found");
+                                        return;
+                                    }
                                     items.add(CompressedModel.compressedModelFromHash(values).uncompressModel());
                                     adapter.notifyItemInserted(items.size() - 1);
                                     Log.d("TAG", "onComplete: "+values.toString());

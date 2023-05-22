@@ -106,6 +106,10 @@
         <item>Wargear</item>
         <item>Profile</item>
     </string-array>
+    <string-array name="spinner_addOnlyCustom">
+        <item>Add custom</item>
+        <item>Remove</item>
+    </string-array>
     <string name="title_activity_landing_page">LandingPageActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

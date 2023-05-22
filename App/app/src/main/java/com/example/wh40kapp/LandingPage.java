@@ -30,6 +30,7 @@ public class LandingPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
+        AppUsageNotifications appUsageNotifications = new AppUsageNotifications(this);
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
         mAuth = FirebaseAuth.getInstance();
         textView_account = findViewById(R.id.textView_account);

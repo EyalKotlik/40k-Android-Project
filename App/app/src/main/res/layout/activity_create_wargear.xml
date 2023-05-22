@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    tools:context=".CreateWargear">
+
+    <Button
+        android:id="@+id/button_saveWargear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Wargear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_discard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_newWargearProfiles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_discard3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_wargearProfileName" />
+
+    <Button
+        android:id="@+id/button_confirm4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="confirm"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_actionChoice4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_actionChoice4" />
+
+    <Spinner
+        android:id="@+id/spinner_actionChoice4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:entries="@array/spinner_addOnlyCustom"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_wargearProfileName"
+        app:layout_constraintEnd_toStartOf="@+id/button_confirm4"
+        app:layout_constraintStart_toEndOf="@+id/editText_wargearProfileName"
+        app:layout_constraintTop_toTopOf="@+id/editText_wargearProfileName" />
+
+    <EditText
+        android:id="@+id/editText_wargearProfileName"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Immortal"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_wargearName2" />
+
+    <EditText
+        android:id="@+id/editText_wargearName2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Wargear name: "
+        android:textColor="#62A388"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_wargearName2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_wargearName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
