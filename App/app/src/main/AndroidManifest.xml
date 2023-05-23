@@ -21,18 +21,23 @@
 
         <activity
             android:name=".activities.CreateWargearProfile"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".activities.CreateWargear"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".activities.CreateModel"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".activities.CreateActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".activities.LandingPage"
+            android:screenOrientation="portrait"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +51,7 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
     </application>
 
