@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp.adapters;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,8 +12,8 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.Model;
-import com.example.wh40kapp.Wargear;
+import com.example.wh40kapp.data.Model;
+import com.example.wh40kapp.data.Wargear;
 import com.example.wh40kapp.databinding.FragmentModelViewerBinding;
 
 import java.util.ArrayList;

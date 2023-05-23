@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp.adapters;
 
 import android.util.Log;
 
@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.wh40kapp.fragments.ModelViewerFragment;
+import com.example.wh40kapp.fragments.ResultsViewerFragment;
 
 public class ModelViewerFragmentAdapter extends FragmentStateAdapter {
     public Fragment[] fragments = new Fragment[3];

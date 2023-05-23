@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.Model;
 import com.example.wh40kapp.R;
-import com.example.wh40kapp.Wargear;
+import com.example.wh40kapp.data.Wargear;
 
 import java.util.List;
 

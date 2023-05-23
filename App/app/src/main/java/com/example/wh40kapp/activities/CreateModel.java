@@ -1,4 +1,4 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.wh40kapp.fragments.WargearRecyclerViewAdapter;
+import com.example.wh40kapp.R;
+import com.example.wh40kapp.adapters.WargearRecyclerViewAdapter;
+import com.example.wh40kapp.data.CompressedModel;
+import com.example.wh40kapp.data.CompressedProfile;
+import com.example.wh40kapp.data.CompressedWargear;
+import com.example.wh40kapp.data.Wargear;
+import com.example.wh40kapp.data.WargearProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -127,6 +134,19 @@ public class CreateModel extends AppCompatActivity {
         button_confirmCreateModel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 ArrayList<CompressedWargear> wargear = new ArrayList<CompressedWargear>();
+                if (TextUtils.isEmpty(editText_modelName.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_cost.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_weaponSkill.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_ballisticSkill.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_strength.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_toughness.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_wounds.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_attacks.getText().toString().trim()) ||
+                        TextUtils.isEmpty(editText_save.getText().toString().trim()) ||
+                        items.size() == 0) {
+                    Toast.makeText(editText_modelName.getContext(), "Please fill out all fields", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 for (int i = 0; i < items.size(); i++) {
                     ArrayList<CompressedProfile> profiles = new ArrayList<CompressedProfile>();
                     for (WargearProfile profile : items.get(i).getProfiles()) {

@@ -1,6 +1,10 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.logic;
 
 import android.util.Log;
+
+import com.example.wh40kapp.data.Model;
+import com.example.wh40kapp.data.Wargear;
+import com.example.wh40kapp.data.WargearProfile;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction;

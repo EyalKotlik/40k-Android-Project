@@ -1,6 +1,4 @@
-package com.example.wh40kapp;
-
-import android.util.Log;
+package com.example.wh40kapp.logic;
 
 public class DiceRoller {
     /**
@@ -76,7 +74,7 @@ public class DiceRoller {
 
     /**
      *
-     * @param notation dice notation like 2D6+1, 3D3+2, 1D6-1, 2D3-2, 3, 4, etc.
+     * @param notation dice notation like 2d6+1, 3d3+2, 1d6-1, 2d3-2, 3, 4, etc.
      * @param modifiers [rerollUnder, rollMod, canReroll, canHaveBonus]
      * @return the result of the roll
      */

@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -18,9 +17,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.CompressedModel;
-import com.example.wh40kapp.Model;
+import com.example.wh40kapp.data.CompressedModel;
+import com.example.wh40kapp.data.Model;
 import com.example.wh40kapp.R;
+import com.example.wh40kapp.adapters.ModelRecyclerViewAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -51,7 +51,6 @@ public class ModelViewerFragment extends Fragment {
 
     private ArrayList<Model> items;
     private Spinner spinner_actionChoice;
-    private String actionChoice;
 
     @SuppressWarnings("unused")
     public static ModelViewerFragment newInstance(int columnCount) {
@@ -164,18 +163,6 @@ public class ModelViewerFragment extends Fragment {
             }
         });
         spinner_actionChoice = (Spinner) view.findViewById(R.id.spinner_actionChoice);
-        /*/spinner_actionChoice.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                actionChoice = parent.getItemAtPosition(position).toString();
-                Log.d("ModelViewerFragment", "onItemSelected: " + actionChoice);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                // Handle the case where no item is selected
-            }
-        });*/
         return view;
     }
 }

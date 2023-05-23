@@ -1,4 +1,4 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.wh40kapp.fragments.WargearProfileRecyclerViewAdapter;
-import com.example.wh40kapp.fragments.WargearRecyclerViewAdapter;
+import com.example.wh40kapp.R;
+import com.example.wh40kapp.adapters.WargearProfileRecyclerViewAdapter;
+import com.example.wh40kapp.data.CompressedProfile;
+import com.example.wh40kapp.data.CompressedWargear;
+import com.example.wh40kapp.data.WargearProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -23,9 +26,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.opencsv.exceptions.CsvValidationException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 

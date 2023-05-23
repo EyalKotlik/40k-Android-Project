@@ -1,9 +1,7 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.data;
 
 import java.util.ArrayList;
-import java.util.Dictionary;
 import java.util.HashMap;
-import java.util.Hashtable;
 
 public class CompressedModel {
     private String name, unitComposition, wargearOptions;

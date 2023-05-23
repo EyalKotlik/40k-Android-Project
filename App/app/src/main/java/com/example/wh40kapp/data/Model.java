@@ -1,7 +1,6 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.data;
 
 import android.content.Context;
-import android.os.Parcelable;
 
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;

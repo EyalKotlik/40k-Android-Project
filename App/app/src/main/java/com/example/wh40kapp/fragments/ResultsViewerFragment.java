@@ -18,11 +18,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.AttackCalculations;
-import com.example.wh40kapp.AttackResultsData;
-import com.example.wh40kapp.AverageAttackResultsData;
-import com.example.wh40kapp.DiceProbabilities;
-import com.example.wh40kapp.Model;
+import com.example.wh40kapp.adapters.AttackResultsRecyclerViewAdapter;
+import com.example.wh40kapp.adapters.AverageAttackResultsRecyclerViewerAdapter;
+import com.example.wh40kapp.logic.AttackCalculations;
+import com.example.wh40kapp.data.AttackResultsData;
+import com.example.wh40kapp.data.AverageAttackResultsData;
+import com.example.wh40kapp.data.Model;
 import com.example.wh40kapp.R;
 
 import org.apache.commons.math4.legacy.core.Pair;

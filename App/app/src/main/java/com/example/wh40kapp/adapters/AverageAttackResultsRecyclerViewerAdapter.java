@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp.adapters;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -9,8 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.AttackResultsData;
-import com.example.wh40kapp.AverageAttackResultsData;
+import com.example.wh40kapp.data.AverageAttackResultsData;
 import com.example.wh40kapp.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;

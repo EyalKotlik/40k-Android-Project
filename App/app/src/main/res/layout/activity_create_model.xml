@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#343434"
-    tools:context=".CreateModel">
+    tools:context=".activities.CreateModel">
 
     <EditText
         android:id="@+id/editText_wargearName"

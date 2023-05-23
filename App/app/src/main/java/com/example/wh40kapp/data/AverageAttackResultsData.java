@@ -1,4 +1,4 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.data;
 
 import org.apache.commons.math4.legacy.core.Pair;
 

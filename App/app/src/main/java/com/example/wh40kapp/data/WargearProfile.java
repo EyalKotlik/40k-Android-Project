@@ -1,4 +1,4 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.data;
 
 import android.content.Context;
 

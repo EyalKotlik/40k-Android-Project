@@ -1,4 +1,4 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.wh40kapp.other.AppUsageNotifications;
+import com.example.wh40kapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Date;
@@ -24,16 +26,19 @@ public class LandingPage extends AppCompatActivity {
     private Button button_signIn,button_signUp, button_toBattle, button_toCreate;
     private String email, password;
     private FirebaseAuth mAuth;
+    private static boolean serviceRunning = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
-        SharedPreferences preferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
-        preferences.edit().putLong("lastAppUsageTime", new Date().getTime()).apply();
-        Intent notificationIntent = new Intent(this, AppUsageNotifications.class);
-        ContextCompat.startForegroundService(this, notificationIntent);
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
+        sharedPreferences.edit().putLong("lastAppUsageTime", new Date().getTime()).apply();
+        if (!serviceRunning) {
+            Intent notificationIntent = new Intent(this, AppUsageNotifications.class);
+            ContextCompat.startForegroundService(this, notificationIntent);
+            serviceRunning = true;
+        }
         mAuth = FirebaseAuth.getInstance();
         textView_account = findViewById(R.id.textView_account);
         if (mAuth.getCurrentUser() != null) {
@@ -50,10 +55,9 @@ public class LandingPage extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(LandingPage.this, "Sign in successful", Toast.LENGTH_SHORT).show();
                             sharedPreferences.edit().putString("email",email).apply(); //TODO: this might not be the best way to store user data, but it works for now (probably)
-                            sharedPreferences.edit().putString("password",password).apply();
                             textView_account.setText("Welcome, " + email);
                         } else {
-                            Toast.makeText(LandingPage.this, "Sign in failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LandingPage.this, "Sign in failed, ensure the password and email are correct", Toast.LENGTH_SHORT).show();
                         }
                     });
                 });
@@ -62,14 +66,20 @@ public class LandingPage extends AppCompatActivity {
         button_signUp.setOnClickListener(v -> {
             email = editText_email.getText().toString();
             password = editText_password.getText().toString();
+            mAuth.fetchSignInMethodsForEmail(email).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    if (task.getResult().getSignInMethods().size() > 0) {
+                        Toast.makeText(LandingPage.this, "Sign up failed, this email is already in use", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     Toast.makeText(LandingPage.this, "Sign up successful", Toast.LENGTH_SHORT).show();
                     sharedPreferences.edit().putString("email",email).apply(); //TODO: this might not be the best way to store user data, but it works for now (probably)
-                    sharedPreferences.edit().putString("password",password).apply();
                     textView_account.setText("Welcome, " + email);
                 } else {
-                    Toast.makeText(LandingPage.this, "Sign up failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LandingPage.this, "Sign up failed, ensure the email is valid and the password has at least 6 characters", Toast.LENGTH_SHORT).show();
                 }
             });
         });

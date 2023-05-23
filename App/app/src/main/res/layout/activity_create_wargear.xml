@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#343434"
-    tools:context=".CreateWargear">
+    tools:context=".activities.CreateWargear">
 
     <Button
         android:id="@+id/button_saveWargear"

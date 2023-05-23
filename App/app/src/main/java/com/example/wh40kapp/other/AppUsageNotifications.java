@@ -1,24 +1,18 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.other;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
-import android.preference.PreferenceManager;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
 
-import com.example.wh40kapp.MainActivity;
 import com.example.wh40kapp.R;
 
 import java.util.Date;
@@ -41,7 +35,7 @@ public class AppUsageNotifications extends Service {
                 // Perform the check and send notification here
                 Log.d("TAG", "run: checking app usage");
                 checkAppUsage();
-                handler.postDelayed(this, 10000);
+                handler.postDelayed(this, SECONDS_IN_A_DAY);
             }
         };
     }
@@ -88,7 +82,7 @@ public class AppUsageNotifications extends Service {
         notificationManager.createNotificationChannel(channel);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("The Omnissiah has noticed that you haven't used the app for 14 days")
-                .setContentText("Use the app; or you and the phone's machine spirit will be purged.")
+                .setContentText("Your phones machine spirit is upset; Use the app to appease it.")
                 .setSmallIcon(R.drawable.necrons)
                 .setColor(getResources().getColor(R.color.white, getTheme()))
                 .setPriority(NotificationCompat.PRIORITY_MAX);
@@ -105,10 +99,11 @@ public class AppUsageNotifications extends Service {
         notificationManager.createNotificationChannel(channel);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("The Omnissiah is watching you")
-                .setContentText("Fail to use the app; and suffer the consequences of your heresy.")
+                .setContentText("Fail to use the app or your phones machine spirit will be sad.")
                 .setSmallIcon(R.drawable.necrons)
                 .setColor(getResources().getColor(R.color.white, getTheme()))
                 .setPriority(NotificationCompat.PRIORITY_MAX);
+
         return builder.build();
     }
 }

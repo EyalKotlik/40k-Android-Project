@@ -1,21 +1,14 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.logic;
 
-import android.util.Log;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction;
 import org.apache.commons.math4.legacy.core.Pair;
 import org.apache.commons.math4.legacy.distribution.EnumeratedDistribution;
-import org.apache.commons.math4.legacy.distribution.EnumeratedIntegerDistribution;
 import org.apache.commons.statistics.distribution.BinomialDistribution;
-import org.apache.commons.statistics.distribution.GeometricDistribution;
-import org.apache.commons.statistics.distribution.UniformDiscreteDistribution;
-import org.apache.commons.lang3.ArrayUtils;
+
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class DiceProbabilities {
 

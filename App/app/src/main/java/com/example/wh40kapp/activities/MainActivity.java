@@ -1,6 +1,5 @@
-package com.example.wh40kapp;
+package com.example.wh40kapp.activities;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +8,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.wh40kapp.fragments.ModelViewerFragmentAdapter;
+import com.example.wh40kapp.R;
+import com.example.wh40kapp.adapters.ModelViewerFragmentAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     private ModelViewerFragmentAdapter modelViewerFragmentAdapter;
-    private Context context;
     private FirebaseAuth mAuth;
     private Button button_returnToLandingPage;
 
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        this.context = this;
         tabLayout = findViewById(R.id.tab_layout_battle);
         viewPager2 = findViewById(R.id.viewpager2_battle);
         modelViewerFragmentAdapter = new ModelViewerFragmentAdapter(this);

@@ -1,4 +1,4 @@
-package com.example.wh40kapp.fragments;
+package com.example.wh40kapp.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.wh40kapp.AttackResultsData;
+import com.example.wh40kapp.data.AttackResultsData;
 import com.example.wh40kapp.R;
 
 import java.util.List;

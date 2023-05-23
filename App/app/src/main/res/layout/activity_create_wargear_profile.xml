@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#343434"
-    tools:context=".CreateWargearProfile">
+    tools:context=".activities.CreateWargearProfile">
 
     <Button
         android:id="@+id/button_saveWargearProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Wargear"
+        android:text="Save Wargear Profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

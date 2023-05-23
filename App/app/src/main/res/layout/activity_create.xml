@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#343434"
-    tools:context=".CreateActivity">
+    tools:context=".activities.CreateActivity">
 
     <Button
         android:id="@+id/button_returnToLandingPage"
@@ -32,11 +32,12 @@
         android:id="@+id/spinner_typeChoice"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
         android:entries="@array/spinner_createChoice_array"
         android:outlineAmbientShadowColor="#03A9F4"
-        app:layout_constraintStart_toEndOf="@+id/spinner_creativeActionChoice"
-        app:layout_constraintTop_toTopOf="@+id/spinner_creativeActionChoice" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_create" />
 
     <Button
         android:id="@+id/button_confirmCreate"
@@ -47,15 +48,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/spinner_typeChoice"
         app:layout_constraintStart_toEndOf="@+id/spinner_typeChoice"
         app:layout_constraintTop_toTopOf="@+id/spinner_typeChoice" />
-
-    <Spinner
-        android:id="@+id/spinner_creativeActionChoice"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:entries="@array/spinner_creativeActionChoice_array"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_create" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
